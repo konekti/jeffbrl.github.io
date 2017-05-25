@@ -1,0 +1,88 @@
+---
+layout: default
+published: true
+---
+
+<section class = 'cool'>
+  <div class = 'overlay'><div>
+    <h1>Konekti Blog</h1>
+    <h4 class  = 'center'>Some of our articles</h4>
+  </div></div>
+</section>
+<section class = 'blog container flex'>
+  <article class = 'child tripple'>
+    <div class = 'hold'>
+      <ul class="post-collection flex">
+        {% for post in paginator.posts %}
+        <li class = 'child' id = '{{post.image}}'>
+          <div class = 'show flex-up'>
+            <a href="{{ post.url | relative_url }}" class = 'post-link'>
+              <h3>
+                {{ post.title | escape }}
+              </h3>
+            </a>
+            <h4 class = 'lighten'>
+              {{ post.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span>
+              by {{ post.author }} 
+            </h4>
+          </div>
+          <div class = 'excerpt flex-up'>
+            <div>{{ post.excerpt  | truncate: 840}}</div>
+            <a href="{{ post.url | relative_url }}" class = 'button-medium'>Read More</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <!-- pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div class="pagination"> 
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        {% else %}
+          <span>&laquo; </span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="webjeda">{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="/">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo;</a>
+        {% else %}
+          <span> &raquo;</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </article>
+  <aside class = 'child trio'>
+    <h4><span class = 'pretty'>Archives</span></h4>
+    <div id = 'accordion'>   
+    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <h3 class = 'pretty'><i class="fa fa-caret-right" aria-hidden="true"></i> {{ year.name }}</h3>
+      <ul>
+       {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%b'" %}
+       {% for month in postsByMonth %}
+         <h3 class = 'pretty deep'><i class="fa fa-caret-right" aria-hidden="true"></i> {{ month.name }}</h3>
+         <ul>
+           {% for post in month.items %}
+             <li><a href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></li>
+            {% endfor %}
+         </ul>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    </div>
+    <h4><span class = 'pretty'>Twitter Feed</span></h4>
+    <a class="twitter-timeline" href="https://twitter.com/{{site.twitter}}" data-tweet-limit="3"></a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <ul>
+  </aside>
+</section>

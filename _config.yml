@@ -1,0 +1,24 @@
+title: 'Konekti Systems'
+description: ''
+baseurl: ''
+url: 'http://konekti.us'
+# social media handles (links)
+twitter: 'jeffbrl'
+facebook: ''
+email: 'info@konekti.us'
+environment: 'production'
+disqus: 
+  shortname: konekti-us
+markdown: kramdown
+theme: minima
+# paginate
+paginate: 5
+paginate_path: '/blog/page:num/'
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock  
+excerpt_separator: "<!--excerpt-->"

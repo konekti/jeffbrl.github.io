@@ -1,0 +1,255 @@
+---
+layout: default
+--- 
+<section class="services-outer-area" id="home">
+  <div class="main-banner">
+    <a href="#" name="scroll-top-div"></a>
+    <div class="overlay-mask">
+      <div class="container">
+        <!-- Start:Slider area -->
+        <div class="slider">
+          <div class="flexslider">
+            <ul class="slides">
+                <!-- Start: Banner Slide 01 -->
+              <li>
+                <img alt="" src="{{ site.baseurl }}/assets/banner-1.png" >
+                <div class="caption">
+                  <h2>Konekti Systems</h2>
+                  <h4>Your Cloud and Hybrid Networking Experts</h4>
+                  <a class="button-large" href="#">View More</a>
+                </div>
+              </li>
+              <!-- End: Banner Slide 01 -->
+              <!-- Start: Banner Slide 02 -->
+              <li>
+                <img alt="" src="{{ site.baseurl }}/assets/consult.png">
+                <div class="caption">
+                  <h2>We are Konekti Systems</h2>
+                  <h4>The Best IT consulting service provider That Ever You Seen</h4>
+                  <a class="button-large" href="#">See More</a>
+                </div>
+              </li>
+                <!-- End: Banner Slide 02 -->
+            </ul>
+          </div>
+        </div>
+        <!-- End:Slider area -->
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- =================================================
+  Banner Area End -->
+  <!-- About Content Area  Start 
+  ====================================================== -->
+  <section class="about-text-outer-area" id="engage">
+    <!-- Start:About Awesome content area-->
+    <div class="container">
+      <div class="content-area">
+        <!-- Start:Left area-->
+        <div class="left-side col-md-6">
+          <div class="main-title left-align">
+              <h5><span>When to</span></h5>
+              <h1>Engage Us</h1>
+          </div>
+          <div class="text-box">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+              <h5><strong>We provide great services</strong></h5>
+              <p>Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+              <p>Qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam. nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
+          </div>
+        </div>			
+        <!-- End:Left area-->      
+        <!-- Start:Right area-->
+        <div class="right-side col-md-6">
+            <div class="img-holder">
+                <img src="{{ site.baseurl }}/assets/software.png" alt=""> 
+            </div>                	
+        </div>
+        <!-- End:Right area-->
+      </div>
+    </div>
+    <!-- End:Awesome Structure content area-->
+  </section>
+  <!-- =================================================
+  About Content Area  End -->   
+  <!-- Our Team Area Start 
+  ====================================================== -->
+  <section class="our-team-area-outer light-grey" id="our-team">
+  <div class="container">
+    <div class="content-area">
+      <div class="main-title">
+        <h5><span>Meet our happy clients</span></h5>
+        <h2>Testimonials</h2>
+      </div>
+      <!-- Start: Our Team -->
+      <div class="our-team-detail-sec">
+        <!-- Loop through testimonials -->
+        {% for client in site.data.testimonials %}
+        <div class="col-md-4">
+          <div class="team-member">
+            <div class="team-member-box">	
+              <div class="text-box">
+                <center>
+                  <h5>{{ client.name }}</h5>
+                  <h6>{{ client.location }}</h6>
+                  <hr>
+                  <p>{{ client.description }}</p>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}        
+      </div>
+      <!-- End: Our Team -->
+    </div>
+  </div>
+  </section>
+  <!-- =================================================
+  Our Team Area End -->
+  <!-- Key Skills Area  Start 
+  ====================================================== -->
+  <section class="key-skills-outer-area" id="about">
+    <div class="container">
+      <div class="content-area"> 
+        <!-- Start:Right area-->
+        <div class="right-side col-md-6">
+            <div class="main-title left-align">
+              <h5><span>We are the best</span></h5>
+              <h1>ABOUT US</h1>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium emque laudantium, totam rem aperiam.</p>
+              <br>
+              <a class="button-medium pull-left" href="">READ MORE</a>
+            </div>
+        </div>
+        <!-- End:Right area-->
+        <!-- Start:Left area-->
+        <div class="left-side col-md-6">
+            <div class="img-holder">
+                <img src="{{ site.baseurl }}/assets/icons-1cs-v3-06.png" alt=""> 
+            </div>
+        </div>
+        <!-- End:Left area-->
+      </div>
+    </div>
+  </section>
+  <!-- =================================================
+      Home Fun Fact Area Start 
+  ====================================================== -->
+  <section class="home-fun-fact-area-outer-sec">
+      <div class="home-fun-fact-area">
+          <div class="container">
+              <div class="fun-fact-sec">
+                  <!-- Start:Fun Fact Items -->
+                  <ul class="fun-fact-items">
+                      <!-- Loop through fun facts -->
+                      {% for fact in site.data.facts %}
+                      <li>
+                          <div class="icon"><i class="fa fa-{{ fact.icon }}" aria-hidden="true"></i></div>
+                          <div class="text">
+                              <h2>{{ fact.number }}</h2>
+                              <p>{{ fact.text }}Clients</p>
+                          </div>	
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <!-- End:Fun Fact Items -->
+              </div>
+          </div>
+          </div>
+  </section>
+  <!-- =================================================
+   Content Area Start 
+  ====================================================== -->
+  <section class="contact-area-outer  "  id="contact-us">
+  <div class="contact-form-sec ">
+        <!-- Start: Form Area -->
+          <div class="container">
+              <div class="content-area clearfix">
+                  <div class="main-title">
+                    <h5>Looking for a quick reply</h5>
+                      <h1>Send us an email</h1>
+                  </div>
+                  <div class="form-sec">
+                      <form name="contact" action="https://formspree.io/{{ site.email }}" method="POST" id = 'enquire'>
+                          <div class="col-md-4">
+                              <input type="text" id="contact-name" name = 'Name' placeholder="Your Name" class="text-field-box ">
+                          </div>
+                          <div class="col-md-4">
+                              <input type="text" id="contact-email" name="_replyto" placeholder="Your Email" class="text-field-box ">
+                          </div>
+                          <div class="col-md-4">
+                              <input type="text" id="contact-number" name = 'Mobile' placeholder="Your Phone" class="text-field-box ">
+                          </div>
+                          <div class="col-md-12">
+                              <textarea id="contact-msg" class="text-field-box" name = 'Message' placeholder="Your Message"></textarea>
+                              <button name="contact" type="submit" id="contact-submit" class="button-medium">Submit Now</button>
+                          </div>
+                          <div class="error-item">
+                              <div id="contact-loading" style="display: none;"> Email Sending... </div>
+                              <div id="contact-success" style="display: none;"> 
+                                  Your message sent sucessfully to our team and they will be in touch with you asap. 
+                              </div>
+                              <div id="contact-failed" style="display: none;"> 
+                                  Error...!, message sending faild , try after sometime. 
+                              </div>
+                          </div> 
+                      </form>
+                  </div>	
+              </div>
+          </div> 
+          <!-- End: Form Area -->
+      </div>    
+  <!-- Start:Contact Details Area -->
+    <div class="contact-sec-contents">
+      <div class="container"><br><br><br>
+                <div class="contact-info">
+                    <!-- Start:Phone Number -->
+          <div class="col-md-4">
+            <div class="features-box">
+              <div class="features-icon"><i class="fa fa-building-o"></i></div>
+              <div class="features-text">
+                <h6>Contact Address</h6>
+                <p><strong>Office :</strong>  12345 Little Lonsdale St,<br>
+                  Melbourne, Australia</p>
+              </div>
+            </div>
+          </div>
+                      <!-- End:Phone Number -->     
+                      <!-- Start:Address -->
+          <div class="col-md-4">
+            <div class="features-box">
+              <div class="features-icon"><i class="fa fa-phone"></i></div>
+              <div class="features-text">
+                <h6>Phone And Fax</h6>
+                <p><strong>Phone :</strong> (123) 123-456</p>
+                <p><strong>Fax :</strong> (123) 123-456</p>
+              </div>
+            </div>
+          </div>
+                      <!-- End:Address -->    
+                      <!-- Start:Email -->
+          <div class="col-md-4">
+            <div class="features-box">
+              <div class="features-icon"> <i class="fa fa-envelope-o"></i></div>
+              <div class="features-text">
+                <h6>Email Address</h6>
+                <p><strong>E-Mail :</strong> johndoe@site.com,
+                                    office@site.com</p>
+              </div>
+            </div>
+          </div>
+                      <!-- End:Email -->
+        </div>
+      </div>
+    </div>
+  <!-- End:Contact Details Area -->
+      <!-- Start:
+  <div class="map-area">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14604.264638061977!2d90.37898279999999!3d23.7806583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ebb5b921e528ab!2z4Kas4Ka-4KaC4Kay4Ka-4Kam4KeH4Ka2IOCmrOCmv-CmruCmvuCmqCDgpqzgpr7gprngpr_gpqjgp4Ag4Kav4Ka-4Kam4KeB4KaY4Kaw!5e0!3m2!1sbn!2sbd!4v1494351475759" width="100%" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div> 
+  ================================================
+  End:Map Area -->  
+</section>
