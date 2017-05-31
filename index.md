@@ -1,6 +1,8 @@
 ---
 layout: default
---- 
+published: true
+---
+ 
 <section class="services-outer-area" id="home">
   <div class="main-banner">
     <a href="#" name="scroll-top-div"></a>
@@ -25,7 +27,7 @@ layout: default
                 <img alt="" src="{{ site.baseurl }}/assets/consult.png">
                 <div class="caption">
                   <h2>We are Konekti Systems</h2>
-                  <h4>The Best IT consulting service provider That Ever You Seen</h4>
+                  <h4>We can help you optimize network connectivity to the cloud.</h4>
                   <a class="button-large" href="#">See More</a>
                 </div>
               </li>
