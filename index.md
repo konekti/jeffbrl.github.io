@@ -77,6 +77,7 @@ published: true
   About Content Area  End -->   
   <!-- Our Team Area Start 
   ====================================================== -->
+  <div style="display:none">
   <section class="our-team-area-outer light-grey" id="our-team">
   <div class="container">
     <div class="content-area">
@@ -85,7 +86,7 @@ published: true
         <h2>Testimonials</h2>
       </div>
       <!-- Start: Our Team -->
-      <div style="display:none" class="our-team-detail-sec">
+      <div class="our-team-detail-sec">
         <!-- Loop through testimonials -->
         {% for client in site.data.testimonials %}
         <div class="col-md-4">
@@ -110,6 +111,7 @@ published: true
   </section>
   <!-- =================================================
   Our Team Area End -->
+  </div>
   <!-- Key Skills Area  Start 
   ====================================================== -->
   <section class="key-skills-outer-area" id="about">
