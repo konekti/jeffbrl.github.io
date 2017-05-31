@@ -145,7 +145,7 @@ published: true
   <section class="home-fun-fact-area-outer-sec">
       <div class="home-fun-fact-area">
           <div class="container">
-              <div class="fun-fact-sec">
+              <div style="display:none" class="fun-fact-sec">
                   <!-- Start:Fun Fact Items -->
                   <ul class="fun-fact-items">
                       <!-- Loop through fun facts -->
