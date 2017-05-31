@@ -1,9 +1,9 @@
 - name: Office
   icon: map-marker
-  text: '12345 Little Lonsdale St, Melbourne, Australia'
+  text: 'Leesburg, VA USA'
 - name: Phone
   icon: phone
-  text: '(123) 123-456'
+  text: '(571) 293-0820'
 - name: Email
   icon: envelope
-  text: 'johndoe@site.com'
+  text: 'info@konekti.us'
