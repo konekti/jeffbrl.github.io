@@ -85,7 +85,7 @@ published: true
         <h2>Testimonials</h2>
       </div>
       <!-- Start: Our Team -->
-      <div class="our-team-detail-sec">
+      <div style="display:none" class="our-team-detail-sec">
         <!-- Loop through testimonials -->
         {% for client in site.data.testimonials %}
         <div class="col-md-4">
