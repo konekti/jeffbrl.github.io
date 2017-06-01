@@ -197,7 +197,7 @@ published: true
                                   Your message sent sucessfully to our team and they will be in touch with you asap. 
                               </div>
                               <div id="contact-failed" style="display: none;"> 
-                                  Error...!, message sending faild , try after sometime. 
+                                  Error! Message sending failed, try again soon. 
                               </div>
                           </div> 
                       </form>
@@ -216,8 +216,8 @@ published: true
               <div class="features-icon"><i class="fa fa-building-o"></i></div>
               <div class="features-text">
                 <h6>Contact Address</h6>
-                <p><strong>Office :</strong>  12345 Little Lonsdale St,<br>
-                  Melbourne, Australia</p>
+                <p><strong>Office :</strong>40356 Monroe Glen Lane<br>
+                  Leesburg, VA 20175</p>
               </div>
             </div>
           </div>
@@ -240,8 +240,9 @@ published: true
               <div class="features-icon"> <i class="fa fa-envelope-o"></i></div>
               <div class="features-text">
                 <h6>Email Address</h6>
-                <p><strong>E-Mail :</strong> johndoe@site.com,
-                                    office@site.com</p>
+                <p><strong>E-Mail :</strong> 
+                   info@konekti.us
+                </p>
               </div>
             </div>
           </div>
