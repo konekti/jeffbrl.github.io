@@ -14,6 +14,10 @@
           </ul>
         </div>
       </div>
+      <!-- empty div -->
+      <div class="col-md-4">
+      
+      </div>
       <!-- Start:Useful Links -->
       <div class="col-md-4">
         <div class="useful-link-sec">
@@ -27,6 +31,7 @@
         </div>
       </div>
       <!-- Start:Newsletter -->
+      <!-- 
       <div class="col-md-4">
         <div class="news-letter-sec">
           <h5>Newsletter</h5>
@@ -37,13 +42,14 @@
           </form>
         </div>
       </div>
+      -->
       </div>
     </div>
     <!-- Start:copyright -->
     <div class="bottom-area">
       <div class="container">
         <div class="copyright">
-          <p>© Copyright 2017 Konekti Systems <span>  | </span>  Designed By <a href="https://societyieces.com/author/">One</a></p>
+          <p>© Copyright 2017 Konekti Systems <span>  | </span>  Designed By <a href="https://societypieces.com/author/">One</a></p>
             <a id="scroll-top-div" href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a>
         </div>
       </div>
