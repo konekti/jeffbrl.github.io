@@ -45,7 +45,7 @@ published: true
   <!-- About Content Area  Start 
   ====================================================== -->
   <section class="about-text-outer-area" id="engage">
-    <!-- Start:About Awesome content area-->
+    <!-- Start:Engage content area-->
     <div class="container">
       <div class="content-area">
         <!-- Start:Left area-->
@@ -75,23 +75,23 @@ published: true
   </section>
   <!-- =================================================
   About Content Area  End -->   
-  <!-- Our Team Area Start 
+  <!-- Testamonials Area Start 
   ====================================================== -->
   <div style="display:none">
-  <section class="our-team-area-outer light-grey" id="our-team">
+  <section class="testimonials-area-outer light-grey" id="testimonials">
   <div class="container">
     <div class="content-area">
       <div class="main-title">
         <h5><span>Meet our happy clients</span></h5>
         <h2>Testimonials</h2>
       </div>
-      <!-- Start: Our Team -->
-      <div class="our-team-detail-sec">
+      <!-- Start: Testimonials -->
+      <div class="testimonials-detail-sec">
         <!-- Loop through testimonials -->
         {% for client in site.data.testimonials %}
         <div class="col-md-4">
-          <div class="team-member">
-            <div class="team-member-box">	
+          <div class="testimonial-member">
+            <div class="testimonial-box">	
               <div class="text-box">
                 <center>
                   <h5>{{ client.name }}</h5>
@@ -105,12 +105,12 @@ published: true
         </div>
         {% endfor %}        
       </div>
-      <!-- End: Our Team -->
+      <!-- End: Testimonials -->
     </div>
   </div>
   </section>
   <!-- =================================================
-  Our Team Area End -->
+  Testimonials Area End -->
   </div>
   <!-- Key Skills Area  Start 
   ====================================================== -->
