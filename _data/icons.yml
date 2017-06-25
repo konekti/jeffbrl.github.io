@@ -1,10 +1,4 @@
-- name: facebook
-  link: ''
 - name: twitter
   link: ''
-- name: google-plus
-  link: ''
 - name: linkedin
-  link: ''
-- name: youtube
   link: ''
