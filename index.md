@@ -42,7 +42,42 @@ published: true
 </section>
   <!-- =================================================
   Banner Area End -->
-  <!-- About Content Area  Start 
+  <!-- Services Content Area  Start 
+  ====================================================== -->
+  <section class="about-text-outer-area" id="services">
+    <!-- Start:Services content area-->
+    <div class="container">
+      <div class="content-area">
+        <!-- Start:Left area-->
+        <div class="col-md-12">
+          <div class="main-title left-align">
+              <h1>Our Services</h1>
+          </div>
+          <div class="text-box">
+
+            <p><h5>Public and Hybrid Cloud Migration</h5></p>
+            <p>
+              {% include public-hybrid-cloud-migration.md %}
+            </p>
+            <p><h5>Public and Hybrid Cloud Connectivity Health Check</h5></p>
+            <p>
+              {% include public-hybrid-cloud-health-check.md %}
+            </p>
+            <p><h5>Public Cloud Business Continuity Assurance</h5></p>
+            <p>
+              {% include public-cloud-business-continuity-assurance.md %}
+            </p>
+
+          </div>
+        </div>			
+        <!-- End:Left area-->      
+      </div>
+    </div>
+    <!-- End:Awesome Structure content area-->
+  </section>
+  <!-- =================================================
+  When to Engage Us Content Area  End -->   
+  <!-- When to Engage Us Content Area  Start 
   ====================================================== -->
   <section class="about-text-outer-area" id="engage">
     <!-- Start:Engage content area-->
@@ -66,7 +101,7 @@ published: true
         <div class="right-side col-md-6">
             <div class="img-holder">
                 <img src="{{ site.baseurl }}/assets/software.png" alt=""> 
-            </div>                	
+            </div>
         </div>
         <!-- End:Right area-->
       </div>
@@ -74,8 +109,8 @@ published: true
     <!-- End:Awesome Structure content area-->
   </section>
   <!-- =================================================
-  About Content Area  End -->   
-  <!-- Testamonials Area Start 
+  When to Engage Us Content Area  End -->   
+  <!-- Testimonials Area Start 
   ====================================================== -->
   <div style="display:none">
   <section class="testimonials-area-outer light-grey" id="testimonials">
