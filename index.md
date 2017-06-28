@@ -151,12 +151,9 @@ published: true
         <!-- Start:Right area-->
         <div class="right-side col-md-6">
             <div class="main-title left-align">
-              <h5><span>We are the best</span></h5>
-              <h1>ABOUT US</h1>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium emque laudantium, totam rem aperiam.</p>
+              <h1>About Us</h1>
+              <p> {% include about-us.md %} </p>
               <br>
-              <a class="button-medium pull-left" href="">READ MORE</a>
             </div>
         </div>
         <!-- End:Right area-->
@@ -258,9 +255,8 @@ published: true
             <div class="features-box">
               <div class="features-icon"><i class="fa fa-phone"></i></div>
               <div class="features-text">
-                <h6>Phone And Fax</h6>
+                <h6>Phone</h6>
                 <p><strong>Phone :</strong> (123) 123-456</p>
-                <p><strong>Fax :</strong> (123) 123-456</p>
               </div>
             </div>
           </div>
