@@ -84,26 +84,22 @@ published: true
     <div class="container">
       <div class="content-area">
         <!-- Start:Left area-->
-        <div class="left-side col-md-6">
+        <div class="col-md-12">
           <div class="main-title left-align">
-              <h5><span>When to</span></h5>
-              <h1>Engage Us</h1>
+              <h1>When to Engage Us</h1>
           </div>
           <div class="text-box">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-              <h5><strong>We provide great services</strong></h5>
-              <p>Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-              <p>Qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam. nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
+              <p> <h5>Example #1 </h5></p>
+              <p> {% include story-one.md %} </p>
+              <p> <h5>Example #2 </h5></p>
+              <p> {% include story-two.md %} </p>
+              <p> <h5>Example #3 </h5></p>
+              <p> {% include story-three.md %} </p>
+              <p> <h5>Example #4 </h5></p>
+              <p> {% include story-four.md %} </p>
           </div>
         </div>			
         <!-- End:Left area-->      
-        <!-- Start:Right area-->
-        <div class="right-side col-md-6">
-            <div class="img-holder">
-                <img src="{{ site.baseurl }}/assets/software.png" alt=""> 
-            </div>
-        </div>
-        <!-- End:Right area-->
       </div>
     </div>
     <!-- End:Awesome Structure content area-->
