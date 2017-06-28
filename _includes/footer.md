@@ -5,7 +5,7 @@
       <div class="col-md-4">
         <div class="about-info">
           <div class="footer-logo"><a href="#" ><img alt="" src="{{ site.baseurl }}/assets/footer-logo.png"></a></div>
-          <p>Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. sed do .</p>
+          <p>Our social media presence helps keep you informed of Konekti's efforts in serving our cilients.</p>
           <ul class="social-media-icon-list">
             <!-- loop through icons -->
             {% for icon in site.data.icons %}
