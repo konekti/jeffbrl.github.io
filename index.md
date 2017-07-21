@@ -264,7 +264,7 @@ published: true
               <div class="features-icon"><i class="fa fa-phone"></i></div>
               <div class="features-text">
                 <h6>Phone</h6>
-                <p><strong>Phone :</strong> (123) 123-456</p>
+                <p><strong>Phone :</strong> (703) 852-5160</p>
               </div>
             </div>
           </div>
