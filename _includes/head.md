@@ -23,9 +23,9 @@
   {% endif %}
   <link rel="shortcut icon" href="{{ site.baseurl }}/fav.PNG">
   <link rel="canonical" href="{{ page.url | replace:'index.htm l','' | absolute_url }}">
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include analytics.md %}
-  {% endif %}
+
+  {% include analytics.md %}
+
   <script src="https://use.fontawesome.com/22572db09e.js"></script> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
