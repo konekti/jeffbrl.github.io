@@ -14,7 +14,7 @@ theme: minima
 # paginate
 paginate: 5
 paginate_path: '/blog/page:num/'
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
