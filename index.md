@@ -54,7 +54,6 @@ published: true
               <h1>Our Services</h1>
           </div>
           <div class="text-box">
-
             <p><h5>Public and Hybrid Cloud Migration</h5></p>
             <p>
               {% include public-hybrid-cloud-migration.md %}
@@ -251,8 +250,8 @@ published: true
             <div class="features-box">
               <div class="features-icon"><i class="fa fa-building-o"></i></div>
               <div class="features-text">
-                <h6>Contact Address</h6>
-                <p><strong>Office :</strong>40356 Monroe Glen Lane<br>
+                <h6>Physical Address</h6>
+                <p>40356 Monroe Glen Lane<br>
                   Leesburg, VA 20175</p>
               </div>
             </div>
@@ -264,7 +263,7 @@ published: true
               <div class="features-icon"><i class="fa fa-phone"></i></div>
               <div class="features-text">
                 <h6>Phone</h6>
-                <p><strong>Phone :</strong> (703) 852-5160</p>
+                <p> (703) 852-5160</p>
               </div>
             </div>
           </div>
@@ -275,7 +274,7 @@ published: true
               <div class="features-icon"> <i class="fa fa-envelope-o"></i></div>
               <div class="features-text">
                 <h6>Email Address</h6>
-                <p><strong>E-Mail :</strong> 
+                <p> 
                    info@konekti.us
                 </p>
               </div>
