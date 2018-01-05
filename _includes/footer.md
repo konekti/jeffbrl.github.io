@@ -1,6 +1,6 @@
 <footer class="footer-area">
   <div class="upper-area">
-    <div class="container">
+    <div class="container contact-with-newsletter">
       <!-- Start:About Info -->
       <div class="col-md-4">
         <div class="about-info">
@@ -15,7 +15,6 @@
       </div>
       <!-- empty div -->
       <div class="col-md-4">
-      
       </div>
       <!-- Start:Useful Links -->
       <div class="col-md-4">
@@ -30,7 +29,6 @@
         </div>
       </div>
       <!-- Start:Newsletter -->
-      <!-- 
       <div class="col-md-4">
         <div class="news-letter-sec">
           <h5>Newsletter</h5>
@@ -41,7 +39,6 @@
           </form>
         </div>
       </div>
-      -->
       </div>
     </div>
     <!-- Start:copyright -->
