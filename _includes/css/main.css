@@ -1573,7 +1573,7 @@ a.down-app-btn:hover, .down-app-btn:hover {
 
 
 .content-area {
-	padding: 110px 0;
+	padding: 30px 0;
 	width: 100%;
 	height: auto;
 }
@@ -3214,7 +3214,6 @@ a.ovelay-icon:hover {
 	height: auto;
 }
 .key-skills-outer-area .content-area {
-	padding: 70px 0;
 	float: left;
 }
 .key-skills-outer-area .left-side {
