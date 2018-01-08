@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 722 722" style="enable-background:new 0 0 722 722;" xml:space="preserve">
+	 viewBox="0 0 1108.1 1108.1" style="enable-background:new 0 0 1108.1 1108.1;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#938C8C;stroke-width:0.25;stroke-miterlimit:10;}
 </style>
-<line class="st0" x1="367.3" y1="484" x2="339.7" y2="513.8"/>
-<polyline class="st0" points="101,443 66,463 109,496 147,476 "/>
-<polyline class="st0" points="390,496 355,516 398,549 436,529 "/>
-<image style="overflow:visible;" width="1365" height="768" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVUAAAMACAYAAAAkCYfBAAABS2lUWHRYTUw6Y29tLmFkb2JlLnht
+<g>
+	<line class="st0" x1="563.8" y1="688.8" x2="515.2" y2="741.2"/>
+	<polyline class="st0" points="94.6,616.5 32.9,651.8 108.7,709.9 175.6,674.7 	"/>
+	<polyline class="st0" points="603.7,709.9 542.1,745.1 617.8,803.3 684.8,768 	"/>
+	
+		<image style="overflow:visible;" width="1365" height="768" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVUAAAMACAYAAAAkCYfBAAABS2lUWHRYTUw6Y29tLmFkb2JlLnht
 cAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQi
 Pz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1Q
 IENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgog
@@ -9607,8 +9609,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfGT8T/6L16dKpiS1AAAAAElFTkSuQmCC" transform="matrix(0.487 0 0 0.487 22.6367 242)">
-</image>
-<line class="st0" x1="278" y1="474.5" x2="301" y2="489"/>
-<line class="st0" x1="316.5" y1="499.8" x2="339.5" y2="514.3"/>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfGT8T/6L16dKpiS1AAAAAElFTkSuQmCC" transform="matrix(0.858 0 0 0.858 -43.4981 262.4192)">
+	</image>
+	<line class="st0" x1="406.4" y1="672" x2="446.9" y2="697.6"/>
+	<line class="st0" x1="474.3" y1="716.7" x2="514.8" y2="742.2"/>
+</g>
 </svg>
