@@ -142,7 +142,7 @@ published: true
         <!-- Start:Left area-->
         <div class="left-side col-md-6">
             <div class="img-holder">
-                <img src="{{ site.baseurl }}/assets/aws-model.png" alt=""> 
+                <img src="{{ site.baseurl }}/assets/aws-model.svg" alt=""> 
             </div>
         </div>
         <!-- End:Left area-->
