@@ -9,32 +9,7 @@ published: true
     <div class="overlay-mask">
       <div class="container">
         <!-- Start:Slider area -->
-        <div class="slider">
-          <div class="flexslider">
-            <ul class="slides">
-                <!-- Start: Banner Slide 01 -->
-              <li>
-                <img alt="" src="{{ site.baseurl }}/assets/banner-1.png" >
-                <div class="caption">
-                  <h2>Konekti Systems</h2>
-                  <h4>Your Cloud and Hybrid Networking Experts</h4>
-                  <a class="button-large" href="#">View More</a>
-                </div>
-              </li>
-              <!-- End: Banner Slide 01 -->
-              <!-- Start: Banner Slide 02 -->
-              <li>
-                <img alt="" src="{{ site.baseurl }}/assets/consult.png">
-                <div class="caption">
-                  <h2>We are Konekti Systems</h2>
-                  <h4>We can help you optimize network connectivity to the cloud.</h4>
-                  <a class="button-large" href="#">See More</a>
-                </div>
-              </li>
-                <!-- End: Banner Slide 02 -->
-            </ul>
-          </div>
-        </div>
+         {% include slides.md %}
         <!-- End:Slider area -->
       </div>
     </div>
@@ -167,7 +142,7 @@ published: true
         <!-- Start:Left area-->
         <div class="left-side col-md-6">
             <div class="img-holder">
-                <img src="{{ site.baseurl }}/assets/icons-1cs-v3-06.png" alt=""> 
+                <img src="{{ site.baseurl }}/assets/aws-model.png" alt=""> 
             </div>
         </div>
         <!-- End:Left area-->
