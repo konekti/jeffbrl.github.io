@@ -16,6 +16,34 @@
   });
 })();
 
+
+(function() {
+  
+  let $input = $('input[type=radio]');
+
+  $input.on('change', function() {
+    if($(this).prop('checked')) {
+      let $id = $(this)[0].id;
+      let $button = $(this).siblings('.custom-indicators').children(`.${$id}`);
+       
+      $button.addClass('is-checked');
+      $button.siblings().removeClass('is-checked');
+    }
+  })
+
+  $('.custom-slides').on('keydown', function(event) {
+    let  $checked = $('input:checked');
+    if(event.target === this && (event.keyCode == 37 || event.keyCode == 39)){
+        let $move = $checked.siblings('input[type=radio]');
+        $move.prop('checked', true);
+
+        // hacky solution
+        $('.custom-indicators').children().toggleClass('is-checked');
+    }
+  });
+  
+})();
+
 (function() {
     var mailForm, subForm, mailFail, mailSuccess, notify, guest;
     mailSuccess = `
