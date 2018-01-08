@@ -41,7 +41,7 @@ html, body {
 	width: 100%;
 	line-height: 24px;
 	font-size: 14px;
-	color: #666;
+	color: #343434;
 	background: #fff;
 }
 /* Link Styling */
@@ -105,7 +105,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	line-height: 1.75 !important;
-	color: #666;
+	color: #080e14;
 	font-weight: 400;
 }
 hr {
@@ -150,7 +150,7 @@ input, select, label, textarea input[type="radio"], input[type="checkbox"], butt
 	border: none;
 	box-shadow: none;
 	outline: none;
-	color: #666;
+	color: #343434;
 }
 /* animation styles */
 
@@ -186,7 +186,7 @@ img {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1084px;
+	max-width: 1084px !important;
 	height: auto;
 	display: block;
 }
@@ -377,12 +377,12 @@ body::-webkit-scrollbar-thumb {
 	position: relative;
 	width: 100%;
 	transition: all 0.5s ease 0s;
-	color: #666;
+	color: #343434;
 	white-space: nowrap;
 }
 .menu li ul li a {
 	display: block;
-	color: #666 !important;
+	color: #343434 !important;
 	text-align: left;
 	width: 100%;
 	font-size: 14px;
@@ -433,7 +433,7 @@ body::-webkit-scrollbar-thumb {
 	width: auto;
 }
 .menu li ul li:hover li a {
-	color: #666 !important;
+	color: #343434 !important;
 	background: #fff;
 }
 .menu li ul li li:hover a {
@@ -463,22 +463,21 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 10px !important;
 }
 .main-banner {
-	background: #2b3840;
+	/* background: rgb(84,52,52,0.8) !important; */
 	width: 100%;
 	margin: 0;
+	background-repeat: repeat;
 	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	height: 840px;
+	min-height: 100vh;
 	position: relative;
 	top: 0;
 	z-index: 300;
 }
 .main-banner .overlay-mask {
-	background: rgba(17, 97, 132, 0.8) none repeat scroll 0 0;
+	background: rgba(84,52,52,0.92);
 	height: 100%;
 	width: 100%;
+	min-height:100vh;
 	padding: 0px;
 	position: relative;
 }
@@ -490,7 +489,7 @@ body::-webkit-scrollbar-thumb {
 	height: 300px;
 }
 .inner .overlay-mask {
-	background: rgba(17, 97, 132, 0.8) url(../img/globe-inner.png) no-repeat center center;
+	background: rgb(84,52,52,0.8) url(../img/congruent_pentagon.png) repeat center center;
 	height: 100%;
 	width: 100%;
 	padding: 154px 0 0;
@@ -756,12 +755,12 @@ body::-webkit-scrollbar-thumb {
 ol li {
 	line-height: 30px;
 	font-size: 16px;
-	color: #666;
+	color: #343434;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 ol li a {
-	color: #666;
+	color: #343434;
 }
 ol li a:hover {
 	color: #faac3a;
@@ -949,7 +948,7 @@ ol li a:hover {
 .home-fun-fact-area-outer-sec .home-fun-fact-area {
 	width: 100%;
 	height: 100%;
-	background: rgba(17,97,132,0.7);
+	background: rgba(84,52,52,0.72);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1710,7 +1709,7 @@ a.down-app-btn:hover, .down-app-btn:hover {
 	height: 46px;
 	line-height: 46px;
 	text-align: left;
-	color: #666;
+	color: #343434;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 25px;
@@ -1930,13 +1929,13 @@ form .button-normal {
 	display: block;
 	line-height: 30px;
 	font-size: 16px;
-	color: #666;
+	color: #343434;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 .default-list li a {
 	display: block;
-	color: #666;
+	color: #343434;
 }
 .default-list li a:hover {
 	color: #faac3a;
@@ -1953,7 +1952,7 @@ form .button-normal {
 	width: 100%;
 }
 .list-style-caret-left li {
-	color: #666;
+	color: #343434;
 	display: block;
 	float: left;
 	font-family: 'Open Sans', sans-serif;
@@ -1966,13 +1965,13 @@ form .button-normal {
 	font-weight: 400;
 }
 .list-style-caret-left li a {
-	color: #666;
+	color: #343434;
 }
 .list-style-caret-left a:hover {
 	color: #faac3a;
 }
 .list-style-caret-left li:before {
-	color: #666;
+	color: #343434;
 	content: "\f0da";
 	font-family: "FontAwesome";
 	font-size: 14px;
@@ -1991,7 +1990,7 @@ form .button-normal {
 	width: 100%;
 }
 .list-style-calendar li {
-	color: #666;
+	color: #343434;
 	display: flex;
 	float: left;
 	font-family: 'Open Sans', sans-serif;
@@ -2004,7 +2003,7 @@ form .button-normal {
 	font-weight: 400;
 }
 .list-style-calendar li a {
-	color: #666;
+	color: #343434;
 }
 .list-style-calendar a:hover {
 	color: #faac3a;
@@ -2029,7 +2028,7 @@ form .button-normal {
 	width: 100%;
 }
 .list-style-pie-chart li {
-	color: #666;
+	color: #343434;
 	display: flex;
 	float: left;
 	font-family: 'Open Sans', sans-serif;
@@ -2042,7 +2041,7 @@ form .button-normal {
 	font-weight: 400;
 }
 .list-style-pie-chart li a {
-	color: #666;
+	color: #343434;
 }
 .list-style-pie-chart a:hover {
 	color: #faac3a;
@@ -2914,7 +2913,7 @@ a.ovelay-icon:hover {
 	margin: 10px 0 0;
 }
 .users-list li a {
-	color: #666666;
+	color: #343434;
 	text-decoration: underline;
 }
 .users-list li a:hover {
@@ -2939,7 +2938,7 @@ a.ovelay-icon:hover {
 .search-btn {
 	background: #eeeeee url("../img/search.png") no-repeat scroll right center;
 	border-radius: 25px;
-	color: #666666;
+	color: #343434;
 	display: block;
 	float: left;
 	font-weight: 400;
@@ -2962,11 +2961,11 @@ a.ovelay-icon:hover {
 	padding: 6px 0 8px 20px;
 	position: relative;
 	border-bottom: 1px solid #dfdfdf;
-	color: #666;
+	color: #343434;
 	font-size: 14px;
 }
 .category-box li a, .popular-post-box li a {
-	color: #666;
+	color: #343434;
 }
 .category-box li a:hover, .popular-post-box li a:hover {
 	color: #faac3a;
@@ -3025,7 +3024,7 @@ a.ovelay-icon:hover {
 	float: left;
 }
 .recent-post li a {
-	color: #666;
+	color: #343434;
 	font-size: 16px;
 	display: block;
 }
@@ -3125,7 +3124,7 @@ a.ovelay-icon:hover {
 	float: none;
 	border: none;
 	font-size:16px;
-	color: #666666;
+	color: #343434;
 	font-family: "Lato";
 }
 .pagination-area .pagination > li.active > a, .pagination-area .pagination > li.active > span, .pagination-area .pagination > li:hover a, .pagination-area .pagination > li:hover span, .pagination-area .pagination > li:active a, .pagination-area .pagination > li:active span, .pagination-area .pagination > li:focus a, .pagination-area .pagination > li:focus span {
@@ -3651,7 +3650,7 @@ h4 label {
 	transition: all 0.5s ease 0s;
 }
 .pricing-table .default-list li {
-	color: #666666;
+	color: #343434;
 	line-height: 50px;
 }
 .pricing-table a .button-medium {
@@ -3713,7 +3712,7 @@ h4 label {
 	font-weight:500;
 }
 .footer-area p {
-	color: #666;
+	color: #343434;
 	font-weight:400;
 	line-height: 24px;
 	margin: 0 0 25px;
@@ -3722,7 +3721,7 @@ h4 label {
 	margin: 0 0 20px;
 }
 .footer-area a {
-	color: #666;
+	color: #343434;
 }
 .footer-area a:hover {
 	color: #faac3a;
@@ -3794,7 +3793,7 @@ h4 label {
 	height: 37px;
 	line-height: 37px;
 	background: #e5e5e5;
-	color: #666;
+	color: #343434;
 	text-align: left;
 	padding: 0 15px;
 	display: inline-block;
@@ -3832,7 +3831,7 @@ h4 label {
 	display: block;
 	font-size: 14px;
 	line-height: 24px;
-	color: #666;
+	color: #343434;
 }
 .footer-area .bottom-area {
 	width: 100%;
@@ -4322,7 +4321,7 @@ a.ovelay-icon {
 	padding: 5px 0;
 }
 .menu li ul li:hover li a {
-	background: #666666;
+	background: #343434;
 	color: #ffffff !important;
 }
 .menu li ul li li:hover a {
