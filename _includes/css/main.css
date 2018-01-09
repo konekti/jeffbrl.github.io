@@ -146,7 +146,6 @@ ol {
 input, select, label, textarea input[type="radio"], input[type="checkbox"], button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 	border: none;
 	box-shadow: none;
 	outline: none;
@@ -208,12 +207,12 @@ body::-webkit-scrollbar {
  width:6px;
 }
 body::-webkit-scrollbar-track {
- -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+ box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
  border-radius: 5px;
 }
 body::-webkit-scrollbar-thumb {
  border-radius: 5px;
- -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+ box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
 }
 /* ===================================================================================================== */
 /* 02. Preloader Content Styles                                                                          */
@@ -269,10 +268,6 @@ body::-webkit-scrollbar-thumb {
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
-}
-.header-area .left-side {
-}
-.header-area .right-side {
 }
 .header-area .logo {
 	width: auto;
@@ -901,7 +896,6 @@ ol li a:hover {
 	width: 50%;
 	margin: 0;
 	padding: 110px 0 0;
-	display: inline-block;
 	float: left;
 }
 .make-different-outer-area .right-side {
@@ -914,7 +908,6 @@ ol li a:hover {
 	width: 50%;
 	margin: 0;
 	padding: 60px 0 0;
-	display: inline-block;
 	float: left;
 }
 .awesome-structure-outer-area .right-side {
@@ -1109,7 +1102,6 @@ ol li a:hover {
 .client-list-box li {
 	width: 16.6%;
 	float: left;
-	display: inline-block;
 	padding: 0;
 	margin: 0;
 	height: auto;
@@ -1178,7 +1170,7 @@ ol li a:hover {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	toip: 0;
+	top: 0;
 	left: 0;
 	background: rgba(0,0,0,0.6);
 }
@@ -1258,6 +1250,7 @@ ol li a:hover {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	touch-action: pan-y; 
 	-ms-touch-action: pan-y;
 }
 #portfolio-slider .item {
@@ -1270,6 +1263,7 @@ ol li a:hover {
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-wrapper-outer {
 	overflow: hidden;
@@ -1365,9 +1359,10 @@ ol li a:hover {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 /* Demo Slides */
 
@@ -1637,7 +1632,7 @@ a.down-app-btn:hover, .down-app-btn:hover {
 .special-main-title h4 {
 	background: #ffffff none repeat scroll 0 0;
 	color: #faac3a;
-	display: inline;
+	display: inline-block;
 	height: 48px;
 	line-height: 48px;
 	padding: 20px;
@@ -1716,7 +1711,6 @@ a.down-app-btn:hover, .down-app-btn:hover {
 	margin-bottom: 10px;
 	width: 100%;
 	outline: none;
-	appearance: none;
 	-webkit-appearance: none;
 }
 .text-field-box.normal.borderd {
@@ -1773,7 +1767,6 @@ form .button-normal {
 	width: 200px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 	border: 1px solid #faac3a;
 	box-shadow: none;
 	outline: none;
@@ -1800,7 +1793,6 @@ form .button-normal {
 	width: 160px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 	border: 1px solid #faac3a;
 	box-shadow: none;
 	outline: none;
@@ -2315,8 +2307,6 @@ form .button-normal {
 }
 /*----------------------------   Headings Area Section    -----------------------------------------------*/
 
-.headings-sec {
-}
 .headings-sec h1, .headings-sec h2, .headings-sec h3, .headings-sec h4, .headings-sec h5, .headings-sec h6 {
 	margin: 0 0 20px;
 }
@@ -2597,9 +2587,6 @@ form .button-normal {
 .smoke-white {
 	background: #f8f8f8 !important;
 }
-.form-area select {
-	appearance: normal;
-}
 form .button-medium {
 	margin: 0;
 	text-transform: none;
@@ -2648,7 +2635,7 @@ option {
 	text-align: left;
 	box-shadow: none;
 	outline: none;
-	appearance: none;
+	-webkit-appearance: none;
 	border: none;
 }
 /* ===================================================================================================== */
@@ -2896,13 +2883,11 @@ a.ovelay-icon:hover {
 	width: 100%;
 }
 .users-list li .user-comment {
-	display: inline-block;
 	float: left;
 	height: auto;
 	width: 78%;
 }
 .users-list li .user-pic {
-	display: inline-block;
 	float: left;
 	height: 80px;
 	max-width: 105px;
@@ -3065,7 +3050,6 @@ a.ovelay-icon:hover {
 	width: 100%;
 	display: block;
 	height: auto;
-	vertical-align: middle;
 }
 .tags a {
 	display: inline-block;
@@ -3216,14 +3200,12 @@ a.ovelay-icon:hover {
 	float: left;
 }
 .key-skills-outer-area .left-side {
-	display: inline-block;
 	float: left;
 	margin: 0;
 	padding-top: 10px;
 	width: 50%;
 }
 .key-skills-outer-area .right-side {
-	display: inline-block;
 	float: right;
 	margin: 0;
 	padding-top: 35px;
@@ -3249,7 +3231,6 @@ a.ovelay-icon:hover {
 	float: left;
 }
 .about-text-outer-area .left-side {
-	display: inline-block;
 	float: left;
 	margin: 0;
 	padding-top: 10px;
@@ -3265,7 +3246,6 @@ a.ovelay-icon:hover {
 	margin: 10px 0 15px;
 }
 .about-text-outer-area .right-side {
-	display: inline-block;
 	float: right;
 	margin: 0;
 	width: 50%;
@@ -3796,7 +3776,6 @@ h4 label {
 	color: #4a4a4a;
 	text-align: left;
 	padding: 0 15px;
-	display: inline-block;
 	font-size: 14px;
 	float: left;
 }
@@ -3804,7 +3783,6 @@ h4 label {
 	height: 37px;
 	line-height: 37px;
 	width: 25%;
-	display: inline-block;
 	background: #faac3a;
 	color: #fff;
 	text-align: center;
@@ -4265,7 +4243,7 @@ a.ovelay-icon {
 	z-index: 999;
 	transition: all 0.5s ease 0s;
 	cursor: pointer;
-	appearance: none;
+	-webkit-appearance: none;
 	position: absolute;
 	width: 50px;
 	top: 30px;
