@@ -73,7 +73,7 @@
   .customs .button-large{
       margin: 15px auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .customs{
       flex-flow:row wrap;
       justify-content: space-between;
