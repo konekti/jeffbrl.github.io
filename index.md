@@ -29,7 +29,7 @@ published: true
               <h1>Our Services</h1>
           </div>
           <div class="text-box">
-            <p><h5>Public and Hybrid Cloud Migration</h5></p>
+            <h5>Public and Hybrid Cloud Migration</h5>
             <p>
               {% include public-hybrid-cloud-migration.md %}
             </p>
@@ -41,7 +41,6 @@ published: true
             <p>
               {% include public-cloud-business-continuity-assurance.md %}
             </p>
-
           </div>
         </div>			
         <!-- End:Left area-->      
@@ -49,10 +48,6 @@ published: true
     </div>
     <!-- End:Awesome Structure content area-->
   </section>
-  <!-- =================================================
-  When to Engage Us Content Area  End -->   
-  <!-- When to Engage Us Content Area  Start 
-  ====================================================== -->
   <section class="about-text-outer-area" id="engage">
     <!-- Start:Engage content area-->
     <div class="container">
