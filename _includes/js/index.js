@@ -36,7 +36,8 @@
   }, false); 
 
   function handleGesture() {
-      if ( (touchendX <= touchstartX) || (touchendX >= touchstartX) ) {
+      let touch_threshhold = 50;
+      if ( (touchendX <= touchstartX - touch_threshhold) || (touchendX >= touchstartX + touch_threshhold ) ) {
         let  $checked = $('input:checked');
         let $move = $checked.siblings('input[type=radio]');
         $move.prop('checked', true);
