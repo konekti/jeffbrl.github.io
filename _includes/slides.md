@@ -73,6 +73,9 @@
   .customs .button-large{
       margin: 15px auto;
   }
+  .custom-slides input{ 
+     opacity:0;
+  }
   @media screen and (min-width: 769px) {
     .customs{
       flex-flow:row wrap;
