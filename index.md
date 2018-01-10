@@ -113,19 +113,13 @@ published: true
         </div>
         {% endfor %}        
       </div>
-      <!-- End: Testimonials -->
     </div>
   </div>
   </section>
-  <!-- =================================================
-  Testimonials Area End -->
   </div>
-  <!-- Key Skills Area  Start 
-  ====================================================== -->
   <section class="key-skills-outer-area" id="about">
     <div class="container">
       <div class="content-area"> 
-        <!-- Start:Right area-->
         <div class="right-side col-md-6">
             <div class="main-title left-align">
               <h1>About Us</h1>
@@ -133,7 +127,6 @@ published: true
               <br>
             </div>
         </div>
-        <!-- End:Right area-->
         <!-- Start:Left area-->
         <div class="left-side col-md-6">
             <div class="img-holder">

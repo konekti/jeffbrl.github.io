@@ -98,7 +98,7 @@
     <input type = 'radio'  id = 'slide-one-trigger'  name = 'slide' checked>
     <div class='slide-one customs'>
         <div class = 'customs-inner'>
-          <img alt='' src='{{ site.baseurl }}/assets/cloud-2.svg' >
+          <img alt='' src='{{ site.baseurl }}/assets/cloud-1.svg' >
         </div>
         <div class = 'customs-inner'>
           <h2>Konekti Systems</h2>
@@ -109,7 +109,7 @@
     <input type = 'radio' id = 'slide-two-trigger'  name = 'slide'>
     <div class='slide-two customs'>
         <div class = 'customs-inner'>
-          <img alt='' src='{{ site.baseurl }}/assets/cloud.svg'>
+          <img alt='' src='{{ site.baseurl }}/assets/cloud-3.svg'>
         </div>
         <div class = 'customs-inner'>
           <h2>We are Konekti Systems</h2>
