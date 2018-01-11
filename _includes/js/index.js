@@ -16,65 +16,6 @@
   });
 })();
 
-(function swipe() {
-  let touchstartX = 0;
-  let touchstartY = 0;
-  let touchendX = 0;
-  let touchendY = 0;
-
-  const gestureZone = document.getElementsByClassName('custom-slides')[0];
-
-  gestureZone.addEventListener('touchstart', function(event) {
-      touchstartX = event.changedTouches[0].screenX;
-      touchstartY = event.changedTouches[0].screenY;
-  }, false);
-
-  gestureZone.addEventListener('touchend', function(event) {
-      touchendX = event.changedTouches[0].screenX;
-      touchendY = event.changedTouches[0].screenY;
-      handleGesture();
-  }, false); 
-
-  function handleGesture() {
-      let touch_threshhold = 50;
-      if ( (touchendX <= touchstartX - touch_threshhold) || (touchendX >= touchstartX + touch_threshhold ) ) {
-        let  $checked = $('input:checked');
-        let $move = $checked.siblings('input[type=radio]');
-        $move.prop('checked', true);
-        // hacky solution
-        $('.custom-indicators').children().toggleClass('is-checked');
-      }
-  }
-})();
-
-
-(function() {
-  
-  let $input = $('input[type=radio]');
-
-  $input.on('change', function() {
-    if($(this).prop('checked')) {
-      let $id = $(this)[0].id;
-      let $button = $(this).siblings('.custom-indicators').children(`.${$id}`);
-       
-      $button.addClass('is-checked');
-      $button.siblings().removeClass('is-checked');
-    }
-  })
-
-  $('.custom-slides').on('keydown', function(event) {
-    let  $checked = $('input:checked');
-    if(event.target === this && (event.keyCode == 37 || event.keyCode == 39)){
-        let $move = $checked.siblings('input[type=radio]');
-        $move.prop('checked', true);
-
-        // hacky solution
-        $('.custom-indicators').children().toggleClass('is-checked');
-    }
-  });
-  
-})();
-
 (function() {
     var mailForm, subForm, mailFail, mailSuccess, notify, guest;
     mailSuccess = `
