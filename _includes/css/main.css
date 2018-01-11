@@ -3846,9 +3846,6 @@ h4 label {
 /* 13. Media Query                                                                                       */
 /* ===================================================================================================== */
 
-
-@media (max-width: 1400px) { /* This media query is written for 1400PX resolution devices */
-}
  @media (max-width: 1200px) { /* This media query is written for 1400PX resolution devices */
 .mini-grid-area > div {
 	max-width: 320px;
