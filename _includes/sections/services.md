@@ -3,7 +3,6 @@
       <div class='content-area'>
         <div class='col-md-12'>
           <div class='main-title left-align'>
-              <br>
               <h1>Our Services</h1>
           </div>
           <div class='text-box'>
