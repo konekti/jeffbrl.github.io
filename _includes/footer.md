@@ -29,7 +29,7 @@
         </div>
       </div>
       <!-- Start:Newsletter -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="news-letter-sec">
           <h5>Newsletter</h5>
           <p>For getting latest news, please subscribe our news letter:</p>
@@ -38,7 +38,7 @@
             <button class="send-btn">SEnd</button>
           </form>
         </div>
-      </div>
+      </div> -->
       </div>
     </div>
     <!-- Start:copyright -->
@@ -59,9 +59,6 @@
 <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 <!--<script type="text/javascript" src="js/map-settings.js"></script>-->
 <script>
-  {% include js/owl.carousel.js %}
-  {% include js/owl-carousel-settings.js %}
-  {% include js/jquery.flexslider.js %}
   {% include js/mini-grid.js %}
   {% include js/settings.js %}
   {% include js/animation.js %}
