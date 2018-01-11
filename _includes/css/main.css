@@ -1619,9 +1619,6 @@ a.down-app-btn:hover, .down-app-btn:hover {
 .main-title h5 span {
 	color: #faac3a;
 }
-.main-title p {
-	margin: 20px 0 0;
-}
 .special-main-title {
 	background: rgba(0, 0, 0, 0) url("../img/special-btn-bg.png") repeat-x scroll 0 0;
 	float: left;
@@ -4293,6 +4290,8 @@ a.ovelay-icon {
 .menu li a {
 	line-height: 1;
 	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 400;
 }
 .menu li ul li a, .menu li li li a {
 	line-height: 1;
