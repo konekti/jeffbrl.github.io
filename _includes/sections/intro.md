@@ -1,6 +1,6 @@
 <style>
   .slides-contain{
-    padding: 60px 25px 60px;
+    padding: 60px 25px 0;
     overflow:hidden;
     display:block;
     margin:0 auto;
