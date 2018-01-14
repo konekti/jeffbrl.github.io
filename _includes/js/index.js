@@ -4,7 +4,7 @@
   font = document.createElement('link');
   font.type = 'text/css'; 
   font.rel = 'stylesheet';
-  font.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Poppins:300,400,500,600,700';
+  font.href = 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500|PT+Serif:400,400i';
   s = document.getElementsByTagName('link')[0]; 
   s.parentNode.insertBefore(font, s);
 })();

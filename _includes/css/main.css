@@ -35,7 +35,7 @@
 
 
 html, body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 400;
 	height: 100%;
 	width: 100%;
@@ -58,35 +58,35 @@ a, a:hover, a:active, a:visited, a:link {
 
 h1 {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 3em;
 	color: #000;
 	font-weight: 500;
 }
 h2 {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 42px;
 	color: #000;
 	font-weight: 500;
 }
 h3 {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 36px;
 	color: #000;
 	font-weight: 500;
 }
 h4 {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 30px;
 	color: #000;
 	font-weight: 500;
 }
 h5 {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 24px;
 	color: #000;
 	font-weight: 400;
@@ -94,7 +94,7 @@ h5 {
 h6 {
 	margin: 0 0 15px 0;
 	padding: 0 0 0 0;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 18px;
 	line-height:1.4;
 	color: #000;
@@ -103,7 +103,7 @@ h6 {
 p {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 1.75 !important;
 	font-weight: 400;
@@ -327,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -751,7 +751,7 @@ ol li {
 	line-height: 30px;
 	font-size: 16px;
 	color: #4a4a4a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 400;
 }
 ol li a {
@@ -983,7 +983,7 @@ ol li a:hover {
 }
 .fun-fact-items li .text h2 {
 	font-size: 48px;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #fff;
 	line-height: 16px;
@@ -993,7 +993,7 @@ ol li a:hover {
 	margin: 15px 0 0;
 	font-size: 14px;
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-weight: 300;
 	transition: all 0.5s ease 0s;
 }
@@ -1703,7 +1703,7 @@ a.down-app-btn:hover, .down-app-btn:hover {
 	text-align: left;
 	color: #4a4a4a;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	padding: 0 25px;
 	margin-bottom: 10px;
 	width: 100%;
@@ -1919,7 +1919,7 @@ form .button-normal {
 	line-height: 30px;
 	font-size: 16px;
 	color: #4a4a4a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 400;
 }
 .default-list li a {
@@ -1944,7 +1944,7 @@ form .button-normal {
 	color: #4a4a4a;
 	display: block;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size: 16px;
 	line-height: 30px;
 	list-style: outside;
@@ -1982,7 +1982,7 @@ form .button-normal {
 	color: #4a4a4a;
 	display: flex;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 42px;
 	list-style: outside;
@@ -2020,7 +2020,7 @@ form .button-normal {
 	color: #4a4a4a;
 	display: flex;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 42px;
 	list-style: outside;
@@ -2067,7 +2067,7 @@ form .button-normal {
 	color: #faac3a;
 	background: #fff;
 	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	font-size: 18px;
 	margin: 0px;
 	border-radius: 40px;
@@ -2158,7 +2158,7 @@ form .button-normal {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	font-family: 'Poppins', sans-serif;
+	font-family:  'Montserrat', sans-serif;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
@@ -2262,7 +2262,7 @@ form .button-normal {
 	border: 1px solid #ddd;
 }
 .form-area .accordion-simple .tab {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	line-height: 54px;
 	height: 54px;
 	margin: 0;
@@ -2566,7 +2566,7 @@ form .button-normal {
 	overflow: hidden;
 }
 .form-area label {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 700;
 	font-size: 18px;
 	margin: 20px 0 5px;
@@ -3457,7 +3457,7 @@ a.ovelay-icon:hover {
 }
 #contact-loading {
 	color: #faac3a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3472,7 +3472,7 @@ a.ovelay-icon:hover {
 }
 #contact-success {
 	color: #faac3a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3487,7 +3487,7 @@ a.ovelay-icon:hover {
 }
 #contact-failed {
 	color: #faac3a;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3752,7 +3752,7 @@ h4 label {
 	margin: 0;
 	padding: 0;
 	width: 49%;
-	font-family: "Open Sans", serif;
+	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 28px;
 }

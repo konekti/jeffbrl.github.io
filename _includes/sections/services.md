@@ -15,9 +15,8 @@
               {% include public-hybrid-cloud-health-check.md %}
             </p>
             <h5>Public Cloud Business Continuity Assurance</h5>
-            <p>
+            <p></p>
               {% include public-cloud-business-continuity-assurance.md %}     
-            </p>
           </div>
         </div>  
       </div>
