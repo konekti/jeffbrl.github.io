@@ -65,7 +65,7 @@ published: true
       {% endfor %}
     </ul>
     <h4><span class = 'pretty'>Twitter Feed</span></h4>
-    <a class="twitter-timeline" href="https://twitter.com/{{site.twitter}}" data-tweet-limit="3"></a>
+    <a class="twitter-timeline" href="https://twitter.com/{{site.twitter}}" data-tweet-limit="{{ site.data-tweet-limit }}"></a>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </aside>
 </article>
