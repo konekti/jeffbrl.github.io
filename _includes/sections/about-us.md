@@ -3,7 +3,7 @@
       <div class="content-area">
         <div class="col-md-6">
             <div class="img-holder">
-                <img src="{{ site.baseurl }}/assets/cloud-2.svg" alt=""> 
+                <img src="{{ site.baseurl }}/assets/aws-model.svg" alt=""> 
             </div>
         </div>
         <div class="col-md-6">
