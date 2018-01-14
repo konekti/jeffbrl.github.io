@@ -32,6 +32,8 @@
   }
   .customs h4{
     color:#eee;
+    font-family: 'PT Serif', serif;
+    font-size:24px;
   }
   .customs .button-large{
       margin: 15px auto;
