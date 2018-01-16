@@ -22,5 +22,5 @@ You can use this [form](https://konekti.us/#contact-us) or call us directly at (
 <br><br>
 <br><br>
 
-Jeff Loughridge & Amir Tabdili
+Jeff Loughridge & Amir Tabdili<br>
 Konekti Systems Co-Founders
