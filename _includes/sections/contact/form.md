@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content-area clearfix">
       <div class="main-title">
-        <h5>Looking for a quick reply</h5>
+        <h5>Looking for a quick reply?</h5>
         <h1>Send us an email</h1>
       </div>
       <div class="form-sec">

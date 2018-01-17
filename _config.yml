@@ -1,9 +1,8 @@
-title: 'Konekti Systems'
 description: ''
-baseurl: ''
 url: 'http://konekti.us'
+baseurl: ''
 # social media handles (links)
-twitter: 'jeffbrl'
+twitter: 'konekti_systems'
 facebook: ''
 email: 'info@konekti.us'
 environment: 'production'
