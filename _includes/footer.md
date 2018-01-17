@@ -45,7 +45,7 @@
     <div class="bottom-area">
       <div class="container">
         <div class="copyright">
-          <p>© Copyright 2018 Konekti Systems <span>  | </span>  Designed By <a href="https://societypieces.com/author/">One</a></p>
+          <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By <a href="https://societypieces.com/author/">One</a></div>
             <a id="scroll-top-div" href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a>
         </div>
       </div>

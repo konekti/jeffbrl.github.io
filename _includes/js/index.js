@@ -16,6 +16,12 @@
   });
 })();
 
+(function year(){
+  var $date = new Date();
+  var $year = $date.getFullYear();
+  $('footer .year').text($year);
+})();
+
 (function() {
     var mailForm, subForm, mailFail, mailSuccess, notify, guest;
     mailSuccess = `
