@@ -36,24 +36,10 @@ published: true
     {% endif %}
   </div>
   <aside class = 'child trio'>
-    <h4><span class = 'pretty'>Archives</span></h4>
-    <div id = 'accordion'>   
-    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-    {% for year in postsByYear %}
-      <h3 class = 'pretty'><i class="fa fa-caret-right" aria-hidden="true"></i> {{ year.name }}</h3>
-      <ul>
-       {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%b'" %}
-       {% for month in postsByMonth %}
-         <h3 class = 'pretty deep'><i class="fa fa-caret-right" aria-hidden="true"></i> {{ month.name }}</h3>
-         <ul>
-           {% for post in month.items %}
-             <li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-         </ul>
-        {% endfor %}
-    </ul>
-    {% endfor %}
-    </div>
+    <!-- include archives -->
+    {% include blog-archives.md %}
+    <!-- show recent posts if there are more than one posts -->
+    {% if site.posts.size > 1 %}
     <h4><span class = 'pretty'>Recent Posts</span></h4>
     <ul class="post-list">
       {% for post in site.posts limit:6 %}
@@ -64,6 +50,7 @@ published: true
       {% endif %}
       {% endfor %}
     </ul>
+    {% endif %}
     <h4><span class = 'pretty'>Twitter Feed</span></h4>
     <a class="twitter-timeline" href="https://twitter.com/{{site.twitter}}" data-tweet-limit="{{ site.data-tweet-limit }}"></a>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
