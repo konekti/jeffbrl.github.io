@@ -32,7 +32,7 @@ Like JSON, intrinsic functions in YAML can be expressed in templates using the f
 
 Our stack will create a VPC with two subnets, one per AZ. The stack also creates an Internet Gateway, and two Routing Tables (one per subnet).
 <br><br>
-![My helpful screenshot]({{ "/assets/posts/cloudformation_vpc_diagram.png" | absolute_url }})
+![VPC Diagram]({{ site.url }}/assets/posts/cloudformation_vpc_diagram.png)
 
 <br>
 
