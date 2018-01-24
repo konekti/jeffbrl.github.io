@@ -8,14 +8,6 @@ published: true
  <div class = 'overlay'>
    <div class="post-header">
     <div class = 'cover'>
-      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <h4 class = 'duration lighten'>
-        {{ page.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span>
-        {% assign time = content| number_of_words | divided_by:170 %}{{ time }} min read
-        </h4>
-      </time>
-      <h4 itemprop="name" class = 'flex-in'><a href = '/'>{{ page.author }}</a></h4>
     </div>
    </div>
  </div>
@@ -28,6 +20,13 @@ published: true
   </div>
   <div class = 'child tripple'>
     <div class="post-content" itemprop="articleBody">
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        <div class = 'duration'>
+        {{ page.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span><small>by </small><a href = '/'>{{ page.author }}</a><span class = 'apart'>|</span>
+        {% assign time = content| number_of_words | divided_by:170 %}{{ time }} min read
+        </div>
+      </time>
       {{ content }}
       {% include mobile.md %}
     </div>
