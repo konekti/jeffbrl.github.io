@@ -1,4 +1,4 @@
-description: ''
+description: '' # write a description for your site here. It's good for seo. Ideally it should not exceed 160 characters. If it does, the template will truncate it
 url: 'http://konekti.us'
 baseurl: ''
 # social media handles (links)
@@ -10,6 +10,7 @@ disqus:
   shortname: konekti-us
 markdown: kramdown
 theme: minima
+highlighter: rouge
 # number of embeded tweets on sidebar
 data-tweet-limit: 2
 # paginate
