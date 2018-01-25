@@ -9,6 +9,17 @@
   s.parentNode.insertBefore(font, s);
 })();
 
+(function copyToClipboard() {
+  // var blocks = document.getElementsByClassName('.highlight');
+  // console.log(blocks);
+  // blocks.map((block) => {
+  //   console.log(block);
+  //   block.select();
+  //   document.execCommand("Copy");
+  //   alert("Copied the text: " + block.value);
+  // });
+})();
+
 (function() {
   $('h3.pretty').on('click', function() {
     $(this).next().toggleClass('opens');
@@ -25,14 +36,14 @@
 (function() {
     var mailForm, subForm, mailFail, mailSuccess, notify, guest;
     mailSuccess = `
-      <div class = "confirm">
+      <div class = 'confirm'>
         <h2>Hey ${guest}!</h2>
         <div class = 'big-icon  success'><i class = 'fa fa-cool'></i></div>
         <p>Success</p>
       </div>
     `;
     mailFail = `
-      <div class = "confirm">
+      <div class = 'confirm'>
       <div class = 'success'><i class = 'fa fa-cool'></i></div>
         <h2 class = 'error'>Yikes! There was problem.</h2>
         <p>Please refrsh and try again.</p>
