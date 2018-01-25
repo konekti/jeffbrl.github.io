@@ -13,11 +13,8 @@
           </ul>
         </div>
       </div>
-      <!-- empty div -->
-      <div class="col-md-4">
-      </div>
       <!-- Start:Useful Links -->
-      <div class="col-md-4">
+      <div class="col-md-8">
         <div class="useful-link-sec">
           <h5>Useful Links</h5>
           <ul class="useful-links">
