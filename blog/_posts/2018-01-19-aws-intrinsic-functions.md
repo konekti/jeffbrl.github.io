@@ -56,7 +56,7 @@ The !Ref function gives the author of the template access to variables in the Pa
 <br><br>
 Let's look at an example.
 <br><br>
-```yaml
+```
 Parameters:
 
    VpcCIDR:
@@ -82,7 +82,7 @@ The expression `!Sub ${EnvironmentName}` fills in the value of the `EnvironmentN
 If you are a python developer, the `!Join` function is reminiscent of the python `join` method. The result is the string "1,2,3). The comma serves as a separater character. The same holds true for the expression `!Join [ ",", [ !Ref Subnet1, !Ref Subnet2 ]]`.
 <br><br>
 
-```yaml
+```
 Description:
     This template deploys a VPC with two Availability Zones, each with
     one subnet. It also deploys an Internet Gateway and a Route Table.
