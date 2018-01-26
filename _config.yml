@@ -1,5 +1,6 @@
 description: '' # write a description for your site here. It's good for seo. Ideally it should not exceed 160 characters. If it does, the template will truncate it
 url: 'http://konekti.us'
+title: Konekti
 baseurl: ''
 # social media handles (links)
 twitter: 'konekti_systems'
