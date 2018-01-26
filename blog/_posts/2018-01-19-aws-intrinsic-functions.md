@@ -11,7 +11,7 @@ AWS CloudFormation is a tool to create a template for your infrastructure. You c
 <br><br>
 AWS CloudFormation intrinsic functions help you manage cloud formation stacks by assigning values that are required but are only available at run time (i.e., when the stack is launched). For example, let's say that one of your resources depends on another resource's attributes, which are not defined at the time the template is written. We can use CloudFormation to dynamically access those attributes at run time. 
 <br><br>
-Here's a list of the intrinsic functions we'll cover in Part 1.
+Here's a list of the intrinsic functions we'll cover this post.
 <br><br>
  - [Fn::GetAZs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getavailabilityzones.html) - returns an array that lists Availability Zones for a specified region
 
