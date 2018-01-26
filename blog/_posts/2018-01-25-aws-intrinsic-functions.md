@@ -295,5 +295,5 @@ that you have a limit of five VPCs per region.
 The most important take-away from this article is that you should associate CloudFormation intrinsic functions with run 
 time intelligence. The awareness CloudFormation has about the resources being created increases the portability of the 
 templates. We didn't cover all functions nor describe other critical components of portability such as pseudo parameters.
-I'll describe this information for a future post.
+I'll describe this information in a future post.
 
