@@ -7,7 +7,7 @@ published: true
 ---
 
 <br>
-AWS CloudFormation is a tool to create a template for your infrastructure. You can define AWS constructs using JSON or YAML. AWS's documentation is well-suited for explaining the basic functionality and simple resource creation. After creating a few stacks, a newcomer would likely want to learn how to increase template portability and re-use with intrinsic functions. At this point the reference material may be a bit daunting. This article will introduce CloudFormation intrinsic functions by using the creation of a simple VPC as an example.
+AWS CloudFormation is a tool to create a template for your infrastructure. You can define AWS constructs using JSON or YAML. AWS's documentation is well-suited for explaining the basic functionality and simple resource creation. After creating a few stacks, a newcomer would likely want to learn how to increase template portability and re-use with intrinsic functions. At this point, the reference material may be a bit daunting. This article will introduce CloudFormation intrinsic functions by using the creation of a simple VPC as an example.
 <br><br>
 AWS CloudFormation intrinsic functions help you manage cloud formation stacks by assigning values that are required but are only available at run time (i.e., when the stack is launched). For example, let's say that one of your resources depends on another resource's attributes, which are not defined at the time the template is written. We can use CloudFormation to dynamically access those attributes at run time. 
 <br><br>
@@ -30,15 +30,15 @@ Some of Konekti's customers have expressed frustration in writing CloudFormation
 Like JSON, intrinsic functions in YAML can be expressed in templates using the format "Fn::*function_name*". YAML has the advantage of using the short form, "!*function_name*". This means rather than writing "Fn::Sub", you can write "!Sub". Note that the short form notation will indicate invalid when using YAML validators. The AWS CLI command `aws cloudformation validate-template --template-body file://your_template.yaml` can be executed to validate a template.
 <br><br>
 
-Our stack will create a VPC with two subnets, one per AZ. The stack also creates an Internet Gateway, and two Routing Tables (one per subnet).
+Our stack will create a VPC with two subnets, one per AZ. The stack also creates an Internet Gateway and two Routing Tables (one per subnet).
 <br><br>
-![VPC Diagram]({{ site.baseurl }}/assets/posts/cloudformation_vpc_diagram.png)
+![VPC Diagram]({{ site.baseurl }}/assets/posts/2018/cloudformation_vpc_diagram.png)
 
 <br>
 
 #### !GetAZs
 
-For portability and re-use, we want to create a template that will deploy infrastructure in any region. Hard coding 'us-east-1a' links the template this AZ. Launching the stack in another region will result in an error. To resolve this issue, we'll look to !GetAZs. 
+For portability and re-use, we want to create a template that will deploy infrastructure in any region. Hard coding 'us-east-1a' links the template to this AZ. Launching the stack in another region will result in an error. To resolve this issue, we'll look to !GetAZs. 
 <br><br>
 This function returns an array. We need a way to access an individual element in the area. 
 <br><br>
@@ -65,7 +65,7 @@ Parameters:
         Default: 172.25.0.0/16
 ```
 <br>
-Specifying "!Ref VpcCIDR" in a template will substitute the aforementioned text with "172.25.0.0/16" or the CIDR range specified at run time.
+Specifying "!Ref VpcCIDR" in a template will replace the aforementioned text with "172.25.0.0/16" or the CIDR range specified at run time.
 <br><br>
 #### !GetAtt
 When we need to access Parameters, we use !Ref. !GetAtt provides similar functionality for accessing resource attributes in the template.
@@ -75,11 +75,11 @@ The !GetAtt [documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest
 #### !Sub
 The !Sub function replaces a variable with its value. The function can be used with or without a mapping. We'll use an example of basic substitution without a mapping.
 <br><br>
-The expression `!Sub ${EnvironmentName}` fills in the value of the `EnvironmentName` parameter. Placing the expression in the Outputs section would print "Konekti-prod" if the default environment name from the Parameters section is used. Note that !Ref could be used instead. A more useful case for calling !Ref would be to dynamically create an S3 bucket name or URL.
+The expression `!Sub ${EnvironmentName}` fills in the value of the `EnvironmentName` parameter. Placing the expression in the Outputs section would print "Konekti-prod" if the default environment name from the Parameters section is used. 
 <br><br>
 
 #### !Join
-If you are a python developer, the `!Join` function is reminiscent of the python `join` method. The result is the string "1,2,3). The comma serves as a separater character. The same holds true for the expression `!Join [ ",", [ !Ref Subnet1, !Ref Subnet2 ]]`.
+If you are a python developer, the `!Join` function is reminiscent of the python `join` method. The result is the string "1,2,3". The comma serves as a separater character. The same holds true for the expression `!Join [ ",", [ !Ref Subnet1, !Ref Subnet2 ]]`.
 <br><br>
 
 ```yaml
@@ -211,7 +211,89 @@ Outputs:
         Value: !GetAtt VPC.DefaultSecurityGroup
 ```
 <br>
+#### Creating the stack
+
+Let's demonstrate how the template can be used to build a stack. Copy the text from the template or download it 
+[here]({{ site.baseurl }}/assets/posts/2018/vpc.yaml). Validate it using 
+`aws cloudformation validate-template --template-body file://vpc.yaml`.
+
+You should see the following if the template validates.
+
+```plaintext
+# aws cloudformation validate-template --template-body file://vpc.yaml
+{
+    "Description": "This template deploys a VPC with two Availability Zones, each with one subnet. It also deploys an Internet Gateway and a Route Table.",
+    "Parameters": [
+        {
+            "DefaultValue": "172.25.0.0/16",
+            "NoEcho": false,
+            "Description": "Please enter the IP range in CIDR notation for this VPC",
+            "ParameterKey": "VpcCIDR"
+        },
+        {
+            "DefaultValue": "Konekti-prod",
+            "NoEcho": false,
+            "Description": "Please enter a name for this VPC",
+            "ParameterKey": "EnvironmentName"
+        },
+        {
+            "DefaultValue": "172.25.32.0/24",
+            "NoEcho": false,
+            "Description": "Please enter the IP range (CIDR notation) for the subnet in the second Availability Zone",
+            "ParameterKey": "Subnet2CIDR"
+        },
+        {
+            "DefaultValue": "172.25.30.0/24",
+            "NoEcho": false,
+            "Description": "Please enter the IP range in CIDR notation for the subnet in the first Availability Zone",
+            "ParameterKey": "Subnet1CIDR"
+        }
+    ]
+}
+#
+```
+<br>
+The command will return a ValidationError if the template fails validation.
+<br>
+Let's create out stack and examine the outputs.
+<br><br>
+```plaintext
+# aws cloudformation create-stack --stack-name Konekti --template-body file://vpc.yaml
+{
+    "StackId": "arn:aws:cloudformation:us-east-1:097996670471:stack/Konekti/b9a63580-0235-11e8-a218-50d5ca6326ba"
+}
+# 
+
+# # wait a few minutes, query the stack, and wait for it to complete if needed
+
+# aws cloudformation describe-stacks --stack-name Konekti | grep StackStatus
+            "StackStatus": "CREATE_COMPLETE",
+#  aws cloudformation describe-stacks --stack-name Konekti  --output text
+STACKS  2018-01-26T01:10:40.614Z        This template deploys a VPC with two Availability Zones, each with one subnet. It also deploys an Internet Gateway and a Route Table.  False   arn:aws:cloudformation:us-east-1:097996670471:stack/Konekti/b9a63580-0235-11e8-a218-50d5ca6326ba       Konekti CREATE_COMPLETE
+OUTPUTS A reference to the  subnet in the 1st Availability Zone Subnet1 subnet-fd2842d2
+OUTPUTS A reference to the  subnet in the 2nd Availability Zone Subnet2 subnet-8789b9cc
+OUTPUTS A list of the  subnets  Subnets subnet-fd2842d2,subnet-8789b9cc
+OUTPUTS A reference to the created VPC  VPC     vpc-5c203324
+OUTPUTS VPC Default Security Group      SecurityGroup   sg-cc3fd0bb
+PARAMETERS      VpcCIDR 172.25.0.0/16
+PARAMETERS      EnvironmentName Konekti-prod
+PARAMETERS      Subnet2CIDR     172.25.32.0/24
+PARAMETERS      Subnet1CIDR     172.25.30.0/24
+#
+
+```
+<br>
+Look! We have a stack. We used the OUTPUTS section to display the text related to resource creation. I encourage readers to 
+experiment with intrinsic functions using OUTPUTS. If you use Resources such as VPCs, Route Tables and Subnets, no costs 
+will be incurred. When you want to delete the stack, execute `aws cloudformation delete-stack --stack-name Konekti`. Remember
+that you have a limit of five VPCs per region.
+<br>
+
+<br>
 #### Conclusion
 
-The most important take-away from this article is that you should associate CloudFormation intrinsic functions with run time intelligence. The awareness CloudFormationhas about the resources being created increases the portability of the templates. We did not cover all functions. Check in soon for the second post in this series.
+The most important take-away from this article is that you should associate CloudFormation intrinsic functions with run 
+time intelligence. The awareness CloudFormation has about the resources being created increases the portability of the 
+templates. We didn't cover all functions nor describe other critical components of portability such as pseudo parameters.
+I'll describe this information for a future post.
 
