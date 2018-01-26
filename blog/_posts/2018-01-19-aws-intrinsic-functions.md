@@ -10,8 +10,8 @@ published: true
 AWS CloudFormation is a tool to create a template for your infrastructure. You can define AWS constructs using JSON or YAML. AWS's documentation is well-suited for explaining the basic functionality and simple resource creation. After creating a few stacks, a newcomer would likely want to learn how to increase template portability and re-use with intrinsic functions. At this point, the reference material may be a bit daunting. This article will introduce CloudFormation intrinsic functions by using the creation of a simple VPC as an example.
 <br><br>
 AWS CloudFormation intrinsic functions help you manage cloud formation stacks by assigning values that are required but are only available at run time (i.e., when the stack is launched). For example, let's say that one of your resources depends on another resource's attributes, which are not defined at the time the template is written. We can use CloudFormation to dynamically access those attributes at run time. 
-<br><br>
-Here's a list of the intrinsic functions we'll cover this post.
+n<br><br>
+Here's a list of the intrinsic functions we'll cover in this post.
 <br><br>
  - [Fn::GetAZs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getavailabilityzones.html) - returns an array that lists Availability Zones for a specified region
 
