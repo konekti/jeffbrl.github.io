@@ -1,0 +1,248 @@
+article{
+  padding:25px;
+}
+.tripple{
+  width:100%;
+}
+.blog,
+.post{
+    min-height:96vh;
+}
+.post{
+  margin:0 auto;
+  padding:15px 25px;
+  p{
+    padding-bottom:7.5px;
+    padding-top:7.5px;
+  }
+  &-collection{
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    li{
+      background-color:#fafafa;
+      border-radius:0 0 7.5px 7.5px;
+      box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
+      margin-top:10px;
+      margin-bottom:50px;
+   }
+   h3{
+      color: #fff;
+    }
+  }
+  &-content{
+    h4{
+      margin:5px 0;
+      text-align:left;
+    }
+    p:first-child{
+      margin-top:0;
+      padding-top:0;
+    }
+    a{
+      padding-bottom:7.5px;
+      text-decoration:underline;
+    }
+  }
+  &-list {
+    h3{
+      text-align:left;
+      color:inherit;
+      padding-left:0;
+      transition:color 0.25s ease-in-out;
+    }
+    li{
+      padding:10px 0;
+      margin:7.5px 0 0;
+      border-bottom:1px solid rgba(0,0,0,0.08);
+      transition:color 0.25s ease-in;
+    } 
+    li:hover{
+      color:#47CF73 ;
+    }
+  }
+}
+.blog{
+  h1, h2, h3{
+    margin:15px auto;
+    text-align:left;
+    padding:5px 0 0 0;
+  }
+  h4{
+    font-size:1.2em;
+  }
+  .flex{
+    padding:0;
+  }
+  .tripple{
+    padding:0;
+  }
+}
+
+.cool h4:not(.duration){
+  font-size:1.4em;
+  color:#fff;
+}
+.cool a:hover{
+  color:#faac3a;
+}
+.land,
+.post{
+  padding:30px 20px;
+}
+.land{
+  position:relative;
+  background-color:#000;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:50vh;
+  color:white;
+  width:100%;
+  padding:25px 0;
+}
+.blog.container{
+  padding-top:20px;
+}
+
+.show{
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  height:99px;
+}
+.excerpt{
+  padding:25px 15px;
+  min-height:360px;
+  border-radius:0 0 7.5px 7.5px;
+  p{
+    text-align:center;
+  }
+}
+.lighten{
+    color:#555;
+    display:block;
+    padding:12.5px;
+    font-size:1.1em;
+    text-align:center;
+}
+h4.duration{
+    color: #cecece;
+    font-size: 1.2em;
+}
+.follow{
+    padding:5px;
+    border-radius:50%;
+    color:#fff;
+}
+.facebook{
+    background-color:#3b5998;
+}
+.twitter{
+    background-color:#1da1f2;;
+}
+.linkedin{
+    background-color:#0077B5;
+}
+.social [class*='icon']{
+   display:inline-block;
+}
+.flex{
+    display:flex;
+    flex-direction:row;
+}
+.gravatar{
+    width:99px;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 10px 0 0;
+}
+.connect.clean{
+    background-color:transparent;
+    margin-top:20px;
+}
+h1.post-title{
+    margin:5px 0;
+    text-align:left;
+    font-size: 1.8rem;
+}
+.post-link h3{
+    padding:2.5px 0;
+    margin:12.5px;
+    color:#111;
+    font-size:1.6em;
+    text-align:center;
+}
+.pretty{
+    display:inline-block;
+    padding:7.5px 12.5px;
+    background-color:rgba(0,0,0,0.8);
+    color:#fff;
+    width:96%;
+    min-width:250px;
+}
+h3.pretty{
+    font-size:1.2em;
+    background-color:#ededed;
+    color:inherit;
+    padding:12.5px;
+    cursor:pointer;
+    margin-top:5px !important;
+}
+h3.deep{
+    background-color:#f9f9f9;
+}
+h3.pretty + ul{
+    height:0;
+    overflow:hidden;
+}
+.opens{
+    height:initial !important;
+}
+#accordion li{
+    padding:12.5px;
+    font-size:1.1em;
+    border-bottom:1px solid #f9f9f9;
+    width:96%;
+}
+aside h3{
+  position:relative;
+  margin:0 !important;
+}
+.blogroll{
+  padding:12.5px 0 25px 0;
+}
+.blogroll a{
+  display:inline-block;
+  padding:12.5px 0 0 12.5px;
+  border-bottom:#eee;
+}
+.widget{
+  position:fixed;
+  top:0;
+  bottom:0;
+  width:100%;
+  background-color:rgba(0,0,0,0.6);
+  padding:25px;
+}
+em {
+  line-height:1.7;
+  font-weight:300;
+}
+
+.pagination {
+  text-align: center;
+  display:block;
+  margin:0 auto 30px auto;
+  a:hover {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  a, span {
+    padding: 7px 18px;
+    box-shadow: 0 0 2x 2x rgba(0,0,0,0.04);
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #eee;
+    display: inline-block;
+    border-radius:50%;
+  }
+}
