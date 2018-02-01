@@ -3,6 +3,8 @@ title: AWS Availibility Zone Naming & Networking
 date: 2018-01-31 21:38:00 -05:00
 categories:
 - blog
+image: postimage
+author: Jeff Loughridge
 layout: post
 ---
 
