@@ -40,4 +40,4 @@ defaults:
     values:
       layout: "post"
       author: "Jeff Loughridge"
-      image: "post image"
+      image: "postimage"
