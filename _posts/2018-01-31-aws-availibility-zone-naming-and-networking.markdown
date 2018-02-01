@@ -1,6 +1,7 @@
 ---
 title: AWS Availibility Zone Naming & Networking
 date: 2018-01-31 21:38:00 -05:00
+published: false
 ---
 
 AWS uses names such as us-west-1a to refer to a given availability zone (AZ) in a region. What you may not know is that AZ naming
