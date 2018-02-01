@@ -31,9 +31,7 @@
   <link rel = 'stylesheet' href = '/assets/main.css'>
   <style>
      {% include css/animate.css %}
-     {% include css/flexslider.css %}
      {% include css/main.css %}
-     {% include css/posts.css %}
      {% include css/critical.css %}
   </style>
 </head>
