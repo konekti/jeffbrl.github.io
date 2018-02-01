@@ -8,6 +8,14 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    author: Jeff Loughridge
+    image: post image
 description: 
 url: https://konekti.us
 baseurl: 
@@ -31,13 +39,3 @@ exclude:
 - Gemfile
 - Gemfile.lock
 excerpt_separator: "<!--excerpt-->"
-# If you don't specify values for these fields explicitly in front matter, defaults will be used
-defaults:
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Jeff Loughridge"
-      image: "post image"
