@@ -1,27 +1,33 @@
-description: '' # write a description for your site here. It's good for seo. Ideally it should not exceed 160 characters. If it does, the template will truncate it
-url: 'https://konekti.us'
+---
 title: Konekti
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: ''
+url: https://konekti.us
 baseurl: ''
-# social media handles (links)
-twitter: 'konekti_systems'
+twitter: konekti_systems
 facebook: ''
-email: 'info@konekti.us'
-environment: 'production'
-disqus: 
+email: info@konekti.us
+environment: production
+disqus:
   shortname: konekti-us
 markdown: kramdown
 theme: minima
 highlighter: rouge
-# number of embeded tweets on sidebar
 data-tweet-limit: 2
-# paginate
 paginate: 5
-paginate_path: '/blog/page:num/'
+paginate_path: "/blog/page:num/"
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-paginate
 exclude:
-  - Gemfile
-  - Gemfile.lock  
+- Gemfile
+- Gemfile.lock
 excerpt_separator: "<!--excerpt-->"

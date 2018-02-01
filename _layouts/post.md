@@ -1,9 +1,9 @@
 ---
+permalink: pretty
 layout: default
 comments: true
-permalink: pretty
-published: true
 ---
+
 <div class = 'cool libro'>
  <div class = 'overlay'>
    <div class="post-header">

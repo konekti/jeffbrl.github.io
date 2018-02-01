@@ -1,10 +1,13 @@
 ---
-layout: post
 title: The Journey Begins
+date: 2017-11-12 00:00:00 Z
+categories:
+- blog
+layout: post
 author: Jeff Loughridge
 image: postimage
-published: true
 ---
+
 <br>
 Corporate IT infrastructure is in the midst of a massive transformation. While investments in physical "on-prem" infrastructure will not completely subside for the foreseeable future, the majority of enterprises are sold on the benefits of the public cloud. The cloud is no longer solely the domain of start-ups and high tech entities. Just as laptops without network connectivity are glorified paperweights, the success of cloud workloads are wholly dependent on a networking strategy that seamlessly moves bits within the cloud and cloud to external endpoints such as your customers and corporate sites.
 <br><br>

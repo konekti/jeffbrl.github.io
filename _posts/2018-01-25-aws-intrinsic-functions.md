@@ -1,9 +1,11 @@
 ---
-layout: post
 title: AWS CloudFormation Intrinsic Functions
+date: 2018-01-25 00:00:00 Z
+categories:
+- blog
+layout: post
 author: Jeff Loughridge
 image: postimage
-published: true
 ---
 
 <br>

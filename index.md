@@ -1,6 +1,5 @@
 ---
 layout: default
-published: true
 ---
 
 {% include sections/intro.md %}
