@@ -1,14 +1,9 @@
 ---
 title: AWS Availibility Zone Naming & Networking
 date: 2018-01-31 21:38:00 -05:00
----
-
----
+categories:
+- blog
 layout: post
-title: AWS Availability Zone Naming & Networking
-author: Jeff Loughridge
-image: postimage
-published: true
 ---
 
 AWS uses names such as us-west-1a to refer to a given availability zone (AZ) in a region. What you may not know is that AZ naming
@@ -19,9 +14,7 @@ that new accounts will automatically being using them.
 \
 \
 Why is this important? In February 2017, it is less important than it used to be though still relevant. An AWS AZ consists of a building
-or set of buildings. Latency is a critical factor in ensuring high throughput for intra-VPC traffic. Previously inter-AZ traversal
-\
-could incur latency that I'd estimate was in the multiple hundreds of microseconds. Measuring with ping is insufficient for
+or set of buildings. Latency is a critical factor in ensuring high throughput for intra-VPC traffic. Previously inter-AZ traversal could incur latency that I'd estimate was in the multiple hundreds of microseconds. Measuring with ping is insufficient for
 this level of granularity. If you assumed that cross-account EC2 instances were in the same physical AZ, you would unknowingly
 incur the inter-AZ latency penalty.
 \
