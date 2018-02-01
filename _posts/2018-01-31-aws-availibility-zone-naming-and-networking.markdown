@@ -3,6 +3,14 @@ title: AWS Availibility Zone Naming & Networking
 date: 2018-01-31 21:38:00 -05:00
 ---
 
+---
+layout: post
+title: AWS Availability Zone Naming & Networking
+author: Jeff Loughridge
+image: postimage
+published: true
+---
+
 AWS uses names such as us-west-1a to refer to a given availability zone (AZ) in a region. What you may not know is that AZ naming
 is intentionally inconsistent across accounts. In other words, the us-west-1a in one of the Konekti AWS account is not
 necessarily the same as the us-west-1a in your account. AWS uses this to load balance workloads across accounts. Otherwise, the
