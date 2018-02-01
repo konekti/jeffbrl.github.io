@@ -20,6 +20,3 @@ incur the inter-AZ latency penalty.
 At re:Invent 2017, AWS announced an inter-AZ latency guarantee of 25 microseconds. This eliminates much of the concern about latency between AZs.
 
 Apparently, there is an exception to the AZ naming. Per @QuinnyPig's [tweet](https://twitter.com/quinnypig/status/886271525984256000), us-east-1f is an exception. Probably few outside of AWS know why.
-
-
-\
