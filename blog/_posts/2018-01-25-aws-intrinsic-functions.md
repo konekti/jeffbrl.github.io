@@ -255,7 +255,7 @@ You should see the following if the template validates.
 <br>
 The command will return a ValidationError if the template fails validation.
 <br>
-Let's create out stack and examine the outputs.
+Let's create our stack and examine the outputs.
 <br><br>
 ```plaintext
 # aws cloudformation create-stack --stack-name Konekti --template-body file://vpc.yaml
