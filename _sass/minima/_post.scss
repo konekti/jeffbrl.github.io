@@ -11,18 +11,16 @@ article{
 .post{
   margin:0 auto;
   padding:15px 25px;
+  a{
+    color: #faac3a;
+    &:visited,
+    &:hover{
+      opacity:0.75;
+    }
+  }
   p{
     padding-bottom:7.5px;
     padding-top:7.5px;
-  }
-  a{
-    &:link{
-      color:#777;
-    }
-    &:visited,
-    &:hover{
-      color: #faac3a;
-    }
   }
   &-collection{
     justify-content: space-between !important;
