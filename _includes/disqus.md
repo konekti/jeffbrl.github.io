@@ -6,7 +6,6 @@
       this.page.url = '{{ page.url | absolute_url }}';
       this.page.identifier = '{{ page.url | absolute_url }}';
     };
-
     (function() {
       var d = document, s = d.createElement('script');
 
