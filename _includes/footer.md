@@ -21,7 +21,7 @@
             {% for section in site.data.sections %}
               <li><a href='{{ site.baseurl }}/#{{ section.id }}'>{{ section.text }}</a></li>
             {% endfor %}
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="/blog/">Blog</a></li>
           </ul>
         </div>
       </div>
