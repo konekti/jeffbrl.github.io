@@ -1,0 +1,21 @@
+# A plugin for embedding videos from Vimeo using a simple Liquid tag, ie: {% vimeo 12345678 %}.
+# Based of the Youtube plugin from http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/
+
+module Jekyll
+  class Tweet < Liquid::Tag
+
+    def initialize(name, id, tokens)
+      super
+      @id = id
+    end
+
+    def render(context)
+      source = "<div class=\"tweet\">"
+      source += "<script src=\"/assets/oembed.js?tweet=#{@id}\"></script>"
+      source += "</div>"
+      source
+    end
+  end
+end
+
+Liquid::Template.register_tag('tweet', Jekyll::Tweet)
