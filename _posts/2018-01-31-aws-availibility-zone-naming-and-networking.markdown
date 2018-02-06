@@ -23,3 +23,13 @@ incur the inter-AZ latency penalty.
 At re:Invent 2017, AWS announced an inter-AZ latency guarantee of 25 microseconds. This eliminates much of the concern about latency between AZs.
 
 Apparently, there is an exception to the AZ naming. Per @QuinnyPig's [tweet](https://twitter.com/quinnypig/status/886271525984256000), us-east-1f is an exception. Probably few outside of AWS know why.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">…except for us-east-1f. <a href="https://t.co/bZPb8O1TID">https://t.co/bZPb8O1TID</a></p>&mdash; Corey Quinn (@QuinnyPig) <a href="https://twitter.com/QuinnyPig/status/886271525984256000?ref_src=twsrc%5Etfw">July 15, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/QuinnyPig?ref_src=twsrc%5Etfw">@QuinnyPig</a> and his  <a href="https://twitter.com/lastweekinaws?ref_src=twsrc%5Etfw">@lastweekinaws</a> I’ve just discovered this gem: AWS Inventory in a single HTML file using JS AWS-SDK &amp; Bootstrap <a href="https://t.co/4EspLtWPKP">https://t.co/4EspLtWPKP</a></p>&mdash; Toni de la Fuente (@ToniBlyx) <a href="https://twitter.com/ToniBlyx/status/960582153561169920?ref_src=twsrc%5Etfw">February 5, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
