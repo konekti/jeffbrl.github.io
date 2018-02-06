@@ -1,9 +1,11 @@
 <head>
   <meta charset="utf-8">
   <title>{{ site.title }}</title>
-  <meta itemprop = 'description' name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% assign desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape %}
+  <meta itemprop = 'description' name="description" content="{{ desc }}">
+  <meta property="og:description" content="{{ desc }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
   <meta name="keywords" content="konekti systems">
   <meta property="og:locale" content="en_US" />
@@ -21,6 +23,17 @@
       "url": "{{site.baseur}}/{{page.permalink}}"}
     </script>
   {% endif %}
+  {% if page.image %}
+    <meta property='og:image' content='{{site.url}}/assets/posts/{{page.image}}.jpg' />
+    <meta property='og:image:width' content='720' />
+    <meta property='og:image:height' content='360' />
+    <meta name='twitter:site' content='@{{site.twitter}}' />
+    <meta name='twitter:image' content='{{site.url}}/assets/posts/{{page.image}}.jpg' />
+    <meta name='twitter:card' content='summary' />
+    <meta name='twitter:creator' content='@{{site.twitter}}' />
+    <meta property='og:description'  content="{{ desc }}"/>
+  {% endif %}
+ 
   <link rel="shortcut icon" href="{{ site.baseurl }}/fav.PNG">
   <link rel="canonical" href="{{ page.url | replace:'index.htm l','' | absolute_url }}">
 
