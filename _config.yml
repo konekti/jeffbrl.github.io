@@ -13,7 +13,7 @@ defaults:
     path: _posts
     type: posts
   values:
-    permalink: /:title/
+    permalink: "/:title/"
     layout: post
     author: Jeff Loughridge
     image: postimage
