@@ -3,9 +3,6 @@ title: The Journey Begins
 date: 2017-11-12 00:00:00 Z
 categories:
 - blog
-layout: post
-author: Jeff Loughridge
-image: postimage
 ---
 
 <br>
