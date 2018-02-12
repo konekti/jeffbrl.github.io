@@ -1,6 +1,6 @@
 ---
 title: AWS CloudFormation Intrinsic Functions
-date: 2018-01-25 00:00:00 Z
+date: 2018-01-24 19:00:00 -05:00
 categories:
 - blog
 ---

@@ -1,6 +1,6 @@
 ---
 title: The Journey Begins
-date: 2017-11-12 00:00:00 Z
+date: 2017-11-11 19:00:00 -05:00
 categories:
 - blog
 ---
