@@ -1,6 +1,7 @@
 ---
 title: AWS Availibility Zone Naming & Networking
 date: 2018-02-01 02:38:00 +0000
+publish: fault
 categories:
 - blog
 ---
