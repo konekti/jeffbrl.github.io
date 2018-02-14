@@ -11,11 +11,11 @@ Why is this important? An AWS AZ consists of a building or set of buildings. Lat
 
 > Measuring with ping is insufficient for this level of granularity. Use a better tool such as [qperf](https://github.com/linux-rdma/qperf "qperf").
 
-AWS can't  increase the speed of light in fiber; however, it can optimize the network stack on its instances. The new C5 instance type has an average intra-AZ latency of 50 microseconds. I confirmed this value using qperf and the c5.9xlarge instance type. The latency between my us-east-1a and us-east-1b clocked in around the 500 microsecond mark.
+AWS can't  increase the speed of light in fiber; however, it can optimize the network stack on its instances. The new C5 instance type has an average intra-AZ latency of 50 microseconds. I confirmed this value using qperf and the c5.9xlarge instance type. The latency between **my** us-east-1a and us-east-1b clocked in around the 500 microsecond mark.
 
 > For more on what AWS is doing to increase network performance in the VPC, check out [The Floodgates Are Open – Increased Network Bandwidth for EC2 Instances](https://aws.amazon.com/blogs/aws/the-floodgates-are-open-increased-network-bandwidth-for-ec2-instances/ "The Floodgates are Open").
 
-If you assumed that cross-account EC2 instances were in the same physical AZ, you would unknowingly incur the inter-AZ latency penalty. In addition, you might make incorrect assumptions about redundancy if you are building cross-account applications.
+If you assumed that cross-account EC2 instances located in "us-east-1a" were in the same physical AZ, you could unknowingly incur the inter-AZ latency penalty. In addition, you might make incorrect assumptions about redundancy if you are building cross-account applications.
 
 Apparently, there is an exception to the AZ naming. Per [@QuinnyPig](https://twitter.com/quinnypig "twitter")'s tweet, us-east-1f is an exception.
 
