@@ -12,12 +12,12 @@ Why is this important? An AWS AZ consists of a building or set of buildings. Lat
 
 AWS can't  increase the speed of light in fiber; however, it can optimize the network stack on its instances. The new C5 instance type has an average intra-AZ latency of 50 microseconds. I confirmed this value using qperf and the c5.9xlarge instance type. The latency between my us-east-1a and us-east-1b clocked in around the 500 microsecond mark.
 
-If you assumed that cross-account EC2 instances were in the same physical AZ, you would unknowingly incur the inter-AZ latency penalty.
+> For more on what AWS is doing to increase network performance in the VPC, check out [The Floodgates Are Open – Increased Network Bandwidth for EC2 Instances](https://aws.amazon.com/blogs/aws/the-floodgates-are-open-increased-network-bandwidth-for-ec2-instances/ "The Floodgates are Open").
+
+If you assumed that cross-account EC2 instances were in the same physical AZ, you would unknowingly incur the inter-AZ latency penalty. In addition, you might make incorrect assumptions about redundancy if you are building cross-account applications.
 
 Apparently, there is an exception to the AZ naming. Per @QuinnyPig's [tweet](https://twitter.com/quinnypig/status/886271525984256000), us-east-1f is an exception.
 
 ![](/uploads/2018/02/14/az-tweet.PNG "Corey Quinn Tweet")
 
 He points out later in the thread that you can tell by tracking spot instance pricing across accounts.
-
-No matter what your
