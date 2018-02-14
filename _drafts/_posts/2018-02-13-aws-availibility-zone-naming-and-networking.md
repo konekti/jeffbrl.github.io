@@ -1,6 +1,6 @@
 ---
 title: AWS Availibility Zone Naming & Networking
-date: 2018-02-13 21:38:00 -0500
+date: 2018-02-13 07:20:00 -0500
 categories:
 - blog
 ---
@@ -19,3 +19,5 @@ Apparently, there is an exception to the AZ naming. Per @QuinnyPig's [tweet](htt
 ![](/uploads/2018/02/14/az-tweet.PNG "Corey Quinn Tweet")
 
 He points out later in the thread that you can tell by tracking spot instance pricing across accounts.
+
+No matter what your
