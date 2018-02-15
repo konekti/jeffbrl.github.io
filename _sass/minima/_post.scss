@@ -17,6 +17,9 @@ article{
     &:hover{
       opacity:0.75;
     }
+    &:visited{
+      color: darken(#faac3a, 30%);
+    }
   }
   p{
     padding-bottom:7.5px;
@@ -60,7 +63,7 @@ article{
     li{
       padding:10px 0;
       margin:7.5px 0 0;
-      border-bottom:1px solid rgba(0,0,0,0.08);
+      // border-bottom:1px solid rgba(0,0,0,0.08);
       transition:color 0.25s ease-in;
     } 
     li:hover{
