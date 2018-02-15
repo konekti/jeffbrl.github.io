@@ -23,9 +23,11 @@
       "url": "{{site.baseur}}/{{page.permalink}}"}
     </script>
   {% endif %}
-  {% if page.thumbnail %}
+
+  <!-- set twitter's and facebook's opengraph -->
+  {% if page.thumbnail %} <!-- If thumbnail is set -->
     {% assign thumbnail-url  = '/assets/posts/' | prepend: site.url | append: page.thumbnail | append: '.jpg' %}
-  {% else %}
+  {% else %} 
     {% assign thumbnail-url =   '/assets/posts/' | prepend: site.url | append: page.image |  append: '.jpg' %}
   {% endif %}
   {% if page.image %}
@@ -38,7 +40,8 @@
     <meta name='twitter:creator' content='@{{site.twitter}}' />
     <meta property='og:description'  content="{{ desc }}"/>
   {% endif %}
- 
+ <!-- Opengraph settings end here -->
+
   <link rel="shortcut icon" href="{{ site.baseurl }}/fav.PNG">
   <link rel="canonical" href="{{ page.url | replace:'index.htm l','' | absolute_url }}">
 
