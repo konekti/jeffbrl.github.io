@@ -23,12 +23,17 @@
       "url": "{{site.baseur}}/{{page.permalink}}"}
     </script>
   {% endif %}
+  {% if page.thumbnail %}
+    {% assign thumbnail-url  = '{{site.url}}/assets/posts/{{page.thumbnail}}.jpg' %}
+  {% else %}
+    {% assign thumbnail-url = '{{site.url}}/assets/posts/{{page.image}}.jpg' %}
+  {% endif %}
   {% if page.image %}
-    <meta property='og:image' content='{{site.url}}/assets/posts/{{page.image}}.jpg' />
+    <meta property='og:image' content={{ thumbnail-url }} />
     <meta property='og:image:width' content='720' />
     <meta property='og:image:height' content='360' />
     <meta name='twitter:site' content='@{{site.twitter}}' />
-    <meta name='twitter:image' content='{{site.url}}/assets/posts/{{page.image}}.jpg' />
+    <meta name='twitter:image' content={{ thumbnail-url }} />
     <meta name='twitter:card' content='summary' />
     <meta name='twitter:creator' content='@{{site.twitter}}' />
     <meta property='og:description'  content="{{ desc }}"/>
