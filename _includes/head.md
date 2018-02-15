@@ -24,16 +24,16 @@
     </script>
   {% endif %}
   {% if page.thumbnail %}
-    {% assign thumbnail-url  = '{{site.url}}/assets/posts/{{page.thumbnail}}.jpg' %}
+    {% assign thumbnail-url  = '/assets/posts/' | prepend: site.url | append: page.thumbnail | append: '.jpg' %}
   {% else %}
-    {% assign thumbnail-url = '{{site.url}}/assets/posts/{{page.image}}.jpg' %}
+    {% assign thumbnail-url =   '/assets/posts/' | prepend: site.url | append: page.image |  append: '.jpg' %}
   {% endif %}
   {% if page.image %}
-    <meta property='og:image' content={{ thumbnail-url }} />
+    <meta property='og:image' content= '{{ thumbnail-url }}' />
     <meta property='og:image:width' content='720' />
     <meta property='og:image:height' content='360' />
     <meta name='twitter:site' content='@{{site.twitter}}' />
-    <meta name='twitter:image' content={{ thumbnail-url }} />
+    <meta name='twitter:image' content = '{{ thumbnail-url }}' />
     <meta name='twitter:card' content='summary' />
     <meta name='twitter:creator' content='@{{site.twitter}}' />
     <meta property='og:description'  content="{{ desc }}"/>
