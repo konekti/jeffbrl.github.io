@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/the-march-toward-simplicity-in-cloud-networking.md
 hide_body: false
 fields:
 - name: layout
