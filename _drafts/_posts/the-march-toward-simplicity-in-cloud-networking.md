@@ -17,4 +17,4 @@ When does networking typically need specialized expertise?
 * Effective usage of new networking features such as AWS's Network Load Balancer (NLB) and PrivateLink
 * Any Transit VPC deployment
 
-Developers speak of necessary complexity
+Developers speak of necessary vs accidental complexity. In the networking domain, the ability to maintain the inter-connectivity of a highly-available distributed system is hard. The problem itself has certain qualities of necessary, or inherent, complexity. These issues are difficult--if not impossible--to completely eliminate through abstractions. Accidental complexity is different in that it usually stems from architectures not fully understanding how components can fit together in a manner that is simple to maintain. When your engineers are awoken by a 3 am phone call, how quickly identify and remediate networking-related outages?
