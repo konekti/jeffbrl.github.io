@@ -29,4 +29,9 @@ Consider these improvements.
 
 * **Inter-region peering** - AWS eliminated the need for software VPN to software VPN tunneling to connect VPCs in different regions. This also reduces use cases for Transit VPC when there is no on-premise infrastructure.
 * **CIDR prefix addition** - Prior to August 2017, companies had to "go big" on CIDR allocation for a VPC to accommodate growth. Now users can add multiple CIDR prefixes within the same RFC 1918 block (e.g., 10.0.0.0/8).
-* **NAT Gateways**
+* **NAT Gateways** - Tired of managing NAT instances and failover kludges? The NAT Gateway is highly available in the same vein as the IGW and VGW.
+* **Direct Connect Gateway** - Before this feature was launched, DX connectivity was tied to a region for private and public VIFs (note that U.S. regions were the exception for public VIFs). Via a single BGP session to the Direct Connect Gateway, customers can receive prefixes from any participating VPC in any region. In addition, AWS will announce its public service endpoints for any region except for China.
+
+Do you notice a trend in how these new features and enhancements make the networking component easier for the user? This will continue. Thinking about what might come next becomes a fun exercise. Transit VPC as a service? A new type of VGW to which you can use Hardware VPN to reach all regions? Or might AWS provide a virtual appliance for on-prem that eliminates manual configuration of IPsec entirely?
+
+This article has been AWS-centric. The concept of simplifying the networking component in public networking also applies to Azure and GCP. These developments benefit both the IaaS providers and companies that rely on the cloud. Let's all enjoy the ride.
