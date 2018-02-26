@@ -11,11 +11,11 @@ Developers familiar with public cloud generally know how to set-up simple topolo
 
 When doe companies typically need specialized networking expertise?
 
-- Connecting existing on-premises workloads to the cloud
-- Addition of a second public cloud provider
-- Multi-VPC connectivity when the number of VPC is large ("large" is clearly a relative term but you'll know when your organization has reached this number)
-- Effective usage of new networking features such as AWS's Network Load Balancer (NLB) and PrivateLink
-- Most AWS Transit VPC deployments
+ - Connecting existing on-premises workloads to the cloud
+ - Addition of a second public cloud provider
+ - Multi-VPC connectivity when the number of VPC is large ("large" is clearly a relative term but you'll know when your organization has reached this number)
+ - Effective usage of new networking features such as AWS's Network Load Balancer (NLB) and PrivateLink
+ - Most AWS Transit VPC deployments
 
 Developers speak of necessary vs accidental complexity. In the networking domain, the ability to maintain the inter-connectivity of a highly-available distributed system is hard. The problem itself has certain qualities of necessary, or inherent, complexity. These issues are difficult--if not impossible--to completely eliminate through abstractions. Accidental complexity is different in that it usually stems from architectures not fully understanding how components can fit together in a manner that is simple to maintain. When your engineers are awoken by a 3 am phone call, how quickly identify and remediate networking-related outages? Even more basic, are they equipped to discern application issues from networking ones?
 
@@ -27,10 +27,10 @@ As with its other offerings, AWS has speedily announced new features and improve
 
 Consider these recent improvements.
 
-- **Inter-region peering** - AWS eliminated the need for software VPN to software VPN tunneling to connect VPCs in different regions. This also reduces use cases for Transit VPC when there is no on-premises infrastructure.
-- **CIDR prefix addition** - Prior to August 2017, companies had to "go big" on CIDR allocation for a VPC to accommodate growth. Now users can add multiple CIDR prefixes within the same RFC 1918 block (e.g., 10.0.0.0/8).
-- **NAT Gateways** - Tired of managing NAT instances and failover kludges? The NAT Gateway is highly available in the same vein as the IGW and VGW.
-- **Direct Connect Gateway** - Before this feature was launched, DX connectivity was tied to a region for private and public VIFs (note that U.S. regions were the exception for public VIFs). Via a single BGP session to the Direct Connect Gateway, customers can receive prefixes from any participating VPC in any region. In addition, AWS will announce its public service endpoints for any region except for China.
+ - **Inter-region peering** - AWS eliminated the need for software VPN to software VPN tunneling to connect VPCs in different regions. This also reduces use cases for Transit VPC when there is no on-premises infrastructure.
+ - **CIDR prefix addition** - Prior to August 2017, companies had to "go big" on CIDR allocation for a VPC to accommodate growth. Now users can add multiple CIDR prefixes within the same RFC 1918 block (e.g., 10.0.0.0/8).
+ - **NAT Gateways** - Tired of managing NAT instances and failover kludges? The NAT Gateway is highly available in the same vein as the IGW and VGW.
+ - **Direct Connect Gateway** - Before this feature was launched, DX connectivity was tied to a region for private and public VIFs (note that U.S. regions were the exception for public VIFs). Via a single BGP session to the Direct Connect Gateway, customers can receive prefixes from any participating VPC in any region. In addition, AWS will announce its public service endpoints for any region except for China.
 
 Do you notice a trend in how these new features and enhancements make the networking component easier for the user? This will continue. Thinking about what might come next becomes a fun exercise. Transit VPC as a service? A new type of detached VGW with which you can use Hardware VPN to reach all regions? Or might AWS provide a virtual appliance for on-premises that eliminates manual configuration of IPsec entirely?
 
