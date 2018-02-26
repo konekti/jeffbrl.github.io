@@ -31,7 +31,7 @@ article{
     li{
       background-color:#fafafa;
       border-radius:0 0 7.5px 7.5px;
-      box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
+      // box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
       margin-top:10px;
       margin-bottom:50px;
    }
@@ -51,6 +51,9 @@ article{
     a{
       padding-bottom:7.5px;
       text-decoration:underline;
+    }
+    ul, li{
+      @extend %list;
     }
   }
   &-list {
@@ -120,19 +123,22 @@ article{
   height:99px;
 }
 .excerpt{
-  padding:25px 15px;
+  padding:0  25px 25px;
   min-height:360px;
   border-radius:0 0 7.5px 7.5px;
-  p{
-    text-align:center;
+  ul,li{
+    @extend %list;
+  }
+  li{
+    margin: 0;
   }
 }
 .lighten{
-    color:#555;
+    color:#666;
     display:block;
-    padding:12.5px;
-    font-size:1.1em;
-    text-align:center;
+    padding:0 25px;
+    font-size:16px;
+    // text-align:center;
 }
 h4.duration{
     color: #cecece;
@@ -175,11 +181,11 @@ h1.post-title{
     font-size: 1.8rem;
 }
 .post-link h3{
-    padding:2.5px 0;
-    margin:12.5px;
+    padding:25px 25px 0;
     color:#111;
-    font-size:1.6em;
-    text-align:center;
+    font-size:1.25em;
+    margin: 0;
+    // text-align:center;
 }
 .pretty{
     display:inline-block;
