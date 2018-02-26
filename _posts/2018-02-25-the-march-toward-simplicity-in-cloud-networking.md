@@ -5,7 +5,6 @@ image: postimage
 title: The March Toward Simplicity in Cloud Networking
 date: 2018-02-24 11:37:46 +0000
 ---
-
 <br>
 The networking aspect of cloud networking is complex. Does it have to be? I'll use this post to explain the complexities and how the industry is incentivized to simplify the secure and reliable movement of bits. I'll primarily focus on AWS as it is the company is the industry leader.
 
@@ -37,3 +36,4 @@ Consider these recent improvements.
 Do you notice a trend in how these new features and enhancements make the networking component easier for the user? This will continue. Thinking about what might come next becomes a fun exercise. Transit VPC as a service? A new type of detached VGW with which you can use Hardware VPN to reach all regions? Or might AWS provide a virtual appliance for on-premises that eliminates manual configuration of IPsec entirely?
 
 Undoubtably, this article has been AWS-centric. The concept of simplifying the networking component in public networking also applies to Azure and GCP. These developments benefit both the IaaS providers and companies that rely on the public cloud. Let's all enjoy the ride. At Konekti, we're excited to continue to work with clients on cloud data networking as IaaS providers evolve their networking capabilities.
+
