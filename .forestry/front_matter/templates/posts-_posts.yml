@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/2018-02-25-the-march-toward-simplicity-in-cloud-networking.md
 hide_body: false
 fields:
 - name: layout

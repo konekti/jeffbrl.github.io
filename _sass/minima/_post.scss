@@ -17,6 +17,9 @@ article{
     &:hover{
       opacity:0.75;
     }
+    &:visited{
+      color: darken(#faac3a, 30%);
+    }
   }
   p{
     padding-bottom:7.5px;
@@ -28,7 +31,7 @@ article{
     li{
       background-color:#fafafa;
       border-radius:0 0 7.5px 7.5px;
-      box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
+      // box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
       margin-top:10px;
       margin-bottom:50px;
    }
@@ -49,6 +52,12 @@ article{
       padding-bottom:7.5px;
       text-decoration:underline;
     }
+    ul, ul li{
+      @extend %unordered;
+    }
+    ol, ol li{
+      @extend %ordered;
+    }
   }
   &-list {
     h3{
@@ -60,7 +69,7 @@ article{
     li{
       padding:10px 0;
       margin:7.5px 0 0;
-      border-bottom:1px solid rgba(0,0,0,0.08);
+      // border-bottom:1px solid rgba(0,0,0,0.08);
       transition:color 0.25s ease-in;
     } 
     li:hover{
@@ -117,19 +126,25 @@ article{
   height:99px;
 }
 .excerpt{
-  padding:25px 15px;
+  padding:0  25px 25px;
   min-height:360px;
   border-radius:0 0 7.5px 7.5px;
-  p{
-    text-align:center;
+  ul, ul li{
+    @extend %unordered;
+  }
+  li{
+    margin: 0;
+  }
+  ol, ol li{
+    @extend %ordered;
   }
 }
 .lighten{
-    color:#555;
+    color:#666;
     display:block;
-    padding:12.5px;
-    font-size:1.1em;
-    text-align:center;
+    padding:0 25px;
+    font-size:16px;
+    // text-align:center;
 }
 h4.duration{
     color: #cecece;
@@ -172,11 +187,11 @@ h1.post-title{
     font-size: 1.8rem;
 }
 .post-link h3{
-    padding:2.5px 0;
-    margin:12.5px;
+    padding:25px 25px 0;
     color:#111;
-    font-size:1.6em;
-    text-align:center;
+    font-size:1.25em;
+    margin: 0;
+    // text-align:center;
 }
 .pretty{
     display:inline-block;
@@ -203,6 +218,9 @@ h3.pretty + ul{
 }
 .opens{
     height:initial !important;
+    a{
+      font-size: 16px;
+    }
 }
 #accordion li{
     padding:12.5px;

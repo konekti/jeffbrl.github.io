@@ -20,13 +20,13 @@ layout: default
                 {{ post.title | escape }}
               </h3>
             </a>
-            <h4 class = 'lighten'>
+            <p class = 'lighten'>
               {{ post.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span>
               by {{ post.author }} 
-            </h4>
+            </p>
           </div>
           <div class = 'excerpt flex-up'>
-            <div>{{ post.excerpt  | truncate: 840}}</div>
+            <div>{{ post.excerpt  | truncate: 840 | strip_newlines }}</div>
             <a href="{{ post.url | relative_url }}" class = 'button-medium'>Read More</a>
           </div>
         </li>
