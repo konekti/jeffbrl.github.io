@@ -1,4 +1,10 @@
-%list {
+%ordered, %unordered{
   padding:8px 15px;
+}
+
+%unordered {
+  list-style-type: circle;
+}
+%ordered{
   list-style-type: decimal;
 }

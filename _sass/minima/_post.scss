@@ -52,8 +52,11 @@ article{
       padding-bottom:7.5px;
       text-decoration:underline;
     }
-    ul, li{
-      @extend %list;
+    ul, ul li{
+      @extend %unordered;
+    }
+    ol, ol li{
+      @extend %ordered;
     }
   }
   &-list {
@@ -126,11 +129,14 @@ article{
   padding:0  25px 25px;
   min-height:360px;
   border-radius:0 0 7.5px 7.5px;
-  ul,li{
-    @extend %list;
+  ul, ul li{
+    @extend %unordered;
   }
   li{
     margin: 0;
+  }
+  ol, ol li{
+    @extend %ordered;
   }
 }
 .lighten{
