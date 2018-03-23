@@ -1,6 +1,6 @@
 ---
 pages:
-- _posts/redundancy-in-the-aws-vpc.md
+- _posts/2018-03-22-redundancy-in-the-aws-vpc.md
 - _posts/2018-02-25-the-march-toward-simplicity-in-cloud-networking.md
 hide_body: false
 fields:
