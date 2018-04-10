@@ -8,7 +8,7 @@ date: 2018-04-09 21:13:46 +0000
 A few years ago I had a great business idea…or at the least I thought I did. Like many ideas, it started with a conversation about something unrelated. One of my colleagues had developed an Ansible-based tool intended to automate deployment of new configurations to hundreds of routers and switches. I wanted to see if the same Ansible tool could be used in the AWS cloud where we had our test topology. Then came the idea: Why not create a more generalized business for “Network Automation as a Service” in AWS? We could have the most repeated configuration tasks sold or rented as blocks (Ansible Playbooks) and allow users to pay for usage of these automation “blocks”. Since the conversation was in the context of routers and switches my initial thoughts were around a service that focused on networking devices, whether in the cloud or on-premises.
 <br><br>
 Then came the catch. How could we connect our Virtual Private Cloud (VPC) in AWS where our software lived to the customer VPC where the virtual appliance was located? Even better, how could we connect from our AWS VPC to the customer premise where many of their legacy networking devices were in dire need of automation bliss.
-<br>br>
+<br><br>
 
 #### VPC Peering – Not a Fit
 
@@ -43,7 +43,7 @@ In early November 2017, AWS announced an extension to VPC endpoints called Priva
 >
 > [https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/](https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/ "https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/")
 
-<br><br>
+<br>
 Sounds great, right? Yes, for select services provided by AWS. But this still would not allow us to offer our “Network automation as a Service” from our VPC free of the operational hell described previously.
 <br><br>
 
