@@ -9,7 +9,7 @@ A few years ago I had a great business idea…or at the very last I thought I di
 
 Then came the catch. How could we connect our Virtual Private Cloud (VPC) in AWS where our software lived to the customer VPC where the virtual appliance was located? Even better, how could we connect from our AWS VPC to the customer premise where many of their legacy networking devices were in dire need of automation bliss. 
 
-### VPC Peering – Not a Fit
+#### VPC Peering – Not a Fit
 
 The most obvious existing solution was VPC peering. In the [VPC Peering](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-peering.html) scenario, we would connect the customer VPC to our own VPC, keeping all the traffic private to AWS.  But prior to November 2017, VPC peering was only supported between VPCs in the same region. This limitation meant we needed to deploy our VPC in many regions in order to make customer connections from diverse geographical locations possible. This would force us into a deployment model which was way more expensive than our requirements dictated. To start, we would have liked to limit our VPC deployment to two regions. Even with inter-region VPC peering support, VPC peering came with a whole lot of operational and security baggage.
 
@@ -25,14 +25,16 @@ Plus, the VPC peering did not necessarily solve the issue around access to the c
 
  
 
-### On the Path to PrivateLink – VPC Endpoints
+#### On the Path to PrivateLink – VPC Endpoints
 
 The predecessor to the PrivateLink solution is “VPC Endpoints” – initially for [S3](https://aws.amazon.com/blogs/aws/new-vpc-endpoint-for-amazon-s3/) and then [DynamoDB](https://aws.amazon.com/blogs/aws/new-vpc-endpoints-for-dynamodb/).  The endpoints provide a gateway within the VPC directly to these AWS public services. Once configured, requests to the endpoint service were automatically routed via the gateway to the service. All the traffic between the VPC and the “Endpoint” service never left the AWS network:
 
  
 
-“A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services…without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.  
- [https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html")”
+> “A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services…without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
+>
+>   
+>  [https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html")”
 
  
 
@@ -51,7 +53,7 @@ Sounds great, right? Yes, for select services provided by AWS. But this still wo
 
  
 
-### SaaS Providers Rejoice – AWS for Customers and Partners
+#### SaaS Providers Rejoice – AWS for Customers and Partners
 
 At re:Invent 2017, AWS extended the PrivateLink service to customers and partners.
 
@@ -73,4 +75,4 @@ Given the advantages of PrivateLink, these issues probably won’t amount for mu
 
  
 
-This article has barely scratched the surface of the business opportunities that PrivateLink creates. The details of its implementation with regard to single vs multi-tenancy, performance, and availability are crucial. As always, Konekti is here to help. [Contact us](https://konekti.us/#contact-us "Contact Us") today.
+This article hightlights the business opportunities that PrivateLink creates. The details of its implementation with regard to single vs multi-tenancy, performance, and availability are crucial. As always, Konekti is here to help. [Contact us](https://konekti.us/#contact-us "Contact Us") today.
