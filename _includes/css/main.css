@@ -35,7 +35,6 @@
 
 
 html, body {
-	font-family: 'PT Serif', serif;
 	font-weight: 400;
 	height: 100%;
 	width: 100%;
@@ -103,7 +102,6 @@ h6 {
 p {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 1.75 !important;
 	font-weight: 400;
@@ -750,7 +748,6 @@ ol li {
 	line-height: 30px;
 	font-size: 16px;
 	color: #4a4a4a;
-	font-family: 'PT Serif', serif;
 	font-weight: 400;
 }
 ol li a {
@@ -1702,7 +1699,6 @@ a.down-app-btn:hover, .down-app-btn:hover {
 	text-align: left;
 	color: #4a4a4a;
 	font-size: 16px;
-	font-family: 'PT Serif', serif;
 	padding: 0 25px;
 	margin-bottom: 10px;
 	width: 100%;
@@ -1918,7 +1914,6 @@ form .button-normal {
 	line-height: 30px;
 	font-size: 16px;
 	color: #4a4a4a;
-	font-family: 'PT Serif', serif;
 	font-weight: 400;
 }
 .default-list li a {
@@ -1943,7 +1938,6 @@ form .button-normal {
 	color: #4a4a4a;
 	display: block;
 	float: left;
-	font-family: 'PT Serif', serif;
 	font-size: 16px;
 	line-height: 30px;
 	list-style: outside;
@@ -1981,7 +1975,6 @@ form .button-normal {
 	color: #4a4a4a;
 	display: flex;
 	float: left;
-	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 42px;
 	list-style: outside;
@@ -2019,7 +2012,6 @@ form .button-normal {
 	color: #4a4a4a;
 	display: flex;
 	float: left;
-	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 42px;
 	list-style: outside;
@@ -2261,7 +2253,6 @@ form .button-normal {
 	border: 1px solid #ddd;
 }
 .form-area .accordion-simple .tab {
-	font-family: 'PT Serif', serif;
 	line-height: 54px;
 	height: 54px;
 	margin: 0;
@@ -2565,7 +2556,6 @@ form .button-normal {
 	overflow: hidden;
 }
 .form-area label {
-	font-family: 'PT Serif', serif;
 	font-weight: 700;
 	font-size: 18px;
 	margin: 20px 0 5px;
@@ -3456,7 +3446,6 @@ a.ovelay-icon:hover {
 }
 #contact-loading {
 	color: #faac3a;
-	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3471,7 +3460,6 @@ a.ovelay-icon:hover {
 }
 #contact-success {
 	color: #faac3a;
-	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3486,7 +3474,6 @@ a.ovelay-icon:hover {
 }
 #contact-failed {
 	color: #faac3a;
-	font-family: 'PT Serif', serif;
 	font-size: 24px;
 	line-height: 36px;
 	padding: 40px 15px;
@@ -3751,7 +3738,6 @@ h4 label {
 	margin: 0;
 	padding: 0;
 	width: 49%;
-	font-family: 'PT Serif', serif;
 	font-size:16px;
 	line-height: 28px;
 }
@@ -4496,9 +4482,6 @@ h5 {
 	border-radius: 5px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 }
 .mini-grid-area > div {
