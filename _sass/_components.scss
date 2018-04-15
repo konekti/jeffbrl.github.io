@@ -1,11 +1,14 @@
-a {
-  color: inherit;
-  font-size: inherit;
+.main{
+  &__padded {
+    @include viewport () {
+      padding: 105px 30px 25px;
+    }
+  }
 }
-ul{
-  list-style: none;
-  -webkit-padding-start:0;
-  -moz-padding-start:0;
+.header-dark{
+  background: $dark;
+  padding: $padding 0 !important;
+  position: fixed;
 }
 .center-text{
   text-align:center;
