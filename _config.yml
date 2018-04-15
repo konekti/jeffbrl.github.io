@@ -26,7 +26,7 @@ environment: production
 disqus:
   shortname: konekti-us
 markdown: kramdown
-theme: minima
+# theme: minima
 highlighter: rouge
 data-tweet-limit: 2
 paginate: 5
