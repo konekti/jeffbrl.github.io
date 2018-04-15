@@ -3,17 +3,18 @@ layout: default
 ---
 
 <section class = 'cool'>
-  <div class = 'overlay'><div>
-    <h1>Konekti Blog</h1>
-    <h4 class  = 'center'></h4>
-  </div></div>
+  <div class = 'overlay'>
+    <div>
+      <h1>Konekti Blog</h1>
+    </div>
+  </div>
 </section>
 <section class = 'blog container flex'>
   <article class = 'child tripple'>
     <div class = 'hold'>
       <ul class="post-collection flex">
         {% for post in paginator.posts %}
-        <li class = 'child' id = '{{post.image}}'>
+        <li class = 'child post__item' id = '{{ post.image }}'>
           <div class = 'show flex-up'>
             <a href="{{ post.url | relative_url }}" class = 'post-link'>
               <h3>
