@@ -39,3 +39,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 excerpt_separator: "<!--excerpt-->"
+
+designer:
+  name: Weru
+  url: https://neuralvibes.com/author/

@@ -30,7 +30,7 @@
 <div class="bottom-area">
   <div class="container">
     <div class="copyright">
-      <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By <a href="https://societypieces.com/author/">One</a></div>
+      <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By <a href="{{ site.designer.url }}">{{ site.designer.name }}</a></div>
         <a id="scroll-top-div" href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a>
     </div>
   </div>
