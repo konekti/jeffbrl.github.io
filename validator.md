@@ -4,7 +4,7 @@ permalink: /aws-cf-validator/
 menu: dark
 ---
 
-<div class="container">
+<div class="container validator">
   <h1>AWS CloudFormation YAML Validator</h1>
   <p>Enter your CloudFormation template and click "Validate".</p>
   <div class="row">

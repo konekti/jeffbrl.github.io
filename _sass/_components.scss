@@ -184,3 +184,23 @@ section p{
       width:32%;
   }
 }
+.tools{
+  a{
+    color: #faac3a;
+    &:visited,
+    &:hover{
+      opacity:0.75;
+    }
+    &:visited{
+      color: darken(#faac3a, 30%);
+    }
+  }
+}
+.validator{
+  h1{
+    font-size: 1.8rem;
+  }
+  form{
+    margin: 0 15px;
+  }
+}

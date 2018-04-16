@@ -3,7 +3,8 @@ layout: default
 permalink: /tools/
 menu: dark
 ---
-
-#### [AWS CloudFormation Validator](/aws-cf-validator/) 
+<div class = 'tools'>
+  <a href = '/aws-cf-validator/'><i class="glyphicon glyphicon-link"></i> AWS CloudFormation Validator</a> 
+</div>
 
 *Check back soon for more tools*
