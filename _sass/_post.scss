@@ -22,8 +22,8 @@ article{
     }
   }
   p{
-    padding-bottom:7.5px;
-    padding-top:7.5px;
+    padding-top:15px;
+    padding-bottom:30px;
   }
   &-collection{
     justify-content: space-between !important;
@@ -31,13 +31,15 @@ article{
     li{
       background-color:#fafafa;
       border-radius:0 0 7.5px 7.5px;
-      // box-shadow:0 25px 40px -10px rgba(10,16,34,0.2);
       margin-top:10px;
       margin-bottom:50px;
-   }
-   h3{
+    }
+    h3{
       color: #fff;
     }
+  }
+  &__item{
+    box-shadow: 0 15px 60px 0 rgba(158, 174, 221, 0.2);
   }
   &-content{
     h4{
@@ -137,6 +139,9 @@ article{
   }
   ol, ol li{
     @extend %ordered;
+  }
+  p{
+    font-size: 18px;
   }
 }
 .lighten{

@@ -4,7 +4,7 @@ date: 2018-02-13 07:20:00 -0500
 categories:
 - blog
 ---
-<br>
+
 AWS uses names such as us-west-1a to refer to a given availability zone (AZ) in a region. What you may not know is that AZ naming is intentionally inconsistent across accounts. In other words, the us-west-1a in the Konekti AWS production account is not necessarily the same as the us-west-1a in your account. AWS uses this to load balance workloads across accounts. Otherwise, the "1a" AZ in a region would receive more than its share of the load. This nondeterministic naming also allows AWS to add AZs in a way that new accounts will automatically begin using them.
 
 Why is this important? An AWS AZ consists of a building or set of buildings. Latency is a critical factor in ensuring high throughput for intra-VPC traffic.

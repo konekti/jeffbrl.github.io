@@ -1,0 +1,12 @@
+// variables
+$dark : #24292e;
+$max-width: 1084px;
+$padding: 15px;
+
+// mixins
+@mixin viewport ($width: $max-width){
+  width:100%;
+  max-width: $width;
+  margin:0 auto;
+  @content;
+}

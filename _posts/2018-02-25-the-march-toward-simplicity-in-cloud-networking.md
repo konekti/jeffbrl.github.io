@@ -5,7 +5,7 @@ image: postimage
 title: The March Toward Simplicity in Cloud Networking
 date: 2018-02-24 11:37:46 +0000
 ---
-<br>
+
 The networking aspect of cloud networking is complex. Does it have to be? I'll use this post to explain the complexities and how the industry is incentivized to simplify the secure and reliable movement of bits. I'll primarily focus on AWS as it is the company is the industry leader.
 
 Developers familiar with public cloud generally know how to set-up simple topologies such as a VPC with public and private subnets. The providers make this easy with console wizards and sample architecture blueprints.
