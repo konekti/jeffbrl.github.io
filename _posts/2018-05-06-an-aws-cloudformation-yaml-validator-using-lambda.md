@@ -3,7 +3,7 @@ layout: post
 author: Jeff Loughridge
 image: postimage
 title: An AWS CloudFormation YAML Validator Using Lambda
-date: 2018-04-29 14:51:06 -0400
+date: 2018-05-06 09:51:06 -0400
 ---
 <br>
 AWS Lambda is an incredibly useful platform for rapidly developing web-based tools.  How fast and easy can developers advance from a concept to a production service? With a little bit of javascript in the front end with Lambda as the backend, the pace is very fast. In this post, I'l describe the components of a Lambda app I wrote called AWS CloudFormation
