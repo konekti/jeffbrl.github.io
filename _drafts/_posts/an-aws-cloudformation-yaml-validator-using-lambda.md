@@ -17,7 +17,9 @@ I decided to use [chalice](), the Python Serverless Microframework for AWS. This
 
 While a very impressive framework, chalice has a few rough edges. Two affected me during the development of the tool.
 
-1.  There is no defined way to share chalice apps on Github. I spent an hour reading the repo's issues to find a kludgy work-around for putting the app on Github.
-2. Getting your application to excute on Lambda is tricky if your code or imported modules need C dependencies. The binaries must be compatiable with Amazon Linux. The process for building the binaries is described in the docs, however, consider improvement in the docs--such as including more examples--would be helpful. I was able to get the app working with the C dependency but ended up eliminating it to make things easier for distribution to others.
+1. There is no defined way to share chalice apps on Github. I spent an hour reading the repo's issues to find a kludgy work-around for putting the app on Github.
+2. Getting your application to excute on Lambda is tricky if your code or imported modules need C dependencies. The binaries must be compatiable with Amazon Linux. The process for building the binaries is described in the docs, however,  improvement in the docs--such as including more examples--would be helpful. I was able to get the app working with the C dependency but ended up eliminating it to make things easier for distribution to others.
 
-My app certainly isn't complex or clever. The primary logic is a simple call to boto3's  `validate_template method. The JSON the application returns expresses the validity of the template and an error message in the case that the template is invalid.`
+My app certainly isn't complex or clever. The app makes a simple call to boto3's  `validate_template` method. The JSON the application returns expresses the validity of the template and an error message in the case that the template is invalid.
+
+I posted the backend code at [https://github.com/konekti/aws-cf-validator](https://github.com/konekti/aws-cf-validator "https://github.com/konekti/aws-cf-validator"). along with directions for executing it yourself. If your sole interest is using the web app, check [AWS CloudFormation YAML Validator](https://konekti.us/aws-cf-validator/ "AWS CloudFormation YAML Validator").
