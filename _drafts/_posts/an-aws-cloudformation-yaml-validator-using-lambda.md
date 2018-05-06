@@ -14,7 +14,7 @@ In a previous [post](https://konekti.us/blog/2018/01/24/aws-intrinsic-functions.
 
 This annoyance spawned the idea of a AWS CloudFormation template validator. I could overcome the probable bug with validating the intrinsic function shorthand and perform a true template validator rather than a a simple YAML syntax one.
 
-I decided to use [chalice](), the Python Serverless Microframework for AWS. This module handles all aspects of interacting with IAM,  API Gateway, and Lambda. The modules routes URL endpoints in a manner similar to Flask, a microframework popular with python programmers.
+I decided to use [chalice](https://github.com/aws/chalice), the Python Serverless Microframework for AWS. This module handles all aspects of interacting with IAM,  API Gateway, and Lambda. The modules routes URL endpoints in a manner similar to Flask, a microframework popular with python programmers.
 
 While a very impressive framework, chalice has a few rough edges. Two affected me during the development of the tool.
 
