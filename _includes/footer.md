@@ -38,10 +38,12 @@
 </footer>
 <script>
   {% include js/jquery.js %}
+  {% include js/autosize.min.js %}
   {% include js/index.js %}
   {% include js/validator.js %}
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/22572db09e.js"></script>
 <script>
   {% include js/mini-grid.js %}
   {% include js/settings.js %}
