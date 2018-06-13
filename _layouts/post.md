@@ -4,7 +4,7 @@ layout: default
 comments: true
 ---
 
-<div class = 'cool libro'>
+<div class = 'cool' style = 'background-image:url(/assets/posts/{{page.image}}.jpg);'>
  <div class = 'overlay'>
    <div class="post-header">
     <div class = 'cover'>
