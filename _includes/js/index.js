@@ -33,48 +33,69 @@
   $('footer .year').text($year);
 })();
 
-(function() {
-    var mailForm, subForm, mailFail, mailSuccess, notify, guest;
-    mailSuccess = `
-      <div class = 'confirm'>
-        <h2>Hey ${guest}!</h2>
-        <div class = 'big-icon  success'><i class = 'fa fa-cool'></i></div>
-        <p>Success</p>
-      </div>
-    `;
-    mailFail = `
-      <div class = 'confirm'>
-      <div class = 'success'><i class = 'fa fa-cool'></i></div>
-        <h2 class = 'error'>Yikes! There was problem.</h2>
-        <p>Please refrsh and try again.</p>
-      </div>
-    `;
-    mailForm = $('#enquire');
-    notify = `
-      <h2>Sending</h2>
-      <span class = 'spinner'></span>
-    `;
-    widget = $('.fwidget');
-    mailForm.submit(function(e) {
-      guest = document.getElementById('name').value.toUpperCase();
-      $('body').append('.fwidget');
-      e.preventDefault();
-      if(guest){
-        $.ajax({
-          url: '//formspree.io/{{site.email}}',
-          method: 'POST',
-          data: $(this).serialize(),
-          dataType: 'json',
-          beforeSend: function() {
-            widget.html(notify);
-          },
-          success: function(data) {
-            widget.html(mailSuccess);
-          },
-          error: function(err) {
-            widget.html(mailFail);
-          }
-        });
-      }
+(function autoResizeTextField() {
+  let textarea = document.querySelector('textarea');
+  textarea ? autosize(textarea) : false;
+})();
+
+
+(function contactForm() {
+  let widget = `
+  <div class = 'form_action'>
+    <div class = 'feedback'>
+      <div class = 'spinner'></div>
+    </div>
+  </div>`;
+
+  let form = $('.form');
+
+  function removeWidget() {
+    $('body').find('.form_action').remove();
+    document.querySelector('.form').reset();
+  }
+
+  function handleForm(message)  {
+    function showMessage() {
+      $('.form_action').html(message);
+      setTimeout(removeWidget, 2700);
+    }
+    setTimeout(showMessage, 1500); 
+  }
+
+  form.submit(function(e){
+    let f_name = document.querySelector('.contact-name').value.toUpperCase();
+    let messages = {
+      success: `
+        <div class = 'feedback'>
+          <h5 class = 'golden'>Thank you for contacting us ${f_name} </h5>
+          <p class = 'pale'>We'll get back to you asap.</p>
+        </div>
+      `,
+      error: `
+        <div class = 'feedback'>
+         <h5>Oops!</h5>
+         <p class = 'pale'>There was an error. please try again.</p>
+        </div>
+      `
+    };
+
+    e.preventDefault();
+    var href = $(this).attr("action");
+    
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: href,
+        data: $(this).serialize(),
+        beforeSend: function() {
+          $('body').append(widget);
+        },
+        success: function(data) {
+          handleForm(messages.success);
+        },
+        error: function(err) {
+          handleForm(messages.error); 
+        }
     });
+  });
 })();
