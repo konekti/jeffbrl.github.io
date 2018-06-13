@@ -26,7 +26,6 @@ environment: production
 disqus:
   shortname: konekti-us
 markdown: kramdown
-# theme: minima
 highlighter: rouge
 data-tweet-limit: 2
 paginate: 5
@@ -38,8 +37,12 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+include:
+  - _pages
 excerpt_separator: "<!--excerpt-->"
 
 designer:
   name: Weru
   url: https://neuralvibes.com/author/
+
+formcarry: BkKHKFF0f
