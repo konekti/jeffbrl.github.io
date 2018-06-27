@@ -13,7 +13,7 @@ AWS Summits are typically free to attend. You can't beat the value given the qua
 
 The Walter E. Washington Convention Center was an excellent venue for the event. Although the crowd was large, the space didn't feel as packed as some summits (I'm looking at you, Javits Center).
 
-Teresa Carlson, vice president of Amazon Web Services’ Worldwide Public Sector, gave one of the keynote presentations. The biggest news from her presentation was that AWS will team up with Northern Virginia Community College to offer an associate's degree in cloud technology. Konekti calls the DC metro area home, so we will welcome the cloud-savvy grads to the ecosystem in several years. Read [more]() on the AWS blog site.
+Teresa Carlson, vice president of Amazon Web Services’ Worldwide Public Sector, gave one of the keynote presentations. The biggest news from her presentation was that AWS will team up with Northern Virginia Community College to offer an associate's degree in cloud technology. Konekti calls the DC metro area home, so we will welcome the cloud-savvy grads to the ecosystem in several years. Read [more](https://aws.amazon.com/blogs/publicsector/major-in-the-cloud-nova-and-aws-announce-first-cloud-computing-degree/ "Major in the Cloud: NOVA and AWS Announce First Cloud Computing Degree") on the AWS blog site.
 
 Our favorite presentation was AWS Networking for Migration and Hybrid Environments by Haider Witwit, a Senior Solutions Architect at AWS. Haider packed a large amount of networking content into the talk. He crafted the presentation in a manner that held the audience's attention, which is impressive as the attendees had varying levels of expertise in the VPC and networking. I'll update this post should AWS post the video and slides.
 
@@ -22,3 +22,7 @@ On a fun note, AWS stocked its Certification Lounge with classic arcade games su
 ![](/uploads/2018/06/27/ans-sticker.jpg)
 
 My advice - try to attend one of the remaining summits this year. Perhaps you'll run into me and Amir. We'd love to talk about networking in the VPC and in hybrid cloud environments.
+
+Let's close out this post with some more pictures.
+
+![](/uploads/2018/06/27/exibition-hall-1.jpg)![](/uploads/2018/06/27/empty-room.jpg)![](/uploads/2018/06/27/cloud-lounge.jpg)![](/uploads/2018/06/27/certification-lounge-two.jpg)![](/uploads/2018/06/27/certification-lounge-one.jpg)![](/uploads/2018/06/27/aws-cube.jpg)
