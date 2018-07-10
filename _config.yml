@@ -16,9 +16,10 @@ defaults:
     layout: post
     author: Jeff Loughridge
     image: postimage
-description: 
+    parent: blog
+description: "Konekti Systems helps clients develop and implement cloud and hybrid networks, enabling them to migrate to and between public clouds painlessly."
 url: https://konekti.us
-baseurl: 
+baseurl: ''
 twitter: konekti_systems
 facebook: 
 email: info@konekti.us
@@ -29,7 +30,7 @@ markdown: kramdown
 highlighter: rouge
 data-tweet-limit: 2
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/:num/"
 plugins:
 - jekyll-feed
 - jekyll-sitemap
@@ -44,5 +45,6 @@ excerpt_separator: "<!--excerpt-->"
 designer:
   name: Weru
   url: https://neuralvibes.com/author/
-
+sass:
+  style: compressed
 formcarry: BJEUqzP-7
