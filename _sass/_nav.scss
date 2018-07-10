@@ -1,0 +1,94 @@
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  font-size: 1.15rem;
+  padding: 15px 0;
+}
+.nav{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_menu{
+    display: flex;
+    flex-direction: column;
+    color: $light;
+    width: 0;
+    position: fixed;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+    @media screen and (min-width: 1024px) {
+      opacity: 1;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 75%;
+    }
+  }
+  &_item{
+    color: inherit;
+    &:hover{
+      color: $gold;
+    }
+  }
+  &_toggle{
+    position: absolute !important;
+    right: 25px !important;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    color: $light;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &_close{
+    color: $dark;
+    background: $light;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 90px rgba(0,0,0,0.17)
+  }
+  &_open{
+    background: $light;
+    color: $dark;
+    animation: show 0.3s 0.3s ease-out forwards;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    height: 100vh;
+    box-shadow: 0 0 130px rgba(0,0,0,0.17);
+  }
+  &_child{
+    // shows only when the mobile menu is open
+    padding: 15px 0;
+    border-bottom: 1px solid #faac3a;
+  }
+  &_active {
+    color: $gold;
+  }
+  &_overlay{
+    cursor: pointer;
+  }
+  &_hide{
+    animation: hide 0s 0.3s ease-out forwards;
+  }
+}

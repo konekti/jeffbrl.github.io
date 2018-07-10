@@ -6,6 +6,7 @@ $gold: #faac3a;
 $mute: darken($light, 20%);
 $max-width: 1084px;
 $padding: 15px;
+$margin: 25px;
 
 // mixins
 @mixin viewport ($width: $max-width){

@@ -22,6 +22,44 @@
 .pale{
   color: $pale;
 }
+.dark{
+  background: $dark;
+}
+$fractions: '';
+@for $i from 1 through 4 {
+  $pad: 20px;
+  .pb-#{$i}{
+    padding-bottom: $i * $pad;
+  }
+  .pt-#{$i}{
+    padding-top: $i * $pad;
+  }
+  $fractions : $fractions + ' ' + 1fr;
+  .grid-#{$i} {
+    grid-template-columns: #{$fractions};
+  }
+}
+.grid{
+  display: grid;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.flex {
+  align-items:flex-start;
+  justify-content:space-between;
+  &,&-in,&-up{
+    display:flex;
+  }
+  &-in{
+    justify-content:center;
+    align-items: center;
+  }
+  &-up{
+    flex-direction:column;
+    justify-content:space-between;
+  }
+}
 .spinner{
   margin: 20px auto;
   height: 75px;
@@ -47,6 +85,32 @@
     border-radius: 50%;
     animation: rotate 0.5s linear infinite;
     transform-origin: center;
+  }
+}
+.center {
+	text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+
+// special overlay for menu
+.slab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba($dark, 0.03) !important;
+}
+
+@media screen and (max-width: 1084px) {
+  .pa{
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
