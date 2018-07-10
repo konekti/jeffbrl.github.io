@@ -1,0 +1,21 @@
+<div class = 'share-panel'> 
+  <a class = 'flex-in facebook' href = 'https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}' onclick = "resizeWindow()" >
+    <i class = "fa fa-facebook"></i>
+  </a>
+  
+  <a class = 'flex-in twitter' href = 'https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}' onclick = "resizeWindow()">
+    <i class = 'fa fa-twitter'></i>
+  </a>
+  
+  <a class = 'flex-in linkedin' href = 'https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{site.title}}' onclick = "resizeWindow()" >
+    <i class = 'fa fa-linkedin'></i>
+  </a>
+  
+  <a class = 'flex-in whatsapp' href = 'whatsapp://send?text={{ site.url }}{{ page.url }}' data-action = "share/whatsapp/share">
+    <i class = "fa fa-whatsapp"></i>
+  </a>
+  
+  <a class = 'flex-in google' href = "https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick = "resizeWindow()" >
+    <i class='fa fa-google-plus'></i>
+  </a>                                       
+</div>

@@ -1,0 +1,13 @@
+<section id = 'about'>
+  <div class = 'container grid grid-2 pb-3 pt-3 pa'>
+    <div>
+      <figure class = 'img-holder'>
+        <img src = '{{ site.baseurl }}/assets/aws-model.svg' alt = ''> 
+      </figure>
+    </div>
+    <div>
+      <h1 class = 'left pb-1'>About Us</h1>
+      {{ site.data.about-us | markdownify }}
+    </div>
+  </div>
+</section>

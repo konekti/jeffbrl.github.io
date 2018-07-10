@@ -1,0 +1,16 @@
+{% include archives.html %}
+{% if page.layout == 'post' and site.posts.size > 1 %}
+<h4><span class = 'pretty'>Recent Posts</span></h4>
+<ul class = 'post-list'>
+  {% for post in site.posts limit:6 %}
+  {% if post != page %}
+  <li>
+    <a class = 'post-link' href = '{{ post.url | relative_url }}'><i class = 'icon icon-book' aria-hidden = 'true'></i>{{ post.title | escape }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
+<h4><span class = 'pretty'>Twitter Feed</span></h4>
+<a class = 'twitter-timeline' href = 'https://twitter.com/{{site.twitter}}' data-tweet-limit = '{{ site.data-tweet-limit }}'></a>
+<script async src = '//platform.twitter.com/widgets.js' charset = 'utf-8'></script>

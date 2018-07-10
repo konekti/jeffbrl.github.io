@@ -1,0 +1,40 @@
+<div class = 'container grid grid-3 pb-3 pt-3 upper-area'>
+  <div>
+    <div class = 'about-info'>
+      <div class = 'footer-logo center'>
+        <a href = '#' ><img alt = 'Konekti Logo' src = '/assets/footer-logo.png'></a>
+      </div>
+      <ul class = 'icon-list center'>
+        {% for icon in site.data.icons %}
+          <li><a href='{{ icon.link }}' target = '_blank'><i class = 'fa fa-{{ icon.name }}'></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class = 'useful-link-sec'>
+      <h5>Useful Links</h5>
+      <ul class = 'useful-links'>
+        {%- for item in site.data.nav -%}
+        <li>
+          <a href='/{%- unless item.type == 'page' -%}#{%- endunless -%}{{ item.id }}'>{{ item.text }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class = 'bottom-area'>
+  <div class = 'container pa'>
+    <div class = 'copyright'>
+      <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By
+       <a href = '{{ site.designer.url }}' target = '_blank' rel = 'nonopener'>{{ site.designer.name }}</a>
+      </div>
+      <a class = 'scroll' href = '/#'><i class = 'fa fa-hand-pointer-o' aria-hidden = 'true'></i></a>
+    </div>
+  </div>
+</div>
+</footer>
+
+{%- include scripts.html -%}

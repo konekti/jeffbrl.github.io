@@ -1,0 +1,9 @@
+<section class='about-text-outer-area' id='services'>
+  <div class='container pa pb-2 pt-2'>
+    <h1 class = 'left pt-1'>Our Services</h1>
+    {% for service in site.data.services %}
+    <h4 class = 'pt-2 pb-1'>{{ service.name }}</h4>
+    {{ service.details | markdownify }}    
+    {% endfor %}
+  </div>
+</section>
