@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class = 'cool'>
+  {% include globe.html %}
+  <div class = 'overlay'>
+    <div>
+      <h1>Konekti Blog</h1>
+    </div>
+  </div>
+</section>
+<section class = 'blog container grid'>
+  <article>
+    <div class = 'hold'>
+      <ul class = 'post-collection'>
+        {% for post in paginator.posts %}
+        <li class = 'child post__item' id = '{{ post.image }}'>
+          <div class = 'show flex-up'>
+            <a href = '{{ post.url | relative_url }}' class = 'post-link'>
+              <h3>
+                {{ post.title | escape }}
+              </h3>
+            </a>
+            <p class = 'lighten'>
+              {{ post.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span>
+              by {{ post.author }} 
+            </p>
+          </div>
+          <div class = 'excerpt flex-up'>
+            <div>{{ post.excerpt  | truncate: 840 | strip_newlines }}</div>
+            <a href = '{{ post.url | relative_url }}' class = 'btn'>Read More</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% include paginate.html %}
+    </div>
+  </article>
+  <div></div>
+  <aside class = 'pt-1 pa'>
+    {% include sidebar.html %}
+  </aside>
+</section>

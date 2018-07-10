@@ -1,0 +1,37 @@
+---
+permalink: pretty
+layout: default
+comments: true
+---
+<div class = 'cool'>
+ <div class = 'overlay'>
+   <div class = 'post-header'>
+    <div class = 'cover'>
+    </div>
+   </div>
+ </div>
+</div>
+<div class = 'grid blog container pa'>
+  <article class = 'pb-2'>
+    <div>
+      <div class = 'post-content' itemprop = 'articleBody'>
+        <h1 class = 'post-title' itemprop = 'name headline'>{{ page.title | escape }}</h1>
+        <time datetime = '{{ page.date | date_to_xmlschema }}' itemprop = 'datePublished'>
+          <div class = 'duration'>
+          {{ page.date | date: '%b %d, %Y' }} <span class = 'apart'>|</span><small>by </small><a href = '/'>{{ page.author }}</a><span class = 'apart'>|</span>
+          {% assign time = content| number_of_words | divided_by:170 %}{{ time }} min read
+          </div>
+        </time>
+        {{ content }}
+        {% include mobile.html %}
+      </div>
+      {% if site.disqus.shortname %}
+        {% include disqus.html %}
+      {% endif %}
+    </div>
+  </article>
+  <div></div>
+  <aside class = 'pt-1 pb-2'>
+    {% include sidebar.html %}
+  </aside>
+</div>
