@@ -1,0 +1,21 @@
+- id: home
+  text: Home
+  type: section
+- id: services
+  text: Our Services
+  type: section
+- id: engage
+  text: When to Engage Us
+  type: section
+- id: about
+  text: About Us
+  type: section
+- id: contact
+  text: Contact Us
+  type: section
+- id: tools
+  text: Tools
+  type: page
+- id: blog
+  text: Blog
+  type: page
