@@ -1,24 +1,27 @@
 ---
-layout: default
+layout: page
 permalink: /aws-cf-validator/
-menu: dark
+title: Validate Your YAML script
+form: true
+parent: tools 
 ---
-
-<div class="container validator">
+<div class = 'container validator pb-3 pt-3 pa'>
   <h1>AWS CloudFormation YAML Validator</h1>
-  <p>Enter your CloudFormation template and click "Validate".</p>
-  <div class="row">
-    <div class="form-group">
-      <form action="POST">
-        <textarea class="form-control" rows="20" id="input_text"></textarea><br>
-        <button type="button" id="submitBtn" class="btn btn-primary">Validate</button>
+  <p>Enter your CloudFormation template and click 'Validate'.</p>
+  <div class = 'row'>
+    <div class = 'form-group'>
+      <form action = 'POST'>
+        <textarea class = 'form-control' rows = '20' id = 'input_text' placeholder='Paste YAML script here ...'></textarea>
+        <div class = 'pb-1 pt-2'>
+          <button type = 'button' id = 'submitBtn' class = 'btn btn-primary'>Validate</button>
+        </div>
       </form>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-8">
-      <p id="output" class="none"></p>
+  <div class = 'row'>
+    <div class = 'col-sm-8'>
+      <p id = 'output' class = 'none'></p>
     </div>
-    <div class="col-sm-4"></div>
+    <div class = 'col-sm-4'></div>
   </div>
 </div>
