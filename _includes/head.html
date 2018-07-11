@@ -16,7 +16,8 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{page.title}}" />
     <meta property="og:url" content="/{{page.title}}" />
-    <meta property="article:published_time" content="{{page.date | date_to_xmlschema}}" />
+    {%- assign pageDate = page.date | date_to_xmlschema -%}
+    <meta property="article:published_time" content="{{ pageDate }}" />
     <script type="application/ld+json">
       {"@context": "http://schema.org",
       "@type": "BlogPosting"",
@@ -24,8 +25,8 @@
       "headline": "{{ page.title }}",
       "description": "{{ desc }}",
       "url": "{{site.url}}/{{ page.permalink }}",
-      "datePublished": "{{ page.datePublished }}",
-      "dateModified": "{{ page.dateModified }}",
+      "datePublished": "{{ pageDate }}",
+      "dateModified": "{{ pageDate }}",
       "author": {
         "@type": "Person",
         "name": "{{ page.author }}"

@@ -132,6 +132,13 @@ let elems = function(selector) {
   });
 })();
 
+(function showShareBar() {
+  let share = elem('.mobile');
+  let shareClass = share ? share.classList : false;
+  let pos = elem('article').scrollTop + 600;
+  // listen to scroll event
+})();
+
 (function showActiveLink() {
   let links = elems('.nav_item');
   links.forEach(function(link){

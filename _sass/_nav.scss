@@ -73,14 +73,14 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 10px;
+    left: 5px;
     height: 100vh;
     box-shadow: 0 0 130px rgba(0,0,0,0.17);
-    padding: $margin*3 0;
+    padding: $margin*2 0;
   }
   &_child{
     // shows only when the mobile menu is open
-    margin: 12.5px 0;
+    margin: 7.5px 0;
     box-shadow: 0 5px 30px 0 rgba(158,174,221,0.1);
     padding: 15px;
     border-bottom: 1px solid #fafafa;
