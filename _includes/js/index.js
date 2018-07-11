@@ -119,7 +119,7 @@ let elems = function(selector) {
       e.preventDefault();
     
       // top position relative to the document
-      let pos = $id.offset().top - 70;
+      let pos = $id.offset().top - 50;
       
       // animated top scrolling
       $('body, html').animate({scrollTop: pos});

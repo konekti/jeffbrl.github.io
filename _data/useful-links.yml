@@ -1,0 +1,9 @@
+- id: contact
+  text: Contact Us
+  type: section
+- id: tools
+  text: Tools
+  type: page
+- id: blog
+  text: Blog
+  type: page
