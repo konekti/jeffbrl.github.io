@@ -1,24 +1,20 @@
 @keyframes show{
   0%{
     width: 0;
-    padding: $margin*3 0;
     opacity: 0;
   }
   100%{
     width: 360px;
-    padding: $margin*3 $margin;
     opacity: 1;
   }
 }
 @keyframes hide{
   0%{
     width: 360px;
-    padding: $margin*3 $margin $margin 0;
     opacity: 1;
   }
   100%{
     width: 0;
-    padding: $margin*3 0;
     opacity: 0;
   }
 }

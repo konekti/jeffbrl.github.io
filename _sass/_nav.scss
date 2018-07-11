@@ -76,14 +76,18 @@
     left: 10px;
     height: 100vh;
     box-shadow: 0 0 130px rgba(0,0,0,0.17);
+    padding: $margin*3 0;
   }
   &_child{
     // shows only when the mobile menu is open
-    padding: 15px 0;
-    border-bottom: 1px solid #faac3a;
+    margin: 15px 0;
+    box-shadow: 0 15px 40px 0 rgba(158,174,221,0.1);
+    padding: 25px;
+    border-bottom: 1px solid #fafafa;
   }
   &_active {
     color: $gold;
+    border-left: 5px solid $gold;
   }
   &_overlay{
     cursor: pointer;
