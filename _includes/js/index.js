@@ -63,7 +63,8 @@ function smoothScroll(selector, fn) {
     $('body, html').animate({scrollTop: pos});
   });
 }
-smoothScroll("a[href^='/#']", false);
+
+window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 
 (function toggleMenu() {
   
@@ -126,6 +127,8 @@ smoothScroll("a[href^='/#']", false);
   overlay.addEventListener('click', function(event) {
     event.target == this ? closeMenu() : false ;
   });
+
+  window.innerWidth < 1024 ? smoothScroll('.nav_child', modifyMenu) : false;
 
   
 })();
