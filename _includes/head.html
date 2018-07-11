@@ -20,10 +20,27 @@
     <script type="application/ld+json">
       {"@context": "http://schema.org",
       "@type": "BlogPosting"",
-      "name": "{{site.title}}",
-      "headline": "{{page.tite}}",
-      "description": "{{page.description}}",
-      "url": "{{site.baseur}}/{{page.permalink}}"}
+      "name": "{{ site.title }}",
+      "headline": "{{ page.title }}",
+      "description": "{{ desc }}",
+      "url": "{{site.url}}/{{ page.permalink }}",
+      "datePublished": "{{ page.datePublished }}",
+      "dateModified": "{{ page.dateModified }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+            "logo": {
+              "@type":"ImageObject",
+              "url":"{{ site.url }}/assets/top_log.png",
+              "width":600,
+              "height":60
+            },
+          "name": "{{ site.title }}"
+        }
+    }
     </script>
   {%- endif -%}
 
