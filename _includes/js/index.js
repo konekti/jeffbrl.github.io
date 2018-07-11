@@ -130,7 +130,6 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 
   window.innerWidth < 1024 ? smoothScroll('.nav_child', modifyMenu) : false;
 
-  
 })();
 
 (function showShareBar() {
@@ -184,9 +183,9 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 })();
 
 (function year(){
-  var $date = new Date();
-  var $year = $date.getFullYear();
-  $('footer .year').text($year);
+  var date = new Date();
+  var year = date.getFullYear();
+  elem('.year').innerHTML = year;
 })();
 
 (function autoResizeTextField() {
