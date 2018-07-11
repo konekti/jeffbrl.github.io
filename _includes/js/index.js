@@ -45,7 +45,6 @@ let elems = function(selector) {
   let overlay = elem('.header');
   let hamburger = elem('.nav_toggle');
   let links = elems('.nav_item');
-  let childLinks = elems('.nav_child'); // check purpose in sass partial
   let childClass = 'nav_child';
   let close = 'nav_close';
 
@@ -101,35 +100,31 @@ let elems = function(selector) {
   overlay.addEventListener('click', function(event) {
     event.target == this ? closeMenu() : false ;
   });
-  
-  childLinks.forEach((link) =>{
-    link.addEventListener('click', function() {
-      modifyMenu();
-    });
-  });
-  
-})();
 
-(function smoothScroll() {
-  // handle links with @href started with '#' only
-  $(document).on('click', "a[href^='/#']", function(e) {
-    // target element id
-    let id = $(this).attr('href').replace('/', '');
+  (function smoothScroll() {
+    // handle links with @href started with '#' only
+    $(document).on('click', "a[href^='/#']", function(e) {
+      // first close menu
+      modifyMenu();
+
+      // target element id
+      let id = $(this).attr('href').replace('/', '');
+      
+      // target element
+      let $id = $(id);
+      if ($id.length === 0) {
+        return;
+      }
+      
+      e.preventDefault();
     
-    // target element
-    let $id = $(id);
-    if ($id.length === 0) {
-      return;
-    }
-    
-    e.preventDefault();
-  
-    // top position relative to the document
-    let pos = $id.offset().top - 50;
-    
-    // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
-  });
+      // top position relative to the document
+      let pos = $id.offset().top - 50;
+      
+      // animated top scrolling
+      $('body, html').animate({scrollTop: pos});
+    });
+  })();
 })();
 
 (function showShareBar() {
