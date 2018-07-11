@@ -23,6 +23,20 @@
       box-shadow: 0 0 90px rgba(0,0,0,0.17);
     }
   }
+  &_input {
+    background: $light;
+    color: $dark;
+    margin-bottom: 15px !important;
+    line-height: 1.6;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+  }
 }
 .main{
   &__padded {
@@ -241,21 +255,6 @@ section p{
   background: #F4F5F9;
   padding: 30px 0;
   margin: 30px 0;
-}
-.text-field-box {
-  background: $light;
-  color: $dark;
-  margin-bottom: 15px !important;
-  height: 54px;
-  line-height: 54px;
-  padding: 0 30px;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  text-align: left;
-  font-size: 16px;
-  width: 100%;
-  outline: none;
-  -webkit-appearance: none;
 }
 
 .bottom-area{
