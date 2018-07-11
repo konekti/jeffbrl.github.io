@@ -39,6 +39,32 @@ let elems = function(selector) {
   t ? t.autofocus = true : false;
 })();
 
+function smoothScroll(selector, fn) {
+  // handle links with @href started with '#' only
+  $(document).on('click', selector, function(e) {
+    // first close menu
+    fn ? fn() : false ;
+    // "a[href^='/#']"
+    // target element id
+    let id = $(this).attr('href').replace('/', '');
+    
+    // target element
+    let $id = $(id);
+    if ($id.length === 0) {
+      return;
+    }
+    
+    e.preventDefault();
+  
+    // top position relative to the document
+    let pos = $id.offset().top - 50;
+    
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+  });
+}
+smoothScroll("a[href^='/#']", false);
+
 (function toggleMenu() {
   
   let menu = elem('.nav_menu');
@@ -101,30 +127,7 @@ let elems = function(selector) {
     event.target == this ? closeMenu() : false ;
   });
 
-  (function smoothScroll() {
-    // handle links with @href started with '#' only
-    $(document).on('click', "a[href^='/#']", function(e) {
-      // first close menu
-      modifyMenu();
-
-      // target element id
-      let id = $(this).attr('href').replace('/', '');
-      
-      // target element
-      let $id = $(id);
-      if ($id.length === 0) {
-        return;
-      }
-      
-      e.preventDefault();
-    
-      // top position relative to the document
-      let pos = $id.offset().top - 50;
-      
-      // animated top scrolling
-      $('body, html').animate({scrollTop: pos});
-    });
-  })();
+  
 })();
 
 (function showShareBar() {

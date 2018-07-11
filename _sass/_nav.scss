@@ -84,10 +84,12 @@
     box-shadow: 0 5px 30px 0 rgba(158,174,221,0.1);
     padding: 15px;
     border-bottom: 1px solid #eee;
+    &.nav_active{
+      border-left: 5px solid $gold;
+    }
   }
   &_active {
     color: $gold;
-    border-left: 5px solid $gold;
   }
   &_overlay{
     cursor: pointer;
