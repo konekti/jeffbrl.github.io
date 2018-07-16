@@ -135,8 +135,13 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 (function showShareBar() {
   let share = elem('.mobile');
   let shareClass = share ? share.classList : false;
-  let pos = elem('article').scrollTop + 600;
-  // listen to scroll event
+  $(window).scroll(function() {
+    let wintop, docheight, winheight;
+    wintop = $(window).scrollTop();
+    docheight = $('body').height();
+    winheight = $(window).height();
+    let totalScroll = (wintop/(docheight-winheight))*400;
+  });
 })();
 
 (function showActiveLink() {
@@ -253,4 +258,6 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
       }
     });
   });
+
+
 })();
