@@ -21,17 +21,15 @@ Plus, the VPC peering did not necessarily solve the issue around access to the c
 
 The predecessor to the PrivateLink solution is “VPC Endpoints” – initially for [S3](https://aws.amazon.com/blogs/aws/new-vpc-endpoint-for-amazon-s3/) and then [DynamoDB](https://aws.amazon.com/blogs/aws/new-vpc-endpoints-for-dynamodb/).  The endpoints provide a gateway within the VPC directly to these AWS public services. Once configured, requests to the endpoint service were automatically routed via the gateway to the service. All the traffic between the VPC and the “Endpoint” service never left the AWS network:
 
-> “A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services…without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.
->
-> [https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html")”
+> [“A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services…without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon network.”]( https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html)
 
 #### Enter PrivateLink for AWS Services
 
 In early November 2017, AWS announced an extension to VPC endpoints called PrivateLink for AWS Services. Let’s look to the AWS blog for a description of the two pivotal benefits of the initial PrivateLink offering:
 
 > “With traditional endpoints, it’s very much like connecting a virtual cable between your VPC and the AWS service. Connectivity to the AWS service does not require an Internet or NAT gateway, but the endpoint remains outside of your VPC. **With PrivateLink, endpoints are instead created directly inside of your VPC, using Elastic Network Interfaces (ENIs) and IP addresses in your VPC’s subnets**. The service is now in your VPC, enabling connectivity to AWS services via private IP addresses. That means that VPC Security Groups can be used to manage access to the endpoints and that **PrivateLink endpoints can also be accessed from your premises via AWS Direct Connect**.”
->
-> [https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/](https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/ "https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/")
+
+>[https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/](https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/ "https://aws.amazon.com/blogs/aws/new-aws-privatelink-endpoints-kinesis-ec2-systems-manager-and-elb-apis-in-your-vpc/")
 
 
 Sounds great, right? Yes, for select services provided by AWS. But this still would not allow us to offer our “Network automation as a Service” from our VPC free of the operational hell described previously.
@@ -41,7 +39,7 @@ Sounds great, right? Yes, for select services provided by AWS. But this still wo
 At re:Invent 2017, AWS extended the PrivateLink service to customers and partners.
 
 > “…customers can now use AWS PrivateLink to access third party SaaS applications from their Virtual Private Cloud (VPC) without exposing their VPC to the public Internet. Customers can also use AWS PrivateLink to connect services across different accounts and VPCs within their own organizations, significantly simplifying their internal network architecture”
->
+
 > [https://aws.amazon.com/about-aws/whats-new/2017/11/aws-privatelink-now-available-for-customer-and-partner-services/](https://aws.amazon.com/about-aws/whats-new/2017/11/aws-privatelink-now-available-for-customer-and-partner-services/ "https://aws.amazon.com/about-aws/whats-new/2017/11/aws-privatelink-now-available-for-customer-and-partner-services/")
 
 With  AWS PrivateLink for customer and partners, businesses can now make their services available to other accounts and VPCs that are accessed securely as private endpoints. Customers of the service connect to these private endpoints in the normal manner, while on the service side, AWS PrivateLink works in combination with a Network Load Balancer to route traffic to service instances, containers, or IP targets.  These service resources would appear as endpoints in the customer VPC, enabling direct connectivity to the service via private IP addresses. Customers can further decide choose which of their VPCs and subnets can have access to the endpoint. This effectively allows a provider’s service to function like it is hosted directly on the customer’s private network.
