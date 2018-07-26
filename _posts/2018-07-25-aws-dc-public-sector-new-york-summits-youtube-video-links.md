@@ -22,4 +22,4 @@ The New York playlist includes two great videos related to the AWS VPC.
 
 [AWS New York Summit 2018 - Bring Your Own Public IP Address to the Cloud (SRV218)](https://youtu.be/XY3n7n7l4iw "AWS New York Summit 2018 - Bring Your Own Public IP Address to the Cloud (SRV218)")
 
-If you enjoyed our coverage of AWS PrivateLink in a previous [pos](https://konekti.us/2018/04/09/the-value-of-aws-privatelink.html "The Value of AWS PrivateLink")t by Amir, you'll definitely want to watch the PrivateLink video. Watch the Bring Your Own Public IP Address to the Cloud video as well. I'll be covering this new feature in the next post.
+If you enjoyed our coverage of AWS PrivateLink in a previous [post](https://konekti.us/2018/04/09/the-value-of-aws-privatelink.html "The Value of AWS PrivateLink") by Amir, you'll definitely want to watch the PrivateLink video. Watch the Bring Your Own Public IP Address to the Cloud video as well. I'll be covering this new feature in the next post.
