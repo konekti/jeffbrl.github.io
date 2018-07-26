@@ -21,6 +21,7 @@ fields:
 pages:
 - _posts/2018-03-22-redundancy-in-the-aws-vpc.md
 - _posts/2018-02-25-the-march-toward-simplicity-in-cloud-networking.md
+- _posts/aws-dc-public-sector-new-york-summits-youtube-video-links.md
 - _posts/2018-04-09-the-value-of-aws-privatelink.md
 - _posts/2018-06-27-konekti-at-the-aws-public-sector-summit.md
 - _posts/2018-05-06-an-aws-cloudformation-yaml-validator-using-lambda.md
