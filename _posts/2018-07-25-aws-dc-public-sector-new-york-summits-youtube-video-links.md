@@ -10,11 +10,11 @@ For those who follow public cloud, summer is the season of AWS Summits in the U.
 
 You can watch the DC Public Sector playlist at the below link.
 
-[AWS Public Sector Summit 2018 | Washington, D.C.](http://bit.ly/2AbaJCX "AWS Public Sector Summit 2018 - Washington, D.C.")
+[DC](http://bit.ly/2AbaJCX "AWS Public Sector Summit 2018 - Washington, D.C.")
 
 Click on this link for the New York Summit videos.
 
-[AWS Summit New York 2018 | Breakout Sessions](http://bit.ly/2NM27EO "AWS Summit New York 2018 - Breakout Sessions")
+[NYC](http://bit.ly/2NM27EO "AWS Summit New York 2018 - Breakout Sessions")
 
 The New York playlist includes two great videos related to the AWS VPC.
 
