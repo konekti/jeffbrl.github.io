@@ -12,7 +12,7 @@ You can watch the DC Public Sector playlist at the below link.
 
 [AWS Public Sector Summit 2018 | Washington, D.C.](https://www.youtube.com/playlist?list=PLhr1KZpdzukeEdgc5W4So6x1rufYyjzNW "AWS Public Sector Summit 2018 | Washington, D.C.")
 
-Click on this link for the New York Summit.
+Click on this link for the New York Summit videos.
 
 [AWS Summit New York 2018 | Breakout Sessions](https://www.youtube.com/playlist?list=PLhr1KZpdzukeFz2ALpKLxt3ZF6RtdqOaE "AWS Summit New York 2018 | Breakout Sessions")
 
