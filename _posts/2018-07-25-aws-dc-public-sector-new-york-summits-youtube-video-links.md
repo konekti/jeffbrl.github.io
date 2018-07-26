@@ -14,7 +14,7 @@ You can watch the DC Public Sector playlist at the below link.
 
 Click on this link for the New York Summit videos.
 
-[AWS Summit New York 2018 | Breakout Sessions](https://www.youtube.com/playlist?list=PLhr1KZpdzukeFz2ALpKLxt3ZF6RtdqOaE "AWS Summit New York 2018 | Breakout Sessions")
+[AWS Summit New York 2018 | Breakout Sessions](https://www.youtube.com/playlist?playnext=1&list=PLhr1KZpdzukeFz2ALpKLxt3ZF6RtdqOaE&index=1 "AWS Summit New York 2018 | Breakout Sessions")
 
 The New York playlist includes two great videos related to the AWS VPC.
 
