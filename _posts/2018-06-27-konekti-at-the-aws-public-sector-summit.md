@@ -4,6 +4,7 @@ author: Jeff Loughridge
 image: postimage
 title: Konekti at the AWS Public Sector Summit
 date: 2018-06-27 00:06:23 +0000
+
 ---
 Amir and I represented Konekti at the AWS Public Sector Summit in DC last week. What a great event! I've enjoyed the summit events as they aren't as hectic as the annual re:Invent conferences. We had the opportunity to chat with people we know in the public cloud community as well as meet new people. I thought I'd use this post to share some pictures and thoughts on the event.
 
@@ -15,7 +16,7 @@ The Walter E. Washington Convention Center was an excellent venue for the event.
 
 Teresa Carlson, vice president of Amazon Web Services’ Worldwide Public Sector, gave one of the keynote presentations. The biggest news from her presentation was that AWS will team up with Northern Virginia Community College to offer an associate's degree in cloud technology. Konekti calls the DC metro area home, so we will welcome the cloud-savvy grads to the ecosystem in several years. Read [more](https://aws.amazon.com/blogs/publicsector/major-in-the-cloud-nova-and-aws-announce-first-cloud-computing-degree/ "Major in the Cloud: NOVA and AWS Announce First Cloud Computing Degree") on the AWS blog site.
 
-Our favorite presentation was AWS Networking for Migration and Hybrid Environments by Haider Witwit, a Senior Solutions Architect at AWS. Haider packed a large amount of networking content into the talk. He crafted the presentation in a manner that held the audience's attention, which is impressive as the attendees had varying levels of expertise in the VPC and networking. I'll update this post should AWS post the video and slides.
+Our favorite presentation was AWS Networking for Migration and Hybrid Environments by Haider Witwit, a Senior Solutions Architect at AWS. Haider packed a large amount of networking content into the talk. He crafted the presentation in a manner that held the audience's attention, which is impressive as the attendees had varying levels of expertise in the VPC and networking. I'll update this post should AWS post the video and slides. UPDATE 7/25/19 - Here is the link to the [video](https://youtu.be/ZQFRNHW029U "AWS Networking for Migration and Hybrid Environments").
 
 On a fun note, AWS stocked its Certification Lounge with classic arcade games such as Pac-man, Dig Dug, and Street Fighter II. I was solidly beaten by everyone I challenged. I guess video games aren't like riding a bike. AWS gave out video game-themed stickers for certifications. The AWS employee working the lounge noted how few Advanced Networking Speciality stickers she'd handed out (OK, I was flattered). I met a fellow ANS in person for the first time who holds all nine AWS certifications. Now that is truly impressive!
 
