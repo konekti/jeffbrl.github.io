@@ -6,7 +6,7 @@ title: Native AWS Transit VPC in the Works
 date: 2018-08-13 11:24:54 -0400
 
 ---
-Last week Pratik Mankad, AWS Solutions Architect, confirmed that AWS is examining a native Transit VPC solution. In making the statement, he was responding to an audience member's question in a join AWS/Juniper/CBT Nuggets video on Juniper's vSRX usage for Transit VPC.
+Last week Pratik Mankad, AWS Solutions Architect, [confirmed](https://youtu.be/8t-a38jBgA0?t=49m36s "Learn How CBT Nuggets Securely Connects VPCs in Minutes with Juniper Networks and AWS") that AWS is examining a native Transit VPC solution. In making the statement, he was responding to an audience member's question in a joint AWS/Juniper/CBT Nuggets webinar on the use of Juniper vSRX in Transit VPC.
 
 For readers not familiar with Transit VPC, let's cover what the solution provides. AWS customers frequently implements many VPCs for logical separation of workloads. If the customer wants the VPCs to communicate with one another, a VPC peering relationship can be configured. There is a caveat, however. VPC peering is not transitive. Network packets from a given VPC cannot traverse an intermediary VPC to reach a third VPC.
 
@@ -21,6 +21,10 @@ The Transit VPC solution is based on software VPN using firewall appliance from 
 
 Going back to webinar, I believe this is the first time anyone at AWS has publicly commented on the potential development of an internal Transit VPC server. Pratik's comment was far from a commitment of an impending feature release. He said, "...this is one of the things that we are actively looking at." Still, I am confident that the development of a native Transit VPC service is underway.
 
-The release of a native Transit VPC service would be an excellent addition to the AWS ecosystem. The deployment would be much simpler and more aligned for customers with simple transitive VPC requirements. Customer would not have to pay licensing costs or manage virtual firewalls running on EC2 instances.
+The release of a native Transit VPC service would be an excellent addition to the AWS ecosystem. The deployment would be much simpler and more aligned for customers with simple transitive VPC requirements. Customer would not have to pay licensing costs, manage virtual firewalls running on EC2 instances, and ensure high availability.
 
-How this solution might look is anyone's guess. It could resemble DX Gatew
+How this solution might look is anyone's guess. The native Transit VPC could resemble the DX Gateway in being a highly available VPC component with connectivity to all VPCs. Alternatively, AWS engineers might have ideas on how to implement transitive VPC connectivity without introducing the possibility for routing loops.
+
+Will Transit VPC go away? Certainly not. Many customers rely on the advanced security features of the firewall appliances in the AWS Marketplace. In addition, customers that use the same firewall vendors on-premise could opt to retain the same vendor's virtual firewall in the cloud to simplify management.
+
+Perhaps the question we should be asking is, "Will AWS introduce a native Transit VPC at re:Invent 2018 or re:Invent 2019?" As active participants in AWS networking, we at Konekti are eager to find out.
