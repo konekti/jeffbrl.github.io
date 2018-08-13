@@ -6,11 +6,9 @@ title: Decoding Bring Your Own IP for Amazon Virtual Private Cloud
 date: 2018-08-12 20:05:21 -0400
 
 ---
- 
-
 In Werner Vogels’s keynote at the AWS NYC Summit, he [announced](https://youtu.be/VL6aFvEEFQo?t=1h42m30s "AWS Summit New York 2018 - Keynote with Dr. Werner Vogels and Dr. Matt Wood") the preview release of Bring Your Own IP Address. The VPC feature allows customers to use IP addresses they own as public addresses in the VPC. Is it hard to grasp what exactly this means and how it benefits AWS customers? Before delving in, let’s take a step back and examine public and private IP addresses in the VPC.
 
-### Private IP Addresses in the VPC
+#### Private IP Addresses in the VPC
 
 When you create a VPC, you specify a Class Interdomain Routing (CIDR) range for private intra-VPC, inter-VPC (in the case of VPC Peering), and VPC-to-site connectivity. Prior to 2017, you had to carefully select a right-sized CIDR range as you could not later change it short of rebuilding the VPC. The ability to [grow your VPC](https://aws.amazon.com/about-aws/whats-new/2017/08/amazon-virtual-private-cloud-vpc-now-allows-customers-to-expand-their-existing-vpcs/) from an IP address perspective was added in August 2017. I’ll note that this feature allows additional flexibility but does not eliminate the need for deliberate IP address planning.
 
@@ -27,12 +25,12 @@ The RFC 1918 space is pervasive in the enterprise data center. If you have worke
 
 The shared address space defined in RFC 6598 provides an alternative. Its original use was for ISPs that deploy Carrier-Grade NAT (see [https://tools.ietf.org/html/rfc6598](https://tools.ietf.org/html/rfc6598 "https://tools.ietf.org/html/rfc6598") if this piques your interest). The advantage of using this space is that the likelihood of overlap is very low. Outside of the ISP community, few engineers have heard of this space. The near-guarantee of avoiding IP address overlap--and therefore IP renumbering and complex NAT architectures--is appealing to network engineers. The use of 100.64.0.0/10 in VPC also clearly stands out from RFC 1918 addresses during troubleshooting of VPC to data center routing.
 
-### Public IP Addresses in the VPC
+#### Public IP Addresses in the VPC
 
 In a VPC context, public--as in Internet routable--addresses fall into two categories.
 
-1. Elastic IP (EIP) addresses - Persistent IPv4 addresses that are tied to ENIs. EIPs should be used when you want a fixed public IPv4 address in your VPCs. These addresses can be moved around between instances in the same region. AWS has a soft limit of five EIPs per region.
-2. Public IP addresses - IP addresses assigned to your instances if you request an IP address in the “Auto-assign Public IP” field in the AWS console at instance launch. The public IP DNS field in the console with names like ec2-52-90-199-41.compute-1.amazonaws.com map to public IP addresses from the AWS address pool.
+* **Elastic IP (EIP) addresses** - Persistent IPv4 addresses that are tied to ENIs. EIPs should be used when you want a fixed public IPv4 address in your VPCs. These addresses can be moved around between instances in the same region. AWS has a soft limit of five EIPs per region.
+* **Public IP addresses** - IP addresses assigned to your instances if you request an IP address in the “Auto-assign Public IP” field in the AWS console at instance launch. The public IP DNS field in the console with names like ec2-52-90-199-41.compute-1.amazonaws.com map to public IP addresses from the AWS address pool.
 
 AWS documentation and certification exams sometime refer to public IP addresses generically, leaving the reader to use context to distinguish between EIPs and AWS public IP addresses. “Ephemeral” public addresses is a term I use to differentiate them from EIPs. The ephemeral addresses disappear when an instance is stopped or terminated. If you need a fixed address, use an EIP.
 
@@ -40,7 +38,7 @@ Neither types of public IP addresses are visible to the OS in your instance. In 
 
 I mentioned that EIP and AWS public IP addresses are pulled from Amazon’s public IP address pools. When an EIP is released or an EC2 instance with ephemeral public IP address is stopped or terminated, the IP address is released back to the Amazon pool for use by other AWS customers.
 
-### Enter Bring Your Own IP
+#### Enter Bring Your Own IP
 
 The Bring Your Own IP (BYOIP) feature allows customers to use their own IPv4 public space as EIPs in the VPC. Customers that use the BGP protocol typically possess what’s known as provider independent IP addresses. These IP addresses can be moved between ISPs should the company decide to do so. Other companies use IP addresses obtained from the provider. These companies do not own the addresses; the addresses are tied to their provider. In the networking industry, the latter type of IP addresses is called provider aggregatable, a term that stems from how the ISP announces a superset of this address space. To pass AWS’s verification process for Bring Your Own IP, the address space must be provider independent space.
 
@@ -50,9 +48,9 @@ The smallest CIDR range you can port to AWS is a /24. If you are familiar with B
 
 What happens now that an AWS region is announcing your public CIDR range? Customers can allocate EIPs from this range. Via the API, customers can get a random EIP or a specific one. In addition, customers can continue to pull EIPs from Amazon address space. I like the flexibility AWS offers in choosing address pools.
 
-Now we can address why the Bring Your Own IP feature has been a common feature request. In Matt Lehnews’s [Bring Your Own IP Address to the Cloud (SRV218)](https://youtu.be/XY3n7n7l4iw "Bring Your Own IP Address to the Cloud (SRV218)") video, he highlights several use cases.
+Now we can address why the BYOIP functionality has been a common feature request. In Matt Lehnews’s [Bring Your Own IP Address to the Cloud (SRV218)](https://youtu.be/XY3n7n7l4iw "Bring Your Own IP Address to the Cloud (SRV218)") video, he highlights several use cases.
 
-* IP address “reputation” – The IP addresses used by some companies have value accrued over many years of responsible service. Think about well-behaved email providers and web crawlers. 
+* IP address “reputation” – The IP addresses used by some companies have value accrued over many years of responsible service. Think about well-behaved email providers and web crawlers.
 * Whitelisting – Firewalls and other devices permit specific IP addresses. Contacting 3rd parties to make changes after migrating to the crowd would represent a significant effort.
 * Migration – You can avoid changing IP address used by your application as you migrate workloads from the data center to the VPC. IP renumbering is giant headache. Apps should always rely on DNS; however, in practice some on-premise apps use hard-coded IP addresses. The ability to migrate IP address from the data center to the VPC helps to mitigate the problem.
 * Redundancy - I see this use case as the advanced scenario in which IP addresses are announced from both an AWS region and on-premise. If designed carefully, a failure in a region or data center could be almost seamless to the applications’ users as traffic re-routes accordingly.
@@ -72,12 +70,10 @@ The BYOIP preview has a number of caveats at the time of this article (8/12/18).
 
 * The documentation is missing
 * IPv6 is not supported
-* Support for non-EIP public IP addresses is unknown
+* Support for public IP (i.e., non-EIP) addresses is unknown
 
 The announcement of Bring Your Own IP can be found here.
 
 [https://aws.amazon.com/about-aws/whats-new/2018/07/announcing-bring-your-own-ip-for-amazon-virtual-private-cloud-preview/](https://aws.amazon.com/about-aws/whats-new/2018/07/announcing-bring-your-own-ip-for-amazon-virtual-private-cloud-preview/ "https://aws.amazon.com/about-aws/whats-new/2018/07/announcing-bring-your-own-ip-for-amazon-virtual-private-cloud-preview/")
 
 Need help determining how BYOIP can benefit your AWS workloads? Contact us today.
-
- 
