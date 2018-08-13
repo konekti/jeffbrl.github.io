@@ -19,6 +19,7 @@ fields:
   hidden: false
   default: postimage
 pages:
+- _uploads/vpc-peering.md
 - _posts/native-aws-transit-vpc-in-the-works.md
 - _posts/2018-08-12-decoding-bring-your-own-ip-preview-for-aws-vpc.md
 - _posts/2018-07-25-aws-dc-public-sector-new-york-summits-youtube-video-links.md
