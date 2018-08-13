@@ -28,3 +28,9 @@ How this solution might look is anyone's guess. The native Transit VPC could res
 Will Transit VPC go away? Certainly not. Many customers rely on the advanced security features of the firewall appliances in the AWS Marketplace. In addition, customers that use the same firewall vendors on-premise could opt to retain the same vendor's virtual firewall in the cloud to simplify management.
 
 Perhaps the question we should be asking is, "Will AWS introduce a native Transit VPC at re:Invent 2018 or re:Invent 2019?" As active participants in AWS networking, we at Konekti are eager to find out.
+
+Links
+
+[Learn How CBT Nuggets Securely Connects VPCs in Minutes with Juniper Networks and AWS](https://youtu.be/8t-a38jBgA0 "Learn How CBT Nuggets Securely Connects VPCs in Minutes with Juniper Networks and AWS") video
+
+[Slides](https://www.slideshare.net/AmazonWebServices/learn-how-cbt-nuggets-securely-connects-vpcs-in-minutes-with-juniper-networks-and-aws "CBT Nuggets Securely Connects VPCs in Minutes with Juniper Networks and AWS Slides - Slidehare.net")
