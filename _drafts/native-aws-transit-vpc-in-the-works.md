@@ -8,12 +8,9 @@ date: 2018-08-13 11:24:54 -0400
 ---
 Last week Pratik Mankad, AWS Solutions Architect, [confirmed](https://youtu.be/8t-a38jBgA0?t=49m36s "Learn How CBT Nuggets Securely Connects VPCs in Minutes with Juniper Networks and AWS") that AWS is examining a native Transit VPC solution. In making the statement, he was responding to an audience member's question in a joint AWS/Juniper/CBT Nuggets webinar on the use of Juniper vSRX in Transit VPC.
 
-For readers not familiar with Transit VPC, let's cover what the solution provides. AWS customers frequently implements many VPCs for logical separation of workloads. If the customer wants the VPCs to communicate with one another, a VPC peering relationship can be configured. There is a caveat, however. VPC peering is not transitive. Network packets from a given VPC cannot traverse an intermediary VPC to reach a third VPC.
+For readers not familiar with Transit VPC, let's cover what the solution provides. AWS customers frequently implement many VPCs for logical separation of workloads. If the customer wants the VPCs to communicate with one another, a VPC peering relationship can be configured. There is a caveat, however. VPC peering is not transitive. Network packets from a given VPC cannot traverse an intermediary VPC to reach a third VPC.
 
 In the below diagram, VPC A has VPC peering with VPC B and VPC B has a VPC peering with VPC C. VPC A will not be able to communicate with VPC C.
-
-  
-![Non-transitive VPC Peering](/uploads/2018/08/13/VPC Peering.png "Non-transitive VPC Peering")
 
 We can add a third VPC peering from VPC A to VPC C to create a full mesh such that packets from all VPC can communicate directly. This example uses only three VPCs. When this number of VPCs is high, using a full mesh of VPC peering becomes a management nightmare.
 
