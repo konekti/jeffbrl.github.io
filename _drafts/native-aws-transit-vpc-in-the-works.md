@@ -24,7 +24,7 @@ We can add a third VPC peering from VPC A to VPC C to create a full mesh such th
 
 This example uses only three VPCs. When this number of VPCs is high, using a full mesh of VPC peering becomes a management nightmare.
 
-The Transit VPC solution is based on software VPN using firewall appliance from major networking vendors such as Juniper, Cisco, and Palo Alto. Following its implementation in your cloud deployments, VPCs typically use a dedicated VPC as the transit VPC, which contains the virtual firewalls that maintain IPSec tunnels to other VPCs and on-premise firewalls. The Transit VPC can be very difficult to configure and manage. The details of how Transit VPC function could fill an entire post.
+The Transit VPC solution is based on software VPN using firewall appliances from major networking vendors such as Juniper, Cisco, and Palo Alto. Following its implementation in your cloud deployments, VPCs typically use a dedicated VPC as the transit VPC, which contains the virtual firewalls that maintain IPSec tunnels to other VPCs and on-premise firewalls. The Transit VPC can be very difficult to configure and manage. The details of how Transit VPC functions could fill an entire post.
 
 Going back to webinar, I believe this is the first time anyone at AWS has publicly commented on the potential development of an internal Transit VPC server. Pratik's comment was far from a commitment of an impending feature release. He said, "...this is one of the things that we are actively looking at." Even so, I am confident that the development of a native Transit VPC service is underway.
 
