@@ -23,6 +23,11 @@
       "@type": "BlogPosting",
       "name": "{{ site.title }}",
       "headline": "{{ page.title }}",
+      "mainEntityOfPage":"{{site.url}}{{page.url}}",
+      "image":{  
+          "@type":"ImageObject",
+          "url":"{{site.url}}/assets/posts/{{page.image}}.jpg"
+      },
       "description": "{{ desc }}",
       "url": "{{site.url}}/{{ page.permalink }}",
       "datePublished": "{{ pageDate }}",
