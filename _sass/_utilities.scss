@@ -111,6 +111,26 @@ $fractions: '';
   background: rgba($dark, 0.03) !important;
 }
 
+$sites: (
+  facebook: #325c94,
+  instagram: #fb3958,
+  twitter: #00abdc,
+  linkedin: #007bb6
+);
+
+@each $item, $color in $sites {
+  .#{$item} {
+    background: $color;
+  }
+}
+
+.mt-2 {
+  margin-top: 40px;
+}
+.mb-2 {
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1084px) {
   .pa{
     padding-left: 25px;
