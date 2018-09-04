@@ -1,21 +1,12 @@
-<div class = 'share-panel'> 
-  <a class = 'flex-in facebook' href = 'https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}' onclick = "resizeWindow()" >
-    <i class = "fa fa-facebook"></i>
-  </a>
+<div class='share mt-2 mb-2' >
+  <a class = 'share_item facebook' href = 'https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}' onclick = "resizeWindow()" title="Share on facebook" target='_blank'><img src ='/assets/icons/facebook.svg' alt = 'icon'/></a>
   
-  <a class = 'flex-in twitter' href = 'https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}' onclick = "resizeWindow()">
-    <i class = 'fa fa-twitter'></i>
-  </a>
+  <a class = 'share_item twitter' href = 'https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}' onclick = "resizeWindow()" title="Share on Twitter" target='_blank'><img src ='/assets/icons/twitter.svg' alt = 'icon'/></a>
+
+  <div class = 'share_item share_toggle'>
+    <img src ='/assets/icons/share.svg' alt = 'icon'/>
+  </div>
   
-  <a class = 'flex-in linkedin' href = 'https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{site.title}}' onclick = "resizeWindow()" >
-    <i class = 'fa fa-linkedin'></i>
-  </a>
-  
-  <a class = 'flex-in whatsapp' href = 'whatsapp://send?text={{ site.url }}{{ page.url }}' data-action = "share/whatsapp/share">
-    <i class = "fa fa-whatsapp"></i>
-  </a>
-  
-  <a class = 'flex-in google' href = "https://plus.google.com/share?url={{ site.url }}{{ page.url }}" onclick = "resizeWindow()" >
-    <i class='fa fa-google-plus'></i>
-  </a>                                       
+  <a class = 'share_item linkedin' href = 'https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{site.title}}' onclick = "resizeWindow()" title="Share on LinkedIn" target='_blank'><img src ='/assets/icons/linkedin.svg' alt = 'icon'/></a>
+                                    
 </div>
