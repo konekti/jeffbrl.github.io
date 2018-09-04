@@ -132,17 +132,6 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 
 })();
 
-(function showShareBar() {
-  let share = elem('.mobile');
-  let shareClass = share ? share.classList : false;
-  $(window).scroll(function() {
-    let wintop, docheight, winheight;
-    wintop = $(window).scrollTop();
-    docheight = $('body').height();
-    winheight = $(window).height();
-    let totalScroll = (wintop/(docheight-winheight))*400;
-  });
-})();
 
 (function showActiveLink() {
   let links = elems('.nav_item');
@@ -260,4 +249,36 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
   });
 
 
+})();
+
+(function() {
+  // select a single element
+  function elem(selector) {
+    let elem = document.querySelector(selector);
+    return elem != false ? elem : false;
+  }
+  
+  // select multiple elements
+  function elems(selector) {
+    let elems = document.querySelectorAll(selector);
+    return elems != false ? elems : false;
+  }
+  
+  (function toggleShare() {
+    let items = elems('.share_item');
+    let trigger = elem('.share_toggle');
+    let buttons = Array.from(items).filter(function(button) {
+      return button != trigger;
+    });
+    trigger.addEventListener('click', function() {
+      let t_class = this.classList;
+      let toggled = 'share_toggled';
+      t_class.contains(toggled) ? t_class.remove(toggled) : t_class.add(toggled);
+      buttons.map(function(button, index){
+        let b_class = button.classList;
+        let active = 'share_wobble';
+        b_class.contains(active) ? b_class.remove(active) : b_class.add(active);
+      });
+    });
+  })();
 })();
