@@ -267,7 +267,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
   function pushClass(el, targetClass) {
     // equivalent to addClass
     if (el && typeof el == 'object' && targetClass) {
-      elClass = el.classList;
+      let elClass = el.classList;
       elClass.contains(targetClass) ? false : elClass.add(targetClass);
     }
   }
@@ -275,7 +275,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
   function deleteClass(el, targetClass) {
     // equivalent to removeClass
     if (el && typeof el == 'object' && targetClass) {
-      elClass = el.classList;
+      let elClass = el.classList;
       elClass.contains(targetClass) ? elClass.remove(targetClass) : false;
     }
   }
@@ -283,7 +283,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
   function modifyClass(el, targetClass) {
     // equivalent to toggleClass
     if (el && typeof el == 'object' && targetClass) {
-      elClass = el.classList;
+      let elClass = el.classList;
       elClass.contains(targetClass) ? elClass.remove(targetClass) : elClass.add(targetClass);
     }
   }
