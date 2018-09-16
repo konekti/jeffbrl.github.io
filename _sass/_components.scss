@@ -36,6 +36,19 @@
     width: 100%;
     outline: none;
     -webkit-appearance: none;
+    transition: all 0.3s;
+    &-shadow {
+      border: 1px solid #f0f0f0;
+      margin: 15px auto 25px !important;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      &:focus{
+        box-shadow: 0 0 40px rgba(0,0,0,0.17);
+      }
+    }
+  }
+  &_validator{
+    max-width: 840px;
+    margin: 0 auto;
   }
 }
 .main{
@@ -226,11 +239,9 @@ section p{
   }
 }
 .validator{
+  text-align: center;
   h1{
     font-size: 1.8rem;
-  }
-  form{
-    margin: 0 15px;
   }
 }
 .intro{
@@ -260,4 +271,75 @@ section p{
 .bottom-area{
   background: $dark;
   color: $mute;
+}
+
+// subscribe widget;
+.mail{
+  h2,h3{
+    padding-top: 15px;
+  }
+  &_container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  &_grow {
+    animation: grow 1s forwards;
+    padding: 10px 20px;
+  }
+  &_retard {
+    animation: retard 1s forwards;
+    padding: 0;
+  }
+  &_inner{
+    position: relative;
+  }
+  &_preview,&_body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    transform-origin: 100% 50%;
+    min-width: 280px;
+  }
+  &_preview {
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background: $gold;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+  &_body{
+    background: $light;
+    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  &_close{
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 90px;
+    color: #444;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.17);
+    z-index: 15;
+    transition: all 0.3s;
+    &:hover{
+      box-shadow: 0 0 30px rgba(0,0,0,0.17);
+    }
+  }
 }
