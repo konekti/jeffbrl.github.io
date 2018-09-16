@@ -1,0 +1,28 @@
+<div class = 'mail_container'>
+  <div class = 'mail_inner container'>
+    <div class = 'mail_close mail_retard'>close</div>
+    <div class = 'mail_preview mail_grow'>
+      <span>All Things Cloud</span>
+      <span>
+        <svg width="12px" height="8px" viewBox="1362 659 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon id="right_angle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" transform="translate(1368.000000, 662.703125) rotate(-90.000000) translate(-1368.000000, -662.703125) " points="1364.29688 667.296875 1368.89062 662.703125 1364.29688 658.109375 1365.70312 656.703125 1371.70312 662.703125 1365.70312 668.703125"></polygon>
+        </svg>
+      </span>
+    </div>
+    <div class = 'mail_body mail_retard'>
+      <h2>All Things Cloud</h2>
+      <p>Stay updated about internet cloud matters. We do not spam ...</p>
+      <div id='mc_embed_signup'>
+        <form action='{{ site.mailchimp.url }}'  method="post" id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate chimp' target='_blank' novalidate>
+          <div id='mc_embed_signup_scroll'>
+            <div style='position: absolute; left: -5000px;' aria-hidden='true'><input type='text' name='{{ site.mailchimp.hidden }}' tabindex='-1' value=''></div>
+            <label for='mce-EMAIL'></label>
+            <input type='email' value='' name='EMAIL' class='form_input form_input-shadow' id='mce-EMAIL' placeholder='you@awesome.com' required>
+            <input type='submit' value='Subscribe' name='subscribe' id='mc-embedded-subscribe' class='btn'>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <a class = 'scroll' href = '/#home'><i class = 'fa fa-hand-pointer-o' aria-hidden = 'true'></i></a>
+</div>
