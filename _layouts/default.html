@@ -7,7 +7,9 @@
     </header>
     <main class = 'main__content'>
       {{ content }}
-      {%- include mail.html -%}
+      {%- if site.malichimp.show -%}
+        {%- include mail.html -%}
+      {%- endif -%}
     </main>
     <footer class="footer-area">
       {%- include footer.html -%}
