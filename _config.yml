@@ -49,5 +49,6 @@ sass:
   style: compressed
 formcarry: BJEUqzP-7
 mailchimp:
+  show: false;
   url: ''
   hidden: ''
