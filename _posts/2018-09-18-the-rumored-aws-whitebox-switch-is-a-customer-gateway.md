@@ -8,7 +8,7 @@ date: 2018-09-18 08:28:10 -0400
 ---
 The online publication The Information [reported](https://www.theinformation.com/articles/amazon-web-services-targets-cisco-in-networking "Amazon Web Services Targets Cisco in Networking") in mid-July 2018 that AWS was preparing to sell white box switches with built-in connectivity the its cloud offerings. The rumor depressed Cisco stock and triggered a call from Cisco CEO Chuck Robbins to AWS CEO Andy Jassy. AWS confirmed a Cisco spokeman’s statement that AWS is “not actively building a commercial network switch.” While this statement may be true, I suspect that AWS does have plans to breach enterprise data centers with a physical device: a server capable of hosting a virtual Customer Gateway (CGW).
 
-Disclaimer: This article is purely speculative based on my thinking about the direction of hybrid cloud. I do not have non-pubic information on the subject.
+_Disclaimer: This article is purely speculative based on my thinking about the direction of hybrid cloud. I do not have non-pubic information on the subject._
 
 What is the value of an Amazon-branded virtualization server that implements a CGW? Before answering this question, let’s examine the present state of AWS cloud connectivity.
 
