@@ -6,15 +6,15 @@ title: The Rumored AWS Whitebox Switch is a Customer Gateway
 date: 2018-09-18 08:28:10 -0400
 
 ---
-The online publication The Information reported in mid-July 2018 that AWS was preparing to sell white box switches with built-in connectivity the its cloud offerings. The rumor depressed Cisco stock and triggered a call from Cisco CEO Chuck Robbins to AWS CEO Andy Jassy. AWS confirmed a Cisco spokeman’s statement that AWS is “not actively building a commercial network switch.”  While this statement may be true, I suspect that AWS does have plans to breach enterprise data centers with a physical device: a server capable of hosting a virtual Customer Gateway (CGW).
+The online publication The Information [reported](https://www.theinformation.com/articles/amazon-web-services-targets-cisco-in-networking "Amazon Web Services Targets Cisco in Networking") in mid-July 2018 that AWS was preparing to sell white box switches with built-in connectivity the its cloud offerings. The rumor depressed Cisco stock and triggered a call from Cisco CEO Chuck Robbins to AWS CEO Andy Jassy. AWS confirmed a Cisco spokeman’s statement that AWS is “not actively building a commercial network switch.” While this statement may be true, I suspect that AWS does have plans to breach enterprise data centers with a physical device: a server capable of hosting a virtual Customer Gateway (CGW).
 
  
 
-Disclaimer: This article is purely speculative based on my thinking about the direction of hybrid cloud. I do not have non-pubic information on the subject.
+> Disclaimer: This article is purely speculative based on my thinking about the direction of hybrid cloud. I do not have non-pubic information on the subject.
 
  
 
-What is the value of an AWS-branded virtualization server that implements a CGW? Before answering this question, let’s examine the present state of AWS cloud connectivity. 
+What is the value of an Amazon-branded virtualization server that implements a CGW? Before answering this question, let’s examine the present state of AWS cloud connectivity. 
 
  
 
@@ -22,15 +22,15 @@ In AWS, companies that require network connectivity between their Virtual Privat
 
  
 
-Internet - The customer’s infrastructure connects to its VPC(s) using the public Internet. The customer would typically employ secure protocols such as TLS and SSH to ensure traffic is encrypted or can “roll-their-own” VPN to encrypt all traffic (a.k.a. Software VPN in AWS parlance). 
+**Internet** - The customer’s infrastructure connects to its VPC(s) using the public Internet. The customer would typically employ secure protocols such as TLS and SSH to ensure traffic is encrypted or can “roll-their-own” VPN to encrypt all traffic (a.k.a. Software VPN in AWS parlance). 
 
  
 
-Direct Connect (DX) - A dedicated circuit links an AWS DX location and the customer’s data center. Customer traffic traverses this private circuit to reach their VPCs. DX provides consistent latency and jitter. One of its biggest selling points is the discounted Data Out rate, which is very attractive for enterprises that transfer large amounts of data out of the cloud.
+**Direct Connect (DX)** - A dedicated circuit links an AWS DX location and the customer’s data center. Customer traffic traverses this private circuit to reach their VPCs. DX provides consistent latency and jitter. One of its biggest selling points is the discounted Data Out rate, which is very attractive for enterprises that transfer large amounts of data out of the cloud.
 
  
 
-Hardware VPN - This option is a modified form of Software VPN. Rather than having the customer manage the VPN endpoints in the cloud and on-premise, AWS manages a highly available Virtual Gateway (VGW) to terminate IPsec tunnels in the cloud. The customer is responsible for configuring the IPsec endpoint on-premises. The endpoint is typically an Internet edge router at a customer’s site.
+**Hardware VPN** - This option is a modified form of Software VPN. Rather than having the customer manage the VPN endpoints in the cloud and on-premise, AWS manages a highly available Virtual Gateway (VGW) to terminate IPsec tunnels in the cloud. The customer is responsible for configuring the IPsec endpoint on-premises. The endpoint is typically an Internet edge router at a customer’s site.
 
  
 
@@ -66,6 +66,6 @@ What’s good for telcos is good for public cloud providers. While I suspect the
 
  
 
-Will an Amazon whitebox virtualization server soon take its place next to Deep Lens on amazon.com? My guess is that it will and AWS customers that use a hybrid cloud model will benefit.
+Will an Amazon whitebox virtualization server soon take its place next to Deep Lens on amazon.com? My guess is that it will and AWS customers that use the hybrid cloud model will benefit.
 
  
