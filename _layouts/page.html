@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{%- unless page.lean  %}
 <section class = 'cool'>
   {% include globe.html %}
   <div class = 'overlay'>
@@ -9,4 +10,5 @@ layout: default
     </div>
   </div>
 </section>
+{%- endunless -%}
 {{ content }}

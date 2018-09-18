@@ -23,7 +23,9 @@
   color: $pale;
 }
 .dark{
-  background: $dark;
+  &en,&{
+    background: $dark;
+  }
 }
 $fractions: '';
 @for $i from 1 through 4 {

@@ -263,6 +263,55 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
     let elems = document.querySelectorAll(selector);
     return elems != false ? elems : false;
   }
+
+  function pushClass(el, targetClass) {
+    // equivalent to addClass
+    if (el && typeof el == 'object' && targetClass) {
+      let elClass = el.classList;
+      elClass.contains(targetClass) ? false : elClass.add(targetClass);
+    }
+  }
+  
+  function deleteClass(el, targetClass) {
+    // equivalent to removeClass
+    if (el && typeof el == 'object' && targetClass) {
+      let elClass = el.classList;
+      elClass.contains(targetClass) ? elClass.remove(targetClass) : false;
+    }
+  }
+  
+  function modifyClass(el, targetClass) {
+    // equivalent to toggleClass
+    if (el && typeof el == 'object' && targetClass) {
+      let elClass = el.classList;
+      elClass.contains(targetClass) ? elClass.remove(targetClass) : elClass.add(targetClass);
+    }
+  }
+
+  (function toggleSubscribeWidget() {
+    let mailPreview = elem('.mail_preview');
+    let mailClose = elem('.mail_close');
+    if (mailPreview) {
+      let grow = 'mail_grow';
+      let retard = 'mail_retard';
+      function growOrRetard(targets) {
+        targets.forEach((target) => {
+          modifyClass(target, grow);
+          modifyClass(target, retard);
+        });
+      }
+      mailPreview.addEventListener('click', function(event) {
+        let preview = this;
+        let mailBody = this.nextElementSibling;
+        growOrRetard([mailBody, preview, mailClose]);
+      });
+      mailClose.addEventListener('click', function() {
+        let preview = this.nextElementSibling;
+        let mailBody = mailPreview.nextElementSibling;
+        growOrRetard([mailBody, preview, mailClose]);
+      });
+    }
+  })();
   
   (function toggleShare() {
     let items = elems('.share_item');
@@ -270,15 +319,17 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
     let buttons = Array.from(items).filter(function(button) {
       return button != trigger;
     });
-    trigger.addEventListener('click', function() {
-      let t_class = this.classList;
-      let toggled = 'share_toggled';
-      t_class.contains(toggled) ? t_class.remove(toggled) : t_class.add(toggled);
-      buttons.map(function(button, index){
-        let b_class = button.classList;
-        let active = 'share_wobble';
-        b_class.contains(active) ? b_class.remove(active) : b_class.add(active);
+    if (trigger) {
+      trigger.addEventListener('click', function() {
+        let t_class = this.classList;
+        let toggled = 'share_toggled';
+        t_class.contains(toggled) ? t_class.remove(toggled) : t_class.add(toggled);
+        buttons.map(function(button, index){
+          let b_class = button.classList;
+          let active = 'share_wobble';
+          b_class.contains(active) ? b_class.remove(active) : b_class.add(active);
+        });
       });
-    });
+    }
   })();
 })();
