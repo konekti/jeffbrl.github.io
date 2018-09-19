@@ -49,6 +49,6 @@ sass:
   style: compressed
 formcarry: BJEUqzP-7
 mailchimp:
-  show: false;
-  url: ''
-  hidden: ''
+  show: true;
+  url: 'https://konekti.us19.list-manage.com/subscribe/post?u=91ca13ebadc8d8afad64c838a&amp;id=c461d318b7'
+  hidden: 'b_91ca13ebadc8d8afad64c838a_c461d318b7'
