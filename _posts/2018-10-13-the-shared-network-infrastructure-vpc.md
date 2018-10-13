@@ -14,7 +14,7 @@ You may ask, “What the problem with a single CloudFormation template that incl
 
 Organizing your CloudFormation stacks by lifecycle and ownership is straight from the [AWS CloudFormation Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html). This quote from the page is apropos.
 
-> A layered architecture organizes stacks into multiple horizontal layers that build on top of one another, where each layer has a dependency on the layer directly below it. You can have one or more stacks in each layer, but within each layer, your stacks should have AWS resources with similar lifecycles and ownership.
+"_A layered architecture organizes stacks into multiple horizontal layers that build on top of one another, where each layer has a dependency on the layer directly below it. You can have one or more stacks in each layer, but within each layer, your stacks should have AWS resources with similar lifecycles and ownership_."
 
 We advise including all networking resources in a shared network infrastructure VPC. Consider the situation in which you require a VPC with a public subnet and a private subnet that accesses the Internet through a NAT Gateway. Yes, this is the “VPC with Public and Private Subnets” straight from the VPC Wizard. You can view the approximate CloudFormation template [here](https://github.com/awslabs/aws-cloudformation-templates/blob/master/aws/services/VPC/VPC_With_Managed_NAT_And_Private_Subnet.yaml "VPC With Managed NAT and Private Subnet.").
 
