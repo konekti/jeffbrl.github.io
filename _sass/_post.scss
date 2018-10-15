@@ -2,7 +2,8 @@
   width:100%;
 }
 .blog{
-  grid-template-columns: 17fr 1fr 6fr;
+  grid-template-columns: 9fr 4fr;
+  grid-gap: 25px 60px;
 }
 .blog{
   h1, h2, h3{
@@ -126,7 +127,7 @@
 }
 .excerpt{
   padding:0  15px 25px;
-  min-height:360px;
+  // min-height:360px;
   border-radius:0 0 7.5px 7.5px;
   ul, ul li{
     @extend %unordered;
