@@ -289,7 +289,7 @@ section p{
     padding: 10px 20px;
   }
   &_retard {
-    animation: retard 0.25s forwards;
+    animation: retard 0s forwards;
     padding: 0;
   }
   &_inner{
@@ -302,7 +302,7 @@ section p{
     overflow: hidden;
     transform-origin: 100% 50%;
     width: 100%;
-    max-width: 450px;
+    max-width: 360px;
   }
   &_preview {
     font-family:  'Montserrat', sans-serif;
