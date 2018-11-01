@@ -150,3 +150,8 @@ $emojis: (
   padding-left: 2.5px;
   padding-right: 2.5px;
 }
+
+::selection {
+  color: inherit; 
+  background: transparent;
+}
