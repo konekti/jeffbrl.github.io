@@ -1,0 +1,18 @@
+- name: James Jarett
+  role: Head of Client Success
+  thumb: jarett.jpg
+  phone: +1 617-251-5445
+  email: james.jarett@konekti.us
+  scope: "22 Years of Experience Leading Successful Client Engagements \r\n\r\n Helps the client define and develop strategies based on mission-critical priorities and initiatives \r\n\r\n Engages with the client regularly to ensure ongoing delivery of value"
+- name: Jeff Loughridge
+  role: VP of cloud Network Design
+  thumb: jeff.jpg
+  phone: +1 703-587-0948
+  email: jeff@konekti.us
+  scope: "20-year data networking professional who understands how to build scalable and secure cloud and hybrid networks\r\n\r\n Coordinates the technical componentsts of service delivery \r\n\r\n Manages Konekti technical associates"
+- name: Amir Tabdili
+  role: VP of Cloud Strategy
+  thumb: amir.jpg
+  phone: +1 202-812-9273
+  email: amir@konekti.us
+  scope: "22-year serial entrepreneur and data networking subject matter expert \r\n\r\n Collaborates across delivery teams to ensure Konekti services with client's IT architecture objectives \r\n\r\n Leads Delivery Assessment or ensure the client is reveiving the maximum value against key priorities"
