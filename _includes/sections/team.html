@@ -1,0 +1,15 @@
+<h2>Konekti Team</h2>
+<section class = 'team grid-3 pb-3 pt-2'>
+{%- for person in site.data.team -%}
+  <div class = 'team_member'>
+    <img src = '/assets/authors/{{ person.thumb }}' alt = '{{ person.name }}' class = 'team_thumb'>
+    <div class = 'pa'>
+      <h4><a href = '{{ person.profile }}' title = '{{ person.name }} LinkedIn' target = '_blank'>{{ person.name }}</a></h4>
+      <h6>{{ person.role }}</h6>
+      <p>{{ person.phone }}</p>
+      <a href = "mailto:{{ person.email }}">{{ person.email }}</a>
+      {{ person.scope | markdownify }}
+    </div>
+  </div>
+{%- endfor -%}
+</section>
