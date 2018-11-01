@@ -27,7 +27,6 @@
     background: $dark;
   }
 }
-$fractions: '';
 @for $i from 1 through 4 {
   $pad: 20px;
   .pb-#{$i}{
@@ -35,10 +34,6 @@ $fractions: '';
   }
   .pt-#{$i}{
     padding-top: $i * $pad;
-  }
-  $fractions : $fractions + ' ' + 1fr;
-  .grid-#{$i} {
-    grid-template-columns: #{$fractions};
   }
 }
 .pa{
@@ -69,7 +64,7 @@ $fractions: '';
 .spinner{
   margin: 20px auto;
   height: 75px;
-  Width: 75px;
+  width: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,4 +142,37 @@ $sites: (
   100%{
     transform: rotate(360deg);
   }
+}
+
+%grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+[class*='grid-']{
+  grid-gap: 40px;
+  @extend %grid;
+}
+.grid{
+  @extend %grid;
+}
+@media screen  and (min-width: 769px){
+  .grid-2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-reverse{
+    // flip grid auto; borrowed
+    grid-template-columns: 3fr 1fr;
+  }
+  .grid-auto{
+    grid-template-columns: 1fr auto;
+  }
+}
+.grid-2{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.grid-3{
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+.grid-4{
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }

@@ -273,6 +273,22 @@ section p{
   color: $mute;
 }
 
+.team {
+  &_member{
+    box-shadow: 0 0 5px rgba(0,0,0,0.17);
+    transition: all 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 0 50px rgba(0,0,0,0.17);
+    }
+  }
+  &_thumb{
+    width: 100%;
+  }
+}
+
 // subscribe widget;
 .mail{
   h2,h3{
