@@ -16,7 +16,7 @@ Now that my history lesson has concluded, I have advice for all AWS customers. D
 
 What’s the harm in the default VPC? Could its use be such a poor practice? Yes and yes. Let’s explore why this is the case.
 
-The default VPC lacks the proper security and auditing controls. The default VPC does make the best use of critical VPC functionality.
+The default VPC lacks the proper security and auditing controls. The default VPC does not make the best use of critical VPC functionality.
 
 * VPC flow logs - The default VPC does not enable flow logs. The feature allows users to track network flows in the VPC for auditing and troubleshooting purposes. The AWS ecosystem contains many 3rd party tools for analyzing flow logs to increase the value of the data.
 * Unrestricted Network Access Control Lists ( NACLs) - This isn’t necessarily a bad practice per se as some customers forgo deny rules in NACLs. At Konekti, we highlight how deny rules in NACLs adds a layer of hardening for network security. You may determine that NACL deny rules add complexity you deem unneeded; however, you should consider the benefits they bring prior to dismissing them outright.
