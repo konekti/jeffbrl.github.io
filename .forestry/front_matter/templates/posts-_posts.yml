@@ -19,7 +19,7 @@ fields:
   hidden: false
   default: postimage
 pages:
-- _posts/are-you-using-the-aws-default-vpc-stop-now.md
+- _posts/2018-11-08-are-you-using-the-aws-default-vpc-stop-now.md
 - _posts/2018-10-13-the-shared-network-infrastructure-vpc.md
 - _posts/2018-09-18-the-rumored-aws-whitebox-switch-is-a-customer-gateway.md
 - _posts/2018-07-25-aws-dc-public-sector-new-york-summits-youtube-video-links.md
