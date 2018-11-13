@@ -15,7 +15,7 @@ layout: default
       <ul class = 'post-collection'>
         {% for post in paginator.posts %}
         <li class = 'child post__item'>
-          <div class = 'show flex-up'>
+          <div class = 'flex-up'>
             <a href = '{{ post.url | relative_url }}' class = 'post-link'>
               <h3>
                 {{ post.title | escape }}
