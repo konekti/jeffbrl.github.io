@@ -140,6 +140,9 @@ section p{
 	outline: none;
 	transition: all 0.5s ease 0s;
   font-family: "Montserrat";
+  &_left {
+    margin: 0;
+  }
   &:hover{
     color: $gold;
     background: $light;
@@ -275,17 +278,23 @@ section p{
 
 .team {
   &_member{
-    box-shadow: 0 0 5px rgba(0,0,0,0.17);
+    // box-shadow: 0 0 5px rgba(0,0,0,0.17);
     transition: all 0.3s;
     border-radius: 5px;
     overflow: hidden;
+    &, p{
+      text-align: center;
+    }
     &:hover {
       transform: translateY(-15px);
       box-shadow: 0 0 50px rgba(0,0,0,0.17);
     }
   }
   &_thumb{
-    width: 100%;
+    width: 150px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 50%;
   }
 }
 
@@ -304,10 +313,10 @@ section p{
     animation: grow 1s forwards;
     padding: 10px 20px;
   }
-  &_retard {
-    animation: retard 0s forwards;
-    padding: 0;
-  }
+  // &_retard {
+  //   animation: retard 0s forwards;
+  //   padding: 0;
+  // }
   &_inner{
     position: relative;
   }
@@ -335,6 +344,9 @@ section p{
     box-shadow: 0 0 60px rgba(0,0,0,0.3);
     border-radius: 10px 10px 0 0;
     text-align: center;
+    z-index: 50;
+    height: 0;
+    opacity: 0;
   }
   &_close{
     overflow: hidden;
@@ -352,11 +364,15 @@ section p{
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.17);
-    z-index: 15;
+    box-shadow: 0 0 30px transparent;
+    padding: 6px 10px;
+    z-index: 51;
     transition: all 0.3s;
     &:hover{
       box-shadow: 0 0 30px rgba(0,0,0,0.17);
     }
+  }
+  &_inner {
+    position: relative;
   }
 }

@@ -46,7 +46,11 @@
     }
   }
   &__item{
-    box-shadow: 0 0 100px rgba(0,0,0,0.17);
+    box-shadow: 0 0 75px transparent;
+    transition: box-shadow 0.3s;
+    &:hover{
+      box-shadow: 0 0 75px rgba(0,0,0,0.17);
+    } 
   }
   &-content{
     h4{

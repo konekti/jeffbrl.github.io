@@ -30,6 +30,9 @@ p{
   margin: 0 0 0 0;
   line-height: 1.75 !important;
 }
+li p {
+  padding: 0;
+}
 a {
   color: inherit;
   font-size: inherit;
