@@ -36,4 +36,4 @@ Flow Logs is a vital feature in the VPC. Much like CloudTrail, Flow Logs is an a
 
 As in years past, the AWS announcements have drastically slowed as the company prepares for re:Invent. Customers and APN partners are excited to see what comes out of the conference. As an APN partner that specializes in networking, we are eager to hear how networking will evolve as we head into 2019.
 
-_Amir will represent Konekti at re:Invent again this year. Drop us a note if you want to talk about networking in the cloud._
+_Amir will represent Konekti at re:Invent again this year. Drop us a_ [_note_](https://konekti.us/#contact "Contact Us") _if you want to talk about networking in the cloud._
