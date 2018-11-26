@@ -2,13 +2,23 @@
 <section class = 'team grid-3 pb-3 pt-2'>
 {%- for person in site.data.team -%}
   <div class = 'team_member pb-2 pt-2'>
-    <img src = '/assets/authors/{{ person.thumb }}' alt = '{{ person.name }}' class = 'team_thumb'>
-    <div class = 'pa'>
-      <h4><a href = '{{ person.profile }}' title = '{{ person.name }} LinkedIn' target = '_blank'>{{ person.name }}</a></h4>
-      <h6>{{ person.role }}</h6>
-      <a href = "mailto:{{ person.email }}">{{ person.email }}</a>
+    <div>
+      <img src = '/assets/authors/{{ person.thumb }}' alt = '{{ person.name }}' class = 'team_thumb'>
+      <div class = 'pa'>
+        <h4><a href = '{{ person.profile }}' title = '{{ person.name }} LinkedIn' target = '_blank'>{{ person.name }}</a></h4>
+        <h6>{{ person.role }}</h6>
+        <a href = "mailto:{{ person.email }}">{{ person.email }}</a>
+      </div>
+    </div>
+    <div class = 'team_hidden'>
       {{ person.scope | markdownify }}
     </div>
   </div>
 {%- endfor -%}
 </section>
+<div class = 'member_content'>
+  <div class = 'member_inner'>
+    <div class = 'member_header pt-2 pb-2'></div>
+    <div class = 'member_description'></div>
+  </div>
+</div>
