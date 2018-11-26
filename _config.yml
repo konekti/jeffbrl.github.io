@@ -21,6 +21,7 @@ description: "Konekti Systems helps clients develop and implement cloud and hybr
 url: https://konekti.us
 baseurl: ''
 twitter: konekti_systems
+data-tweet-limit: 2
 facebook: 
 email: info@konekti.us
 environment: production
@@ -28,7 +29,6 @@ disqus:
   shortname: konekti-us
 markdown: kramdown
 highlighter: rouge
-data-tweet-limit: 2
 paginate: 5
 paginate_path: "/blog/:num/"
 plugins:
