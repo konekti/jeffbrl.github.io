@@ -327,4 +327,28 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
       });
     }
   })();
+
+  function populateElement(elem, content) {
+    elem.innerHTML = content.innerHTML;
+  }
+
+  (function showMemberBio() {
+    let cards = elems('.team_member');
+    cards.forEach(function(card) {
+      card.addEventListener('click', function(){
+        let card_header = card.children[0];
+        let card_description = card.children[1];
+        let widget = elem('.member_inner').parentNode;
+        let widget_header = elem('.member_header');
+        let widget_description = elem('.member_description');
+        modifyClass(widget, 'member_widget');
+        populateElement(widget_header, card_header);
+        populateElement(widget_description, card_description);
+      });
+    });
+    let widget = elem('.member_content');
+    widget.addEventListener('click', function(){
+      modifyClass(this, 'member_widget');
+    });
+  })();
 })();
