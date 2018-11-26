@@ -275,8 +275,58 @@ section p{
   background: $dark;
   color: $mute;
 }
-
+.member {
+  &_inner {
+    background: $light;
+    display: grid;
+    width: 96%;
+    max-width: $max-width;
+    max-height: 72vh;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+    transform: scale(0);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    border-radius: 0.5rem;
+    filter: drop-shadow(75px 50px 50px rgba(52,90,64,.1));
+    cursor: initial;
+    @media screen and (min-width: 667px) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  &_widget &_inner {
+    transform: scale(1);
+  }
+  &_widget {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+  }
+  &_header {
+    background: #F4F5F9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  &_description {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .team {
+  &_hidden {
+    display: none;
+  }
   &_member{
     // box-shadow: 0 0 5px rgba(0,0,0,0.17);
     transition: all 0.3s;
