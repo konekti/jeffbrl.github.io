@@ -347,8 +347,13 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
       });
     });
     let widget = elem('.member_content');
-    widget.addEventListener('click', function(){
-      modifyClass(this, 'member_widget');
-    });
+    let widget_close = elem('.member_close');
+    function closeBio(selector) {
+      selector.addEventListener('click', function(event){
+        event.target === this ? modifyClass(widget, 'member_widget') : false;
+      });
+    }
+    closeBio(widget);
+    closeBio(widget_close);
   })();
 })();
