@@ -276,6 +276,19 @@ section p{
   color: $mute;
 }
 .member {
+  &_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.25rem;
+    padding: 15px;
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
   &_inner {
     background: $light;
     display: grid;
@@ -286,8 +299,10 @@ section p{
     height: 0;
     transition: transform 0.3s, height 0.1s;
     border-radius: 0.5rem;
-    filter: drop-shadow(75px 50px 50px rgba(52,90,64,.1));
+    box-shadow: 0 0 2px rgba(0,0,0,0.17);
+    filter: drop-shadow(-75px 50px 50px rgba(52,90,64,.1));
     cursor: initial;
+    position: relative;
     @media screen and (min-width: 667px) {
       grid-template-columns: 1fr 2fr;
     }
