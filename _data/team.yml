@@ -1,18 +1,51 @@
-- name: James Jarett
+- name: James Jarrett
   role: Head of Client Success
   thumb: jarett.jpg
   phone: +1 617-251-5445
   email: james.jarett@konekti.us
-  scope: "22 Years of Experience Leading Successful Client Engagements \r\n\r\n Helps the client define and develop strategies based on mission-critical priorities and initiatives \r\n\r\n Engages with the client regularly to ensure ongoing delivery of value"
+  scope: |
+    James brings 22 years of experience building tech companies in the financial services, networking, and customer service
+    industries.  James started his career as Lead Electrical Systems Product Manager for the Department of Energy's Naval
+    Nuclear Propulsion Directorate, where he was responsible for a $300M overhaul of key reactor control systems for the
+    U.S. Navy's fleet of aircraft carriers, and was eventually promoted to General Manager.  After attending Harvard Business
+    School, James joined Intuit as a Product Manager and led several initiatives to innovate QuickBooks through customer-centric
+    design.  James went on to found CW Music, which helped Fortune 500 brands drive deeper customer engagement in partnership
+    with touring musicians.  Immediately prior to Arise, he held senior leadership roles at two fast growing tech companies where
+    he drove significant revenue through large strategic partnerships, leading to acquisition and top-tier venture capital
+    investment, respectively.
+
+    James holds an MBA from Harvard Business School, and earned Master's degrees from Virginia Tech (Systems Engineering)
+    and the U.S. Navy (Nuclear Engineering).  He started his education at Vanderbilt University where he earned a BS in Electrical
+    Engineering.
+
 - name: Jeff Loughridge
-  role: VP of cloud Network Design
+  role: VP of Cloud Network Design
   thumb: jeff.jpg
   phone: +1 703-587-0948
-  email: jeff@konekti.us
-  scope: "20-year data networking professional who understands how to build scalable and secure cloud and hybrid networks\r\n\r\n Coordinates the technical componentsts of service delivery \r\n\r\n Manages Konekti technical associates"
+  email: jeffl@konekti.us
+  scope: |
+    Jeff's career in designing and operating large-scale IP networks began at Sprint in 1998. During his decade tenure at the Tier 1 ISP,
+    Jeff held both engineer and management positions in the company's Ops and Network Development organizations. His most 
+    significant contribution to the company was overseeing the effort to deploy 40 Gb/s IP over DWDM on the SprintLink backbone
+    in 2008. Jeff founded Brooks Consulting LLC in 2009 to helps clients design, test, and maintain Layer 3-centric IP 
+    infrastructure in both the wireline and wireless segments of the telecom industry.
+
+    Jeff graduated from Duke Univerisity in 1998 with a degree in Computer Science. His writing on IP networking has appeared
+    in publications such as The IP Protocol Journal and Network Computing.
+
 - name: Amir Tabdili
   role: VP of Cloud Strategy
   thumb: amir.jpg
   phone: +1 202-812-9273
   email: amir@konekti.us
-  scope: "Amir is a 22-year veteran of networking industry, a subject matter expert on high speed IP networks as well as a successful entrepreneur. Amir began his networking career in 1996 at Sprint Corporation as an operations engineer. At Sprint, Amir implemented the first Inter-provider multicast network in the industry. Amir joined Juniper Networks in 1999, and for 10 years he embarked on various leadership technical roles. At Juniper, he was instrumental in the deployment of Juniper products into numerous large service provider and enterprise networks. Amir founded Cypress Consulting in early 2011 with focus on providing consulting services to various large service provider and enterprises in the areas of IP/MPLS design, network security as well as next generation Data Center and cloud architectures. In 2017, Amir was a founding partner at Konekti Systems. At Konekti, Amir is responsible for setting the strategy for the company’s various operating areas with focus on Hybrid and Multi-cloud deployments. Amir’s team ensures collaboration across various delivery team aimed at meeting clients’ business and architectural objectives. Amir has dual bachelor degrees in Electrical Engineering and Biomedical Engineering from Vanderbilt University, and an MBA with focus in finance from the University of Maryland. Amir holds Juniper Networks' JNCIE, Palo Alto Networks’ PCNSE, and AWS Certified Solutions Architect certifications"
+  scope: |
+    Amir is a 22-year veteran of networking industry, a subject matter expert on large-scale IP networks as well as a 
+    successful entrepreneur. Amir began his networking career in 1996 at Sprint as an operations engineer. 
+    At Sprint, Amir implemented the first inter-provider multicast network in the industry. Amir joined Juniper Networks 
+    in 1999 and excelled in various leadership technical roles over the next decade. At Juniper, he was instrumental in the 
+    deployment of Juniper products into numerous large service provider and enterprise networks. Amir founded Cypress 
+    Consulting in early 2011 with focus on providing IP/MPLS consulting services to large service provider and enterprises.
+
+    Amir has dual bachelor degrees in Electrical Engineering and Biomedical Engineering from Vanderbilt University, and an 
+    MBA with focus in finance from the University of Maryland.
+
