@@ -1,5 +1,5 @@
 - name: James Jarrett
-  role: Head of Client Success
+  role: CEO
   thumb: jarett.jpg
   phone: +1 617-251-5445
   email: james.jarrett@konekti.us
@@ -19,7 +19,7 @@
     Engineering.
 
 - name: Jeff Loughridge
-  role: VP of Cloud Network Design
+  role: CTO
   thumb: jeff.jpg
   phone: +1 703-587-0948
   email: jeffl@konekti.us
@@ -34,7 +34,7 @@
     in publications such as The IP Protocol Journal and Network Computing.
 
 - name: Amir Tabdili
-  role: VP of Cloud Strategy
+  role: Chief Architect
   thumb: amir.jpg
   phone: +1 202-812-9273
   email: amir@konekti.us
