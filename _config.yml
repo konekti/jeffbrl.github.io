@@ -38,6 +38,7 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+- vendor
 include:
   - _pages
 excerpt_separator: "<!--excerpt-->"
