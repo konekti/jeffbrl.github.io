@@ -1,40 +1,7 @@
-{%- unless page.lean -%}
-<div class = 'container grid grid-3 pb-3 pt-3 pa'>
-  <div>
-    <div class = 'about-info'>
-      <div class = 'footer-logo center'>
-        <a href = '#' ><img alt = 'Konekti Logo' src = '/assets/footer-logo.png'></a>
-      </div>
-      <ul class = 'icon-list center'>
-        {% for icon in site.data.icons %}
-          <li><a href='{{ icon.link }}' target = '_blank'><i class = 'fa fa-{{ icon.name }}'></i></a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div>
-    <div class = 'useful-link-sec'>
-      <h5>Useful Links</h5>
-      <ul class = 'useful-links'>
-        {%- for item in site.data.useful-links -%}
-        <li>
-          <a href='/{%- unless item.type == 'page' -%}#{%- endunless -%}{{ item.id }}'>{{ item.text }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </div>
-  <figure class = 'img-holder'>
-    <img src = '/assets/aws-partner-logo.png' alt = ''> 
-  </figure>
-</div>
-{%- endunless -%}
-<div class = 'bottom-area'>
-  <div class = 'container pa'>
-    <div class = 'copyright'>
-      <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By
-       <a href = '{{ site.designer.url }}' target = '_blank' rel = 'noopener'>{{ site.designer.name }}</a>
-      </div>
+<div class = 'container pa'>
+  <div class = 'copyright'>
+    <div>© Copyright <div class = 'year'></div> Konekti Systems <span>  | </span>  Designed By
+      <a href = '{{ site.designer.url }}' target = '_blank' rel = 'noopener'>{{ site.designer.name }}</a>
     </div>
   </div>
 </div>
