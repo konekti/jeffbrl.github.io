@@ -334,26 +334,35 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
 
   (function showMemberBio() {
     let cards = elems('.team_member');
-    cards.forEach(function(card) {
-      card.addEventListener('click', function(){
-        let card_header = card.children[0];
-        let card_description = card.children[1];
-        let widget = elem('.member_inner').parentNode;
-        let widget_header = elem('.member_header');
-        let widget_description = elem('.member_description');
-        modifyClass(widget, 'member_widget');
-        populateElement(widget_header, card_header);
-        populateElement(widget_description, card_description);
+    if (cards) {
+      let widget = elem('.member_content');
+      let widget_close = elem('.member_close');
+      let body = document.body;
+      cards.forEach(function(card) {
+        card.addEventListener('click', function(){
+          let card_header = card.children[0];
+          let card_description = card.children[1];
+          let widget = elem('.member_inner').parentNode;
+          let widget_header = elem('.member_header');
+          let widget_description = elem('.member_description');
+          modifyClass(widget, 'member_widget');
+          modifyClass(body, 'truncate');
+          populateElement(widget_header, card_header);
+          populateElement(widget_description, card_description);
+        });
       });
-    });
-    let widget = elem('.member_content');
-    let widget_close = elem('.member_close');
-    function closeBio(selector) {
-      selector.addEventListener('click', function(event){
-        event.target === this ? modifyClass(widget, 'member_widget') : false;
-      });
+      function closeBio(selector) {
+        if(selector) {
+          selector.addEventListener('click', function(event){
+            if (event.target === this) {
+              modifyClass(body, 'truncate');
+              modifyClass(widget, 'member_widget');
+            } 
+          });
+        }
+      }
+      closeBio(widget);
+      closeBio(widget_close);
     }
-    closeBio(widget);
-    closeBio(widget_close);
   })();
 })();
