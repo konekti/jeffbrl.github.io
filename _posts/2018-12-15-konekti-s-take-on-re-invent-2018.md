@@ -3,7 +3,7 @@ layout: post
 author: Amir Tabdili
 image: cog_globe
 title: Konekti's Take on re:Invent 2018
-date: 2018-12-15 05:58:37 -0500
+date: 2018-12-15 10:58:37 +0000
 
 ---
 re:Invent 2018 was a blast! It's great to have an event in which so many members of the AWS ecosystem assemble each year. This was my second re:Invent conference. I am impressed at the logistical improvements Amazon made. With so many attendees, it's definitely a challenge navigating the events. I highly recommend attending the chalk talks as these are not recorded.
