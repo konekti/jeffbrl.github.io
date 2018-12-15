@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Amir Tabdili
-image: postimage
+image: cog_globe
 title: Konekti's Take on re:Invent 2018
 date: 2018-12-15 05:58:37 -0500
 
