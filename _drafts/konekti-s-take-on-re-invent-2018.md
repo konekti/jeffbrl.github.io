@@ -17,3 +17,17 @@ The most relevant announcements from what we do at Konekti follow.
 Expect to see more extended looks at these features in future posts.
 
 I'll close the post with a few pictures from the event.
+
+![](/uploads/2018/12/15/2018-11-26-11h09m08-mod.JPG)
+
+![](/uploads/2018/12/15/2018-11-26-11h11m20-mod.JPG)
+
+![](/uploads/2018/12/15/2018-11-26-17h25m31-mod.JPG)
+
+That's me on the left with Dave Murray from AWS and two engineers from Snap.
+
+![](/uploads/2018/12/15/2018-11-27-08h27m17-mod.JPG)
+
+![](/uploads/2018/12/15/2018-11-27-08h27m21-mod.JPG)
+
+See you at re:Invent 2019!
