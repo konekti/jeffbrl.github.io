@@ -19,15 +19,16 @@ fields:
   hidden: false
   default: postimage
 pages:
-- _posts/2018-11-14-konekti-s-aws-networking-wish-list-for-re-invent-2018.md
-- _posts/2018-11-08-are-you-using-the-aws-default-vpc-stop-now.md
-- _posts/2018-10-13-the-shared-network-infrastructure-vpc.md
-- _posts/2018-09-18-the-rumored-aws-whitebox-switch-is-a-customer-gateway.md
-- _posts/2018-07-25-aws-dc-public-sector-new-york-summits-youtube-video-links.md
-- _posts/2018-06-27-konekti-at-the-aws-public-sector-summit.md
-- _posts/2018-08-13-native-aws-transit-vpc-in-the-works.md
-- _posts/2018-08-12-decoding-bring-your-own-ip-preview-for-aws-vpc.md
-- _posts/2018-04-09-the-value-of-aws-privatelink.md
-- _posts/2018-05-06-an-aws-cloudformation-yaml-validator-using-lambda.md
-- _posts/2018-02-25-the-march-toward-simplicity-in-cloud-networking.md
 - _posts/2018-03-22-redundancy-in-the-aws-vpc.md
+- _posts/2018-02-25-the-march-toward-simplicity-in-cloud-networking.md
+- _posts/2018-09-18-the-rumored-aws-whitebox-switch-is-a-customer-gateway.md
+- _posts/2018-04-09-the-value-of-aws-privatelink.md
+- _posts/2018-08-12-decoding-bring-your-own-ip-preview-for-aws-vpc.md
+- _posts/2018-08-13-native-aws-transit-vpc-in-the-works.md
+- _posts/2018-10-13-the-shared-network-infrastructure-vpc.md
+- _posts/2018-06-27-konekti-at-the-aws-public-sector-summit.md
+- _posts/2018-07-25-aws-dc-public-sector-new-york-summits-youtube-video-links.md
+- _posts/2018-11-08-are-you-using-the-aws-default-vpc-stop-now.md
+- _posts/2018-11-14-konekti-s-aws-networking-wish-list-for-re-invent-2018.md
+- _posts/2018-05-06-an-aws-cloudformation-yaml-validator-using-lambda.md
+- _posts/konekti-s-take-on-re-invent-2018.md
