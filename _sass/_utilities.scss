@@ -1,6 +1,12 @@
+.logo {
+  width: 225px;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
 .truncate {
   // for body element
   height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 .light{
