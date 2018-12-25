@@ -1,0 +1,69 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+    AWS CloudFormation template to create a linux bastion host with a GUI that can
+    be accessed via x2go.
+
+Parameters:
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instances
+    Type: String
+  VPC:
+    Description: Name of an existing VPC
+    Type: AWS::EC2::VPC::Id
+  Subnet:
+    Description: Name of an existing subnet in which the instance should be launched
+    Type: AWS::EC2::Subnet::Id
+  SourceIpCIDR:
+    Description: Source IP CIDR block
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})
+    ConstraintDescription: Must use a valid IP CIDR range using slash notation (e.g., x.x.x.x/y)
+Mappings:
+  LinuxRegionMap:
+    us-east-1:
+      UbuntuAMI: ami-059eeca93cf09eebd
+    us-west-1:
+      UbuntuAMI: ami-0ad16744583f21877
+Resources:
+  SecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Description: SG to permit TCP Port 22 (ssh, x2go)
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Join [ '-', [ !Ref 'AWS::StackName', 'permit-tcp22' ] ]
+      GroupName: !Join [ '-', [ !Ref 'AWS::StackName', 'permit-tcp22' ] ]
+      GroupDescription: Permit port 22 for ssh and x2go
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        CidrIp: !Ref SourceIpCIDR
+        FromPort: 22
+        ToPort: 22   
+  EC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Join [ '-', [ !Ref 'AWS::StackName', 'bastion' ] ]
+      KeyName: !Ref KeyName 
+      InstanceType: t3.medium
+      ImageId: !FindInMap [ LinuxRegionMap, !Ref 'AWS::Region', UbuntuAMI ] 
+      SecurityGroupIds: 
+        - !Ref SecurityGroup  
+      SubnetId: !Ref Subnet
+      UserData: 
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe 
+          apt-get -y update
+          apt-get -y install xorg lxde-core lxterminal autocutsel chromium-browser
+          add-apt-repository -y ppa:x2go/stable
+          apt-get -y update
+          apt-get install -y x2goserver x2goserver-xsession
+Outputs:
+  PublicIP:
+    Description: Public IP for EC2 instance
+    Value: !GetAtt EC2Instance.PublicDnsName
