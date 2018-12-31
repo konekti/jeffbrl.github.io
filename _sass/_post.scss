@@ -47,9 +47,15 @@
   }
   &__item{
     box-shadow: 0 0 75px transparent;
-    transition: box-shadow 0.3s;
+    margin-bottom: 2rem; 
+    transition: all 0.3s;
+    -webkit-filter: drop-shadow(-2.5rem 1.5rem 1.5rem rgba(52, 58, 64, 0.1));
+    filter: drop-shadow(-2.5rem 1.5rem 1.5rem rgba(52, 58, 64, 0.1));
     &:hover{
       box-shadow: 0 0 75px rgba(0,0,0,0.17);
+      border-radius: 6px;
+      -webkit-filter: drop-shadow(-2.5rem 1.5rem 1.5rem transparent);
+      filter: drop-shadow(-2.5rem 1.5rem 1.5rem transparent);
     } 
   }
   &-content{
@@ -64,12 +70,6 @@
     a{
       padding-bottom:7.5px;
       text-decoration:underline;
-    }
-    ul, ul li{
-      @extend %unordered;
-    }
-    ol, ol li{
-      @extend %ordered;
     }
   }
   &-list {
@@ -133,14 +133,8 @@
   padding:0  15px 25px;
   // min-height:360px;
   border-radius:0 0 7.5px 7.5px;
-  ul, ul li{
-    @extend %unordered;
-  }
   li{
     margin: 0;
-  }
-  ol, ol li{
-    @extend %ordered;
   }
   p{
     font-size: 18px;
