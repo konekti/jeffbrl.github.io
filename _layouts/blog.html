@@ -12,9 +12,9 @@ layout: default
 <section class = 'blog container grid-reverse pa'>
   <article>
     <div class = 'hold'>
-      <ul class = 'post-collection'>
+      <div class = 'post-collection'>
         {% for post in paginator.posts %}
-        <li class = 'child post__item'>
+        <div class = 'child post__item'>
           <div class = 'flex-up'>
             <a href = '{{ post.url | relative_url }}' class = 'post-link'>
               <h3>
@@ -27,9 +27,9 @@ layout: default
             <p>{{ post.excerpt  | strip_html | truncate: 480 }}</p>
             <a href = '{{ post.url | relative_url }}' class = 'btn btn_left'>Read More</a>
           </div>
-        </li>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
       {% include paginate.html %}
     </div>
   </article>
