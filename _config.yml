@@ -9,14 +9,15 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: post
-    author: Jeff Loughridge
-    image: postimage
-    parent: blog
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      author: Jeff Loughridge
+      image: postimage.jpg
+      twitter_image: postimage.jpg
+      parent: blog
 description: "Konekti Systems helps clients develop and implement cloud and hybrid networks, enabling them to migrate to and between public clouds painlessly."
 url: https://konekti.us
 baseurl: ''

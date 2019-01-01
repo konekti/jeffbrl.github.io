@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: cog_globe
+image: cog_globe.jpg
 title: The Most Common Mistake Architects Make with IP Addresses in the AWS VPC
 date: 2018-12-20 04:00 -0500
 

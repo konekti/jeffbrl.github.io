@@ -181,19 +181,28 @@ $emojis: (
 }
 
 blockquote {
-  color: #aaa;
-  padding: 1.5rem;
-  font-size: 1.25rem;
+  color: $gold;
+  padding: 1rem 1rem 1rem 0;
+  // font-size: 1.25rem;
   position: relative;
   quotes:'\201C''\201D''\2018''\2019';
-  // line-height: 1;
-  margin-top: 1rem;
-  &::before {
+  margin:0.5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  p{
+    padding-left: 0.5rem !important;
+  }
+  &::before,
+  &::after {
     font-size: 2rem;
-    position: absolute;
-    content: open-quote;
     font-family: serif;
-    top: 0.5rem;
-    left: 0;
+  }
+  &::before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+    display: flex;
+    align-items: flex-end;
   }
 }

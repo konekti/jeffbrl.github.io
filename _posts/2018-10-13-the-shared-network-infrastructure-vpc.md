@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: The Shared Network Infrastructure VPC
 date: 2018-10-13 10:39:35 -0400
 

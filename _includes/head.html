@@ -1,7 +1,14 @@
 <head>
   <meta charset="utf-8">
   <title>{{ site.title }}</title>
-  {%- assign desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape -%}
+  {%- if page.headline -%} 
+    {%- assign description = page.headline -%}
+  {%- elsif page.description -%}
+    {%- assign description = page.description -%}
+  {%- else %}
+    {%- assign description = page.excerpt | default: site.description -%}
+  {%- endif -%}
+  {%- assign desc = description | strip_html | normalize_whitespace | truncate: 150 | escape -%}
   {%- include analytics.html -%}
   <meta itemprop = 'description' content="{{ desc }}">
   <meta property="og:description" content="{{ desc }}">
@@ -24,7 +31,7 @@
       "mainEntityOfPage":"{{site.url}}{{page.url}}",
       "image":{  
           "@type":"ImageObject",
-          "url":"{{site.url}}/assets/posts/{{page.image}}.jpg"
+          "url":"{{site.url}}/assets/posts/{{ page.image }}"
       },
       "description": "{{ desc }}",
       "url": "{{site.url}}/{{ page.permalink }}",
@@ -48,17 +55,12 @@
     </script>
   {%- endif -%}
 
-  {%- if page.thumbnail -%} <!-- If thumbnail is set -->
-    {%- assign thumbnail-url  = '/assets/posts/' | prepend: site.url | append: page.thumbnail | append: '.jpg' -%}
-  {%- else -%} 
-    {%- assign thumbnail-url =   '/assets/posts/' | prepend: site.url | append: page.image |  append: '.jpg' -%}
-  {%- endif -%}
   {%- if page.image -%}
-    <meta property='og:image' content= '{{ thumbnail-url }}' />
+    <meta property='og:image' content= '{{site.url}}/assets/posts/{{ page.image }}' />
     <meta property='og:image:width' content='720' />
     <meta property='og:image:height' content='360' />
     <meta name='twitter:site' content='@{{site.twitter}}' />
-    <meta name='twitter:image' content = '{{ thumbnail-url }}' />
+    <meta name='twitter:image' content = '{{ site.url }}/assets/posts/{{ page.twitter_image }}' />
     <meta name='twitter:card' content='summary' />
     <meta name='twitter:creator' content='@{{site.twitter}}' />
     <meta property='og:description'  content="{{ desc }}"/>

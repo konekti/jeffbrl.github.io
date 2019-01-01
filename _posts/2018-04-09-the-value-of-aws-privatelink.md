@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Amir Tabdili
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: The Value of AWS PrivateLink
 date: 2018-04-09 21:13:46 +0000
 ---
