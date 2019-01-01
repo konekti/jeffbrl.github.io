@@ -1,10 +1,10 @@
 <head>
   <meta charset="utf-8">
   <title>{{ site.title }}</title>
-  {%- if page.description -%} 
-    {%- assign description = page.description  -%}
-  {%- elsif page.headline -%}
-    {%- assign description = page.headline  -%}
+  {%- if page.headline -%} 
+    {%- assign description = page.headline -%}
+  {%- elsif page.description -%}
+    {%- assign description = page.description -%}
   {%- else %}
     {%- assign description = page.excerpt | default: site.description -%}
   {%- endif -%}
