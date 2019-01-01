@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: The March Toward Simplicity in Cloud Networking
 date: 2018-02-24 11:37:46 +0000
 ---

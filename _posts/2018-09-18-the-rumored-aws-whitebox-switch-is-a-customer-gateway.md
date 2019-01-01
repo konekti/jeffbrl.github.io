@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: The Rumored AWS Whitebox Switch is a Customer Gateway
 date: 2018-09-18 08:28:10 -0400
 

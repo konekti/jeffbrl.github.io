@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: Redundancy in the AWS VPC
 date: 2018-03-22 20:29:54 +0000
 ---

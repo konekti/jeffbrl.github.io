@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: sky
+image: sky.jpg
 title: Linux Instance with GUI Using CloudFormation
 date: 2018-12-25 02:00:00 -0500
 ---

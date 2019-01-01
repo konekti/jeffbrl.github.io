@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: postimage
+# image: postimage ~~~ Already defined in config defaults
 title: An AWS CloudFormation YAML Validator Using Lambda
 date: 2018-05-06 02:51:06 -0400
 ---

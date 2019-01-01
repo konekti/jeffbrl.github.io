@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jeff Loughridge
-image: sky
+image: sky.jpg
 title: Reclaiming AWS Elastic IP Addresses
 date: 2018-12-28 09:00:00 -0500
 ---
