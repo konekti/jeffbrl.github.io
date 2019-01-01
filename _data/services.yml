@@ -1,26 +1,52 @@
 - name: Connectivity and Network Architecture
   details: |
-    This is a test.
-    * Item 1a
-    * Item 2d
-    
-    1. Ordered Item 1A
-    2. Ordered Item 2A
+    Organizations now realize IT must be a hybrid of approaches, using public and private cloud as well as more
+    traditional infrastructure because consumers demand flexibility and agility with workloads. Konekti brings decades
+    of experience in designing and operating networks at scale with the following services.
 
-    > This is a working blockquote. Your thoughts?? In working on AWS infrastructure, performing tasks in the Console clearly leaves room for mistakes. Even carefully crafted automation can contain defects. In this post
+    <br>
+    ###### Hybrid/Multi-cloud Design & Migration
+    Konekti Systems recognizes that for most organizations with investments in on-premises technologies, an evolutionary 
+    hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. Therefore, 
+    selecting the right cloud provider and the best methods to connect to that provider is paramount in achieving business 
+    goals.
 
+    Enterprises are very familiar with the applications they use and their data. The problem is that 
+    they need to understand how these applications will behave in the new environment. How do the clients access the 
+    application’s new home in the Public cloud? This problem is compounded when the business keeps the application active in 
+    its original location during migration.
 
-- name: Hybrid and Multi-cloud Design and Migration
-  details: "Konekti Systems recognizes that for most organizations with investments in on-premises technologies, an evolutionary hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. Therefore, selecting the right cloud provider and the best methods to connect to that provider is paramount in achieving business goals. \r\n\r\n Enterprises are very familiar with the applications they use and their data. The problem is that they need to understand how these applications will behave in the new environment. How do the clients access the application’s new home in the Public cloud? This problem is compounded when the business keeps the application active in its original location during migration. \r\n\r\n Now, there are two locations to access the information and while the application and the data are the same, the different infrastructure and accessibility make the application delivery complex to manage. Konekti has developed best practices for connecting to Public Cloud providers as well as networking design guidelines that make it easy for you to integrate the public cloud as a seamless and secure extension of your existing on premise investments."
-               
-- name: Modernization of the Enterprise Branch Office using SD-WAN
-  details: >-
+    Now, there are two locations to access the information and while the application and the data are the same, the different 
+    infrastructure and accessibility make the application delivery complex to manage. Konekti has developed best practices 
+    for connecting to Public Cloud providers as well as networking design guidelines that make it easy for you to integrate 
+    the public cloud as a seamless and secure extension of your existing on premise investments.
+
+    <br>
+    ###### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
+    The decisions about VPC inter-connectivity increase in difficulty as the number of VPC grows, particularly when following 
+    the best practice of using multiple accounts. When VPCs numbers in the hundreds, well-established design patterns emerge
+    to ensure seamless and reliable connectivity while maintaining a strict security posture for your cloud infrastructure.
+
+    <br>
+    ###### Modernization of the Enterprise Branch Office using SD-WAN
     The public cloud’s wholesale transformation of IT includes a shifting in enterprise IT requirements for the wide-area 
     network (WAN). The viability of traditional network architectures for interconnecting hundreds or even thousands of remote 
     offices, or branches, is rapidly decreasing as enterprises consume IT as a utility. More agile, secure, and dynamic WAN is 
     needed.
 
-- name: Public Cloud Business Continuity Assurance
-  details: "Public clouds such as AWS, Azure, and GCP offer many tools aiming at providing high levels of availability and methods to minimize catastrophic failures. Konekti understands these various options and will work with your team to design and implement a disaster avoidance and recovery mechanism that meets your business’s requirements."
+- name: Cloud-Secured Network
+  details: |
+    Research shows many cloud migrations fail due to a limited understanding of the cloud-based security offerings. Konekti 
+    seamlessly combines enterprise security best practices with deep expertise in emerging security trends through -
+    * Cloud-native Security Best Practices
+    * Next-generation Firewall Cloud Deployments
+    * Container Security using Service Mesh Architectures
 
-
+- name: Automation
+  details: |
+    No cloud migration strategy is complete without integration of automation and DevOps best practices into both engineering 
+    and operational procedures. Konekti guides organizations through selection, development and deployment of these tools and
+    best practices through the following services.
+    * Infrastructure-as-Code (IaaC) using CloudFormation & Terraform
+    * Service assurance & incident response
+    * Integration of Cloud-Native tols with existing systems
