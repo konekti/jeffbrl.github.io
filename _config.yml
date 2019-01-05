@@ -15,10 +15,10 @@ defaults:
     values:
       layout: post
       author: Jeff Loughridge
-      image: postimage.jpg
-      twitter_image: postimage.jpg
+      image: sky.jpg
+      twitter_image: twitter-card.png
       parent: blog
-description: "Konekti Systems helps clients develop and implement cloud and hybrid networks, enabling them to migrate to and between public clouds painlessly."
+description: "Konekti Systems is a secure connetivity services company. We are experts in interconnecting workloads in hybrid IT environments."
 url: https://konekti.us
 baseurl: ''
 twitter: konekti_systems
