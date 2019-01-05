@@ -13,12 +13,12 @@
 
     Enterprises are very familiar with the applications they use and their data. The problem is that 
     they need to understand how these applications will behave in the new environment. How do the clients access the 
-    application’s new home in the Public cloud? This problem is compounded when the business keeps the application active in 
+    application’s new home in the public cloud? This problem is compounded when the business keeps the application active in 
     its original location during migration.
 
     Now, there are two locations to access the information and while the application and the data are the same, the different 
     infrastructure and accessibility make the application delivery complex to manage. Konekti has developed best practices 
-    for connecting to Public Cloud providers as well as networking design guidelines that make it easy for you to integrate 
+    for connecting to public cloud providers as well as networking design guidelines that make it easy for you to integrate 
     the public cloud as a seamless and secure extension of your existing on premise investments.
 
     <br>
@@ -38,10 +38,42 @@
   details: |
     Research shows many cloud migrations fail due to a limited understanding of the cloud-based security offerings. Konekti 
     seamlessly combines enterprise security best practices with deep expertise in emerging security trends through -
-    * Cloud-native Security Best Practices
-    * Next-generation Firewall Cloud Deployments
-    * Container Security using Service Mesh Architectures
 
+    <br>
+    ###### Cloud-native Security Best Practices
+    Cloud providers operate under a shared responsibility model. The Cloud Service Provider (CSP) takes responsibility for 
+    the security of its infrastructure. Meanwhile, it is customer’s responsibility to ensure that their cloud environment is 
+    configured securely, data is not unintentionally exposed, identifying when a user misuses the account, and enforcing 
+    compliance and corporate policies. There is a sharp contrast between legacy methods and a more modern,
+    cloud-native approach with reliance on a DevOps culture and continuous delivery. In addition, each cloud platform provides its
+    own set of native security controls and tools which might differ from provider to provider and from the third partly tools 
+    currently deployed on-premises. At Konekti, we will use your move to the cloud as an opportunity to catalog all your existing
+    security tools using a requirements-driven approach. We will adopt CSP native controls when requirements permit and make sure 
+    any third party solutions you are considering meet your overall security requirements, ensuring that they can integrate with 
+    the cloud native tools through the use of cloud-native APIs.
+
+    <br>
+    ###### Next-generation Firewall Cloud Deployments
+    At Konekti, we use your move to the cloud as an opportunity to analyze any third-party security solutions you are considering
+    for deployment in the cloud, based on you your overall security requirements. Third party Next Generation Firewalls provide a 
+    crucial role for the enforcement of your network security polices in your organization, creating the necessary security 
+    perimeter and internal security boundaries around your critical data assets in the cloud. Choosing the right firewall, and the 
+    necessary network security trust model is becoming increasingly difficult. Konekti can assist you in the definition of your 
+    network security trust model and trust boundaries. Furthermore, Konekti engineers will assist you in choosing the right 
+    Next Generation firewall technology and the appropriate design and configurations to support your organization’s current and 
+    future needs. 
+
+    <br>
+    ###### Container Security using Service Mesh Architectures
+    Containers have simplified how organizations deploy and manage applications by abstracting the underlying infrastructure and 
+    focusing on the applications and its dependencies. This allows enterprises to run their applications on any kind of deployment 
+    platform whether self-managed on-premise, self-managed in the public cloud, or as a service in the public cloud.  In a 
+    containerized world, Kubernetes is the clear winner of the orchestration arms race, abstracting the complexity of managing large
+    fleets of compute nodes. As Kubernetes enables ever larger deployments, the need for a companion technology aimed at a simpler 
+    way of managing and securing large portfolios of services has become evident. The new Service Mesh architecture is aimed at 
+    decoupling many of the security related functions within a microservices architecture. At Konekti, Our security consultants 
+    will work closely with you to analyze your environment, determine possible threats, and find the right solution to protect your 
+    micro services based applications using the best Service Mesh framework for your needs.
 - name: Automation
   details: |
     No cloud migration strategy is complete without integration of automation and DevOps best practices into both engineering 
@@ -49,4 +81,4 @@
     best practices through the following services.
     * Infrastructure-as-Code (IaaC) using CloudFormation & Terraform
     * Service assurance & incident response
-    * Integration of Cloud-Native tols with existing systems
+    * Integration of Cloud-native tools with existing systems
