@@ -13,5 +13,14 @@
     <label for = 'message'>Your Message</label>
     <textarea id = 'message' class = 'form_input' name = 'Message' placeholder = 'Your Message'></textarea>
     <button name = 'contact' type = 'submit' id = 'contact-submit' class = 'btn'>Submit Now</button>
+    <input type="hidden" name="g-recaptcha-response" id="captchaResponse">
   </form>
+  <script>
+    grecaptcha.ready(function() {
+	grecaptcha.execute('6LcSQ40UAAAAAFyoiiVA2_S2e6KWddU91fy4Ih-n', {action: 'homepage'})
+	.then(function(token) {
+            document.getElementById('captchaResponse').value = token;					
+	});
+    });
+  </script>
 </div>
