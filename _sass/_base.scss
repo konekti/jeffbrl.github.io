@@ -46,10 +46,10 @@ a, a:hover, a:active, a:visited, a:link {
 }
 
 // Headings 
-$lh : 1.05; // line-height
+$lh : 1; // line-height
 $fs : 2.8rem; // font-size;
 @for $i from 1 through 6 {
-	$lh : $lh + 0.05;
+	$lh : $lh + 0.08;
 	$fs : $fs * 0.85;
 	h#{$i} {
 		margin: 0;
@@ -177,7 +177,6 @@ $emojis: (
 
 ::selection {
   color: inherit; 
-  background: transparent;
 }
 
 blockquote {

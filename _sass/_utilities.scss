@@ -1,3 +1,9 @@
+.block {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .logo {
   width: 225px;
   margin-top: -10px;

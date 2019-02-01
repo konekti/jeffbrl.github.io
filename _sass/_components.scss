@@ -248,16 +248,14 @@ section p{
   }
 }
 .intro{
-  min-height: 84vh;
+  background: rgb(17, 97, 132);
+  padding: 90px 0 50px;
   h1{
     color: $light;
   }
   img{
     width: 100%;
     max-width: 300px;
-  }
-  &_container{
-    background: rgba(17, 97, 132, 1);
   }
   &_inner{
     @media screen and (min-width: 1024px) {
