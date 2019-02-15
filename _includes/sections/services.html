@@ -2,7 +2,7 @@
   <div class='container pa pb-2 pt-2'>
     <h2 class = 'left pt-1'>Our Services</h2>
     {% for service in site.data.services | markdownify %}
-    <h4 class = 'pt-2 pb-1'>{{ service.name }}</h4>
+    <h3 class = 'pt-1'>{{ service.name }}</h3>
     {{ service.details | markdownify }}    
     {% endfor %}
   </div>

@@ -5,9 +5,9 @@
     <div>
       <img src = '/assets/authors/{{ person.thumb }}' alt = '{{ person.name }}' class = 'team_thumb'>
       <div class = 'pa'>
-        <h4><a href = '{{ person.profile }}' title = '{{ person.name }} LinkedIn' target = '_blank'>{{ person.name }}</a></h4>
-        <h6>{{ person.role }}</h6>
-        <a href = "mailto:{{ person.email }}">{{ person.email }}</a>
+        <h4 class = 'member_item'><a href = '{{ person.profile }}' title = '{{ person.name }} LinkedIn' target = '_blank'>{{ person.name }}</a></h4>
+        <h6 class = 'member_item'>{{ person.role }}</h6>
+        <p class = 'member_item'><a href = "mailto:{{ person.email }}">{{ person.email }}</a></p>
       </div>
     </div>
     <div class = 'team_hidden'>
