@@ -1,12 +1,13 @@
 // variables
 $dark : #132433; // #24292e;
-$pale: lighten($dark, 15%);
+$pale: lighten(#000, 20%);
 $light: #fff;
 $gold: #faac3a;
 $mute: darken($light, 20%);
 $max-width: 1084px;
 $padding: 15px;
 $margin: 25px;
+$font: 'Metropolis', sans-serif;
 
 // mixins
 @mixin viewport ($width: $max-width){

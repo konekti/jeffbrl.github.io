@@ -12,7 +12,7 @@
     padding:5px 0 0 0;
   }
   h4{
-    font-size:1.2em;
+    // font-size:1.2em;
   }
 }
 .post{
@@ -92,12 +92,12 @@
   &-title{
     margin:5px 0;
     text-align:left;
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
   }
   &-link h3{
     padding:25px 10px 0;
     color: $dark;
-    font-size:1.25em;
+    // font-size:1.25em;
     margin: 0;
   }
 }
@@ -131,24 +131,19 @@
 }
 .excerpt{
   padding:0  15px 25px;
-  // min-height:360px;
   border-radius:0 0 7.5px 7.5px;
   li{
     margin: 0;
-  }
-  p{
-    font-size: 18px;
   }
 }
 .lighten{
   color:#666;
   display:block;
   padding:0 15px;
-  font-size:16px;
+  font-size: 1rem;
 }
 .duration{
   color: $pale;
-  font-size: 1.2em;
 }
 .follow{
   padding:5px;
@@ -169,10 +164,10 @@
   margin-top:20px;
 }
 .pretty{
-  display:inline-block;
-  width:96%;
-  min-width:250px;
-  font-size:1.2em;
+  display: block;
+  width: 100%;
+  min-width: 250px;
+  font-size: 1.2rem;
   background-color:#ededed;
   color:inherit;
   padding:12.5px !important;
@@ -193,10 +188,9 @@
   }
 }
 #accordion li{
-  padding:12.5px;
-  font-size:1.1em;
-  border-bottom:1px solid #f9f9f9;
-  width:96%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f9f9f9;
+  width: 100%;
 }
 .widget{
   position:fixed;
