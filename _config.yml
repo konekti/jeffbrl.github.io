@@ -33,14 +33,14 @@ highlighter: rouge
 paginate: 5
 paginate_path: "/blog/:num/"
 plugins:
-- jekyll-feed
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-gist
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
 exclude:
-- Gemfile
-- Gemfile.lock
-- vendor
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 include:
   - _pages
 excerpt_separator: "<!--excerpt-->"
