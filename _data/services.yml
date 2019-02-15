@@ -5,7 +5,7 @@
     of experience in designing and operating networks at scale with the following services.
 
     <br>
-    ###### Hybrid/Multi-cloud Design & Migration
+    #### Hybrid/Multi-cloud Design & Migration
     Konekti Systems recognizes that for most organizations with investments in on-premises technologies, an evolutionary 
     hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. Therefore, 
     selecting the right cloud provider and the best methods to connect to that provider is paramount in achieving business 
@@ -22,13 +22,13 @@
     the public cloud as a seamless and secure extension of your existing on premise investments.
 
     <br>
-    ###### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
+    #### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
     The decisions about VPC inter-connectivity increase in difficulty as the number of VPC grows, particularly when following 
     the best practice of using multiple accounts. When VPCs numbers in the hundreds, well-established design patterns emerge
     to ensure seamless and reliable connectivity while maintaining a strict security posture for your cloud infrastructure.
 
     <br>
-    ###### Modernization of the Enterprise Branch Office using SD-WAN
+    #### Modernization of the Enterprise Branch Office using SD-WAN
     The public cloud’s wholesale transformation of IT includes a shifting in enterprise IT requirements for the wide-area 
     network (WAN). The viability of traditional network architectures for interconnecting hundreds or even thousands of remote 
     offices, or branches, is rapidly decreasing as enterprises consume IT as a utility. More agile, secure, and dynamic WAN is 
@@ -40,7 +40,7 @@
     seamlessly combines enterprise security best practices with deep expertise in emerging security trends through -
 
     <br>
-    ###### Cloud-native Security Best Practices
+    #### Cloud-native Security Best Practices
     Cloud providers operate under a shared responsibility model. The Cloud Service Provider (CSP) takes responsibility for 
     the security of its infrastructure. Meanwhile, it is customer’s responsibility to ensure that their cloud environment is 
     configured securely, data is not unintentionally exposed, identifying when a user misuses the account, and enforcing 
@@ -53,7 +53,7 @@
     the cloud native tools through the use of cloud-native APIs.
 
     <br>
-    ###### Next-generation Firewall Cloud Deployments
+    #### Next-generation Firewall Cloud Deployments
     At Konekti, we use your move to the cloud as an opportunity to analyze any third-party security solutions you are considering
     for deployment in the cloud, based on you your overall security requirements. Third party Next Generation Firewalls provide a 
     crucial role for the enforcement of your network security polices in your organization, creating the necessary security 
@@ -64,7 +64,7 @@
     future needs. 
 
     <br>
-    ###### Container Security using Service Mesh Architectures
+    #### Container Security using Service Mesh Architectures
     Containers have simplified how organizations deploy and manage applications by abstracting the underlying infrastructure and 
     focusing on the applications and its dependencies. This allows enterprises to run their applications on any kind of deployment 
     platform whether self-managed on-premise, self-managed in the public cloud, or as a service in the public cloud.  In a 
