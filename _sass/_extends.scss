@@ -1,11 +1,28 @@
-%ordered, %unordered{
-  font-size: 19px;
-  line-height: 1.7 !important;
-}
-
 %unordered {
   list-style-type: disc;
 }
 %ordered{
   list-style-type: decimal;
+}
+
+// make gists responsive
+.gist{
+  width:100%;
+  &, * {
+    font-family: inherit;
+  }
+  & table{
+    table-layout: fixed;
+  }
+
+  & td.js-line-number{
+    width: 50px; 
+    text-align: center;
+  }
+
+  & .blob-code-inner{
+    white-space: pre-wrap; 
+    whites-space: wrap;
+    word-wrap:break-word;
+  }
 }
