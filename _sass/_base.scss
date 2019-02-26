@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   line-height: 1.6;
+  font-weight: 300;
 }
 body{
   display: flex;
@@ -12,7 +13,6 @@ body{
   justify-content: space-between;
   font-family: $font;
 	width: 100%;
-	line-height: 24px;
 	font-size: 18px;
 	color: $dark;
 	background: #fff;
@@ -47,8 +47,8 @@ $fs : 2rem;
 	$fs : $fs - 0.15;
 	h#{$i} {
 		margin: 0;
-		font-weight: 500;
-		color: #000;
+		font-weight: 400;
+		color: $dark;
 		line-height: $lh;
 		font-size: $fs;
 	}
@@ -157,4 +157,7 @@ blockquote {
 }
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

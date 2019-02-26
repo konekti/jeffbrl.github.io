@@ -5,7 +5,7 @@
     <header class="header {% if page.lean %} darken {%- endif -%}">
       {%- include header.html -%}
     </header>
-    <main class = 'main__content'>
+    <main class = 'main__content {% if page.lean %}pb-3 pt-3{% endif %}'>
       {{ content }}
       {%- if site.mailchimp.show -%}
         {%- include mail.html -%}

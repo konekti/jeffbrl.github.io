@@ -138,6 +138,34 @@ $sites: (
   }
 }
 
+@for $i from 1 through 3 {
+  $size: $i * 20px;
+  // margin bottom
+  .mb-#{$i} {
+    margin-bottom: $size !important;
+  }
+  // margin top
+  .mt-#{$i} {
+    margin-top: $size !important;
+  }
+  // padding around
+  .ma-#{$i} {
+    padding: $size !important;
+  }
+  .pt-#{$i} {
+    padding-top: $size !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: $size !important;
+  }
+  .pl-#{$i} {
+    padding-left: $size !important;
+  }
+  .pr-#{$i} {
+    padding-right: $size !important;
+  }
+}
+
 .mt-2 {
   margin-top: 40px;
 }
@@ -233,4 +261,20 @@ $emojis: (
 [class^=em_]:after {
   padding-left: 2.5px;
   padding-right: 2.5px;
+}
+.none {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  transition: 0.3s ease-in-out;
+}
+.alert {
+  height: initial;
+  padding: initial;
+  &-danger {
+    color: #dc3545;
+  }
+  &-success {
+    color: #28a745;
+  }
 }

@@ -10,15 +10,10 @@ lean: true # no banner section
   <h1>AWS CloudFormation YAML Validator</h1>
   <p>Enter your CloudFormation template and click 'Validate'.</p>
   <form action = 'POST' class = 'form_validator'>
-    <textarea class = 'form-control' rows = '20' id = 'input_text' placeholder='Paste YAML script here ...'></textarea>
+    <textarea class = 'form-control' rows = '12' id = 'input_text' placeholder='Paste YAML script here ...'></textarea>
     <div class = 'pb-1 pt-2'>
+      <p id = 'output' class = 'none'></p>
       <button type = 'button' id = 'submitBtn' class = 'btn btn-primary'>Validate</button>
     </div>
   </form>
-  <div class = 'row'>
-    <div class = 'col-sm-8'>
-      <p id = 'output' class = 'none'></p>
-    </div>
-    <div class = 'col-sm-4'></div>
-  </div>
 </div>
