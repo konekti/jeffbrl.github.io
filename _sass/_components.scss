@@ -245,6 +245,10 @@ section p{
 .intro{
   background: rgb(17, 97, 132);
   padding: 90px 0 50px;
+  p {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
   h1{
     color: $light;
   }
