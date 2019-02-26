@@ -87,7 +87,8 @@ input, select, label, textarea, button {
 	border: none;
 	box-shadow: none;
 	outline: none;
-	color: #4a4a4a;
+  color: #4a4a4a;
+  font-size: 1rem;
 }
 textarea {
   -webkit-appearance: none;
@@ -153,4 +154,7 @@ blockquote {
     display: flex;
     align-items: flex-end;
   }
+}
+main {
+  flex: 1;
 }
