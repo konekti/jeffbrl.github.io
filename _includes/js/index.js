@@ -74,6 +74,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
   let links = elems('.nav_item');
   let childClass = 'nav_child';
   let close = 'nav_close';
+  let menuIsOpen = false;
 
   function modifyNavLinks() {
     links.forEach(function(link){
@@ -102,6 +103,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
     hamburger.innerHTML = `&#9776;`;
     hamburger.classList.remove(close);
     modifyNavLinks();
+    menuIsOpen = false;
   }
   
   function openMenu() {
@@ -112,6 +114,7 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
     hamburger.innerHTML = `&#10006;`;
     hamburger.classList.add(close);
     modifyNavLinks();
+    menuIsOpen = true;
   }
   
   function modifyMenu() {
@@ -124,9 +127,11 @@ window.innerWidth >= 1024 ? smoothScroll("a[href^='/#']", false) : false;
     modifyMenu();
   });
   
-  overlay.addEventListener('click', function(event) {
-    event.target == this ? closeMenu() : false ;
-  });
+  if(menuIsOpen) {
+    overlay.addEventListener('click', function(event) {
+      event.target == this ? modifyMenu() : false ;
+    });
+  }
 
   window.innerWidth < 1024 ? smoothScroll('.nav_child', modifyMenu) : false;
 
