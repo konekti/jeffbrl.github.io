@@ -26,7 +26,7 @@
     <br>
     #### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
     The decisions about VPC inter-connectivity increase in difficulty as the number of VPC grows, particularly when following 
-    the best practice of using multiple accounts. When VPCs numbers in the hundreds, well-established design patterns emerge
+    the best practice of using multiple accounts. When VPCs number in the hundreds, well-established design patterns emerge
     to ensure seamless and reliable connectivity while maintaining a strict security posture for your cloud infrastructure.
     VPC components such as Transit Gateway and PrivateLink provide powerful abstractions for networking the public cloud.
     Should you invest your developers' time in mastering networking within the public cloud or should they be writing 
