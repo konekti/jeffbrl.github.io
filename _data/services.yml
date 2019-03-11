@@ -1,38 +1,46 @@
-- name: Connectivity and Network Architecture
+- name: Network Connectivity and Architecture
   details: |
-    Organizations now realize IT must be a hybrid of approaches, using public and private cloud as well as more
-    traditional infrastructure because consumers demand flexibility and agility with workloads. Konekti brings decades
-    of experience in designing and operating networks at scale with the following services.
+    Organizations realize IT must be a hybrid of approaches, using public and private cloud as well as more
+    traditional infrastructure. The network is a fundamental component in any hybrid IT architecture. Konekti 
+    brings decades of experience in designing and operating networks at scale. Not only do we grasp what it takes 
+    to design a physical network, we possess the cloud-savviness required serve as your partner in your public cloud 
+    adoption.
 
     <br>
-    #### Hybrid/Multi-cloud Design & Migration
+    #### Hybrid IT Network Design & Migration
     Konekti Systems recognizes that for most organizations with investments in on-premises technologies, an evolutionary 
-    hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. Therefore, 
-    selecting the right cloud provider and the best methods to connect to that provider is paramount in achieving business 
-    goals.
+    hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. 
 
-    Enterprises are very familiar with the applications they use and their data. The problem is that 
-    they need to understand how these applications will behave in the new environment. How do the clients access the 
-    application’s new home in the public cloud? This problem is compounded when the business keeps the application active in 
-    its original location during migration.
+    An early question for many organizations is, "Is my current data center network optimized for connecting to the cloud?"
+    For organizations that have traditional data centers, the complex and heterogeneous nature of the network inhibits
+    streamlined connectivity to the cloud. If your organization currently takes days or weeks to add a virtual LAN (VLAN) 
+    or change a firewall rule, this is a sign your network is not ready to be easily extended to the cloud. Our cloud readiness
+    assessments can help you determine what steps are required to ensure simple and resilent connectivity to the cloud.
 
-    Now, there are two locations to access the information and while the application and the data are the same, the different 
-    infrastructure and accessibility make the application delivery complex to manage. Konekti has developed best practices 
-    for connecting to public cloud providers as well as networking design guidelines that make it easy for you to integrate 
-    the public cloud as a seamless and secure extension of your existing on premise investments.
+    For organizations that have many remote branches, determining how to connect these sites to the public cloud is
+    challenging as many options exist. Should you buy private lines directly to the public cloud at each site or backhaul
+    traffic to headquarters using existing MPLS circuits? When is using a VPN over the Internet the best option? Konekti has 
+    developed best practices for connecting to the public cloud as well as networking design guidelines that make it easy 
+    for you to integrate the public cloud as a seamless and secure extension of your existing on premise investments.
 
     <br>
     #### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
     The decisions about VPC inter-connectivity increase in difficulty as the number of VPC grows, particularly when following 
     the best practice of using multiple accounts. When VPCs numbers in the hundreds, well-established design patterns emerge
     to ensure seamless and reliable connectivity while maintaining a strict security posture for your cloud infrastructure.
+    VPC components such as Transit Gateway and PrivateLink provide powerful abstractions for networking the public cloud.
+    Should you invest your developers' time in mastering networking within the public cloud or should they be writing 
+    innovative applications? We can offload the complexity of designing inter-VPC networking 
+    and avoid the pain points by following proven network designs. 
+    
 
     <br>
 
 - name: Cloud-Secured Network
   details: |
     Research shows many cloud migrations fail due to a limited understanding of the cloud-based security offerings. Konekti 
-    seamlessly combines enterprise security best practices with deep expertise in emerging security trends through -
+    seamlessly combines enterprise security best practices with deep expertise in emerging security trends for hybrid 
+    environments.
 
     <br>
     #### Cloud-native Security Best Practices
@@ -62,9 +70,8 @@
 
 - name: Automation
   details: |
-    No cloud migration strategy is complete without integration of automation and DevOps best practices into both engineering 
+    No cloud migration strategy is complete without the inclusion of automation and DevOps best practices into both engineering 
     and operational procedures. Konekti guides organizations through selection, development and deployment of these tools and
-    best practices through the following services.
-    * Infrastructure-as-Code (IaaC) using CloudFormation & Terraform
-    * Service assurance & incident response
-    * Integration of Cloud-native tools with existing systems
+    best practices. At Konekti, we use Terraform and CloudFormation to build VPC infrastructure. Additionally, we have extensive
+    experience automating network infrastructure on-premises. This combination positions us to meet the automation needs of
+    enterprises operating in a hybrid IT environment.
