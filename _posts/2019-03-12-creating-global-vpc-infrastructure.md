@@ -27,7 +27,7 @@ Here were my objectives.
 * Configure all VPC parameters in a YAML file
 * Deploy multiple VPCs across all AWS regions
 
-I want to introduce the new and improved [AWS Infrastructure Made Easy](https://github.com/jeffbrl/aws-vpc-infrastructure-made-easy)
+I want to introduce the new and improved [AWS VPC Infrastructure Made Easy](https://github.com/jeffbrl/aws-vpc-infrastructure-made-easy)
  tool. The program uses terraform beneath the covers and relies heavily on the 
 [terraform-aws-vpc-module](https://github.com/terraform-aws-modules/terraform-aws-vpc). The automation is very flexible in that 
 the YAML configuration can contain any valid input to the terraform-aws-module.
