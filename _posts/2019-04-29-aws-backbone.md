@@ -2,10 +2,9 @@
 layout: post
 author: Jeff Loughridge
 image: sky.jpg
-title: What AWS Customers Should Know About the AWS Global Backbone
-date: 2019-04-29 08:00:00 -0500
+title: What AWS Customer Should Know About the AWS Global Backbone
+date: 2019-04-29 01:00:00 -0500
 ---
-
 
 At re:Invent, various Amazon speakers tout the security, availability, and performance of the
 AWS Global Backbone, a private Internet Protocol (IP) network purpose-built for moving customer data 
@@ -16,11 +15,11 @@ This subject hasn't much coverage outside of re:Invent. Let's fix that in this p
 What are the key concepts about the backbone that enterprise cloud architect should
 know? 
 
-An underlying theme through this post is control. AWS could have relied on transit providers to interconnect
+An underlying theme throughout this post is control. AWS could have relied on transit providers to interconnect
 its regions and edge locations. By doing so, AWS would have been heavily dependent on third parties, which
 would have limited growth and innovation and prevented end-to-end ownership of the customer experience.
 Features such as Global Accelerator--based on IP anycast-- would have been an engineering nightmare to 
-deploy without the Global Backbone. I believe that AWS's ability to continue its dominance of the public cloud industry 
+deploy without the Global Backbone. I believe that AWS's ability to maintain its dominance of the public cloud industry 
 would be severely degraded without the massive inventment in the AWS Global Backbone.
 
 The AWS Global Backbone is a carrier-class backbone, which means it is built to standards of the largest
@@ -34,13 +33,14 @@ that engineers have visibility that few companies outside the FANGs possess.
 
 I wrote in my introduction that the AWS Global Backbone is purpose-built. While comparable in many
 ways to Tier 1 ISPs, this network addresses challenges specific to cloud providers. Tier 1 ISPs make capacity management 
-decisions based on emperical trends. In addition, these networks maintain oversubcription
-ratios at the provider edge (note that this does not necessarily mean that they are congested). They are not designed 
-to have 300Gb/s of data suddenly flood the network in a particular point of presence (POP). AWS must accommodate 
-this exact situation. Workloads can instantly spin up and spin down in minutes, which forces a high degree of over-provisioning 
-of network capacity. While this is an expensive proposition, over-provisioning capacity is superior to the use of complex 
-quality-of-services (QoS) techniques. Keep in mind the QoS is a decision about which packets to drop in the event of 
-congestion. Amazon describes its global backbone as congestion-free.
+decisions based on empirical trends. In addition, these networks maintain oversubscription
+ratios at the provider edge (note that this does not necessarily mean that they are congested thanks to the statistical
+multiplexing property of packet-switched networks). ISPs are not designed to have 300 Gb/s of data suddenly flood the 
+network in a particular point of presence (POP). AWS must accommodate this exact situation. Workloads can instantly spin 
+up and spin down in minutes, which forces a high degree of over-provisioning of network capacity. While this is an expensive 
+proposition, over-provisioning capacity is superior to the use of complex quality-of-services (QoS) techniques. 
+Keep in mind the QoS is a decision about which packets to drop in the event of congestion. Amazon describes its global 
+backbone as congestion-free.
 
 In AWS whitepapers and other publications, the company strongly recommends encrypting inter-region
 traffic. This is partially an artifact of the days when inter-region traffic used the public Internet. As Amazon
@@ -59,8 +59,9 @@ Source: [AWS re:Invent 2018: Behind the Scenes: Exploring the AWS Global Network
 Note that China is excluded.
 
 In the official documentation, AWS guarantees that traffic that traverses inter-region VPC peering 
-links--including AWS PrivateLink endpoints across regions--used the AWS Global Backbone. Inter-region VPC 
-Peering traffic is also encrypted by AWS. The documentation does not state that VPC Peering
+links--including AWS PrivateLink endpoints across regions--uses the AWS Global Backbone. Inter-region VPC 
+Peering traffic is also encrypted by AWS. The documentation does not state that intra-region VPC Peering
+is encrypted.
 
 The takeaway from this discussion is that inter-region traffic is no longer at risk of being shunted to
 the public Internet; the traffic will use the private backbone. I am unsure why AWS hasn't moved what it
@@ -72,7 +73,7 @@ the MTU on Direct Connect links was 1500 bytes. Now the MTU on Direct Connect pr
 be set to 1500 or 9001. The ability to transmit large frames should significantly increase the speed of
 bulk transfers.
 
-Latency is an significant factor in application performance. The AWS Global Backbone is engineered to minimize latency.
+Latency is a significant factor in application performance. The AWS Global Backbone is engineered to minimize latency.
 AWS reduces latency by serving content closer to its users through the edge and Direct Connect locations. While not part 
 of the AWS Global Backbone, AWS Outposts extends the AWS footprint into the enterprise data center, thus minimizing
 latency for select workloads. Returning to the congestion-free nature of the backbone, user data traffic will have
@@ -86,7 +87,7 @@ a consideration if you decide to add a second region to your AWS footprint.
 
 At Konekti, our core philosophy is that our clients should focus on what they do best--writing innovative
 applications that generate revenue for the business. Yet the network is fundamental to application delivery
-and securely moving bits between heterogenous locations--cloud, data centers, remote branches--can be
+and securely moving bits between heterogeneous locations--cloud, data centers, remote branches--can be
 extremely complex. The AWS Global Backbone plays a key role in this movement of data between AWS regions
 and edge locations. 
 
