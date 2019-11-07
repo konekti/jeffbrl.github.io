@@ -1,77 +1,18 @@
-- name: Network Connectivity and Architecture
+- name: Network Security and Design
   details: |
-    Organizations realize IT must be a hybrid of approaches, using public and private cloud as well as more
-    traditional infrastructure. The network is a fundamental component in any hybrid IT architecture. Konekti 
-    brings decades of experience in designing and operating networks at scale. Not only do we grasp what it takes 
-    to design a physical network, we possess the cloud-savviness required to serve as your partner in your public cloud 
-    adoption.
 
-    <br>
-    #### Hybrid IT Network Design & Migration
-    Konekti Systems recognizes that for most organizations with investments in on-premises technologies, an evolutionary 
-    hybrid cloud architecture is the only path towards cloud adoption. Migrating legacy IT systems takes time. 
+    * Implementation of cloud native security tools and security
+    * Design and implementation of secure hybrid architectures
+    * Implementation of network and workload security with next-generation firewalls
 
-    An early question for many organizations is, "Is my current data center network optimized for connecting to the cloud?"
-    For organizations that have traditional data centers, the complex and heterogeneous nature of the network inhibits
-    streamlined connectivity to the cloud. If your organization currently takes days or weeks to add a virtual LAN (VLAN) 
-    or change a firewall rule, this is a sign your network is not ready to be easily extended to the cloud. Our cloud readiness
-    assessments can help you determine what steps are required to ensure simple and resilent connectivity to the cloud.
-
-    For organizations that have many remote branches, determining how to connect these sites to the public cloud is
-    challenging as many options exist. Should you buy private lines directly to the public cloud at each site or backhaul
-    traffic to headquarters using existing MPLS circuits? When is using a VPN over the Internet the best option? Konekti has 
-    developed best practices for connecting to the public cloud as well as networking design guidelines that make it easy 
-    for you to integrate the public cloud as a seamless and secure extension of your existing on premise investments.
-
-    <br>
-    #### Advanced Virtual Private Cloud (VPC) Connectivity at Scale
-    The decisions about VPC inter-connectivity increase in difficulty as the number of VPC grows, particularly when following 
-    the best practice of using multiple accounts. When VPCs number in the hundreds, well-established design patterns emerge
-    to ensure seamless and reliable connectivity while maintaining a strict security posture for your cloud infrastructure.
-    VPC components such as Transit Gateway and PrivateLink provide powerful abstractions for networking the public cloud.
-    Should you invest your developers' time in mastering networking within the public cloud or should they be writing 
-    innovative applications? We can offload the complexity of designing inter-VPC networking 
-    and avoid the pain points by following proven network designs. 
-    
-
-    <br>
-
-- name: Cloud-Secured Network
+- name: Policy Enforcement and Compliance
   details: |
-    Research shows many cloud migrations fail due to a limited understanding of the cloud-based security offerings. Konekti 
-    seamlessly combines enterprise security best practices with deep expertise in emerging security trends for hybrid 
-    environments.
+    * Deployment of automated compliance tools to secure any resource, deployed anywhere
+    * Development of customized security policies and compliance reports
+    * Creation of customized security health reports on cloud resources
 
-    <br>
-    #### Cloud-native Security Best Practices
-    Cloud providers operate under a shared responsibility model. The Cloud Service Provider (CSP) takes responsibility for 
-    the security of its infrastructure. Meanwhile, it is customer’s responsibility to ensure that their cloud environment is 
-    configured securely, data is not unintentionally exposed, identifying when a user misuses the account, and enforcing 
-    compliance and corporate policies. There is a sharp contrast between legacy methods and a more modern,
-    cloud-native approach with reliance on a DevOps culture and continuous delivery. In addition, each cloud platform provides its
-    own set of native security controls and tools which might differ from provider to provider and from the third partly tools 
-    currently deployed on-premises. At Konekti, we will use your move to the cloud as an opportunity to catalog all your existing
-    security tools using a requirements-driven approach. We will adopt CSP native controls when requirements permit and make sure 
-    any third party solutions you are considering meet your overall security requirements, ensuring that they can integrate with 
-    the cloud native tools through the use of cloud-native APIs.
-
-    <br>
-    #### Next-generation Firewall Cloud Deployments
-    At Konekti, we use your move to the cloud as an opportunity to analyze any third-party security solutions you are considering
-    for deployment in the cloud, based on you your overall security requirements. Third party Next Generation Firewalls provide a 
-    crucial role for the enforcement of your network security polices in your organization, creating the necessary security 
-    perimeter and internal security boundaries around your critical data assets in the cloud. Choosing the right firewall, and the 
-    necessary network security trust model is becoming increasingly difficult. Konekti can assist you in the definition of your 
-    network security trust model and trust boundaries. Furthermore, Konekti engineers will assist you in choosing the right 
-    Next Generation firewall technology and the appropriate design and configurations to support your organization’s current and 
-    future needs. 
-
-    <br>
-
-- name: Automation
+- name: Automation and Infrastructure as Code (IaC)
   details: |
-    No cloud migration strategy is complete without the inclusion of automation and DevOps best practices into both engineering 
-    and operational procedures. Konekti guides organizations through selection, development and deployment of these tools and
-    best practices. At Konekti, we use Terraform and CloudFormation to build VPC infrastructure. Additionally, we have extensive
-    experience automating network infrastructure on-premises. This combination positions us to meet the automation needs of
-    enterprises operating in a hybrid IT environment.
+    * Creation of Terraform and CloudFormation templates to build secure and repeatable infrastructure
+    * Integration of security practices into CI/CD pipelines
+    * Creation of customized security health reports on cloud resources
