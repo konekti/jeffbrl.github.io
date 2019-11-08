@@ -244,8 +244,8 @@ section p{
   text-align: center;
 }
 .intro{
-  background: rgb(17, 97, 132);
-  padding: 90px 0 50px;
+  background-color: $dark;
+  padding: 3rem 0;
   p {
     font-size: 1.25rem;
     font-weight: 300;

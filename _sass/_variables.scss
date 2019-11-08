@@ -8,6 +8,7 @@ $max-width: 1084px;
 $padding: 15px;
 $margin: 25px;
 $font: 'Metropolis', sans-serif;
+$ease: cubic-bezier(.19,1,.22,1);
 
 // mixins
 @mixin viewport ($width: $max-width){

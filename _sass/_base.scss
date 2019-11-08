@@ -5,7 +5,10 @@
   padding: 0;
   margin: 0;
   line-height: 1.6;
-  font-weight: 300;
+}
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body{
   display: flex;
@@ -19,7 +22,10 @@ body{
 	overflow-x: hidden;
   margin: 0;
   min-height: 100vh;
-  font-weight: 300;
+  font-weight: 400;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p{
@@ -99,8 +105,9 @@ label{
   opacity: 0;
   visibility: hidden;
 }
-img {
-	max-width: 100%;
+img, figure, svg {
+  max-width: 100%;
+  display: grid;
 }
 b, em, strong {
   font-weight: 500;

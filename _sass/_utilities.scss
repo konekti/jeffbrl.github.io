@@ -5,7 +5,9 @@
   justify-content: center;
 }
 .logo {
-  width: 225px;
+  display: grid;
+  align-items: center;
+  width: 12.5rem;
   margin-top: -10px;
   margin-bottom: -15px;
 }
@@ -40,9 +42,7 @@
   color: $pale;
 }
 .dark{
-  &en,&{
-    background: $dark;
-  }
+  background-color: $dark;
 }
 @for $i from 1 through 4 {
   $pad: 20px;
@@ -225,7 +225,6 @@ $sites: (
 @media screen and (min-width: 1024px) {
   .figure {
     filter: drop-shadow(-60px 40px 40px rgba(52, 90, 64, 0.1));
-    transform: scale(1.6);
   }
 }
 
@@ -233,10 +232,8 @@ $emojis: (
   wave: "\1F44B",
   warn: "\26A0",
   gear: "\2699",  
-  star : "\2b50",
   mail: "\1F4E7",
   money: "\1F480",
-  write: "\270D",
   clap: "\1F447",
   smile: "\1F642",
   sad: "\1F61E"
