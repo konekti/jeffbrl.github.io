@@ -1,12 +1,12 @@
+{%- if page.validator %}
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script>
-  {%- if page.form -%}
-    {%- include js/autosize.js -%}
-  {%- endif -%}
-  {% include js/index.js %}
-  {% include js/validator.js %}
-</script>
+  <script src = '/js/validator.js'></script>
+{%- endif -%}
+{%- if page.form -%}
+  <script src = 'js/autosize.js'></script>
+{%- endif -%}
+<script src = '/js/index.js'></script>
 <script src="https://use.fontawesome.com/22572db09e.js"></script>
