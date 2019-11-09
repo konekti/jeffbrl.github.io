@@ -375,27 +375,28 @@ section p{
     right: 0;
     width: 100%;
   }
-  &_grow {
-    animation: grow 1s forwards;
-    padding: 10px 20px;
-  }
-  // &_retard {
-  //   animation: retard 0s forwards;
-  //   padding: 0;
-  // }
   &_inner{
     position: relative;
   }
-  &_preview,&_body{
+  &_preview {
     position: absolute;
     bottom: 0;
-    right: 5px;
     overflow: hidden;
     transform-origin: 100% 50%;
+  }
+  &_inner, &_preview, &_body {
     width: 100%;
-    max-width: 360px;
+    right: 0;
+    margin: 0;
+    max-width: 100vw !important;
+    margin-left: auto;
+    @media screen and (min-width: 30rem) {
+      max-width: 360px !important;
+      right: 1.5rem;
+    }
   }
   &_preview {
+    z-index: 49;
     font-weight: 500;
     cursor: pointer;
     background: $gold;
@@ -403,41 +404,43 @@ section p{
     justify-content: space-between;
     color: #fff;
     border-radius: 10px 10px 0 0;
+    padding: 0.6rem 1.5rem;
   }
   &_body{
     background: $light;
     box-shadow: 0 0 60px rgba(0,0,0,0.3);
     border-radius: 10px 10px 0 0;
-    text-align: center;
     z-index: 50;
-    height: 0;
     opacity: 0;
+    transform: translateY(25rem);
+    transition: transform 0.3s $ease;
+    padding: 2rem 1.5rem 1.25rem;
+    position: relative;
+    p {
+      padding: 0.25rem 0;
+    }
+  }
+  &_grow {
+    opacity: 1;
+    transform: translateY(0);
   }
   &_close{
-    overflow: hidden;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 90px;
-    color: #444;
-    font-size: 1rem;
-    text-transform: uppercase;
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 30px transparent;
-    padding: 6px 10px;
-    z-index: 51;
-    transition: all 0.3s;
-    &:hover{
-      box-shadow: 0 0 30px rgba(0,0,0,0.17);
-    }
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 1rem rgba($dark, 0.15);
+    background-color: $gold;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 50% 50%;
+    background-image: url(/assets/icons/icon-close.svg);
+    margin-left: auto;
   }
   &_inner {
     position: relative;
+  }
+  &_btn, &_form {
+    margin: 0 !important;
   }
 }
