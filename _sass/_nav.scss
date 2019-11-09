@@ -2,6 +2,7 @@
   width: 100%;
   font-size: 1.05rem;
   background-color: $dark;
+  position: absolute;
 }
 .nav{
   align-items: center;
@@ -23,7 +24,7 @@
     overflow: hidden;
     @media screen and (max-width: 1023px) {
       opacity: 0;
-      width: 15rem;
+      width: 16.5rem;
       background: $dark;
       position: fixed;
       top: 0;
@@ -31,7 +32,7 @@
       left: 0;
       height: 100vh;
       padding: $margin*2 0;
-      transform: translateX(-15rem);
+      transform: translateX(-16.5rem);
       transition: opacity 0.3s $ease, transform 0.3s $ease;
     }
     @media screen and (min-width: 1024px) {

@@ -50,7 +50,7 @@ $fs : 2rem;
 	$fs : $fs - 0.15;
 	h#{$i} {
 		margin: 0;
-		font-weight: 400;
+		font-weight: 600;
 		color: $dark;
 		line-height: $lh;
 		font-size: $fs;
@@ -110,7 +110,7 @@ img, figure, svg {
   display: grid;
 }
 b, em, strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 aside h3{
   position:relative;
