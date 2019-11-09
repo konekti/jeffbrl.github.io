@@ -45,9 +45,6 @@ include:
   - _pages
 excerpt_separator: "<!--excerpt-->"
 
-designer:
-  name: Weru
-  url: https://neuralvibes.com/author/
 sass:
   style: compressed
 formcarry: BJEUqzP-7
