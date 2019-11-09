@@ -1,18 +1,53 @@
-- name: Network Security and Design
+- name: Cloud Security Expertise
+  icon: picture-1.png
   details: |
+    __Consulting company with focus on Cloud Security__, not a traditional reseller. 
+    We understand today’s cloud native applications and what it takes to secure them.
 
-    * Implementation of cloud native security tools and security
-    * Design and implementation of secure hybrid architectures
-    * Implementation of network and workload security with next-generation firewalls
+- name: Services
+  icon: picture-2.png
+  details: |
+    - Cloud Compliance  and Policy Enforcement
+    - Network Security and Design 
+    - Automation and Infrastructure as Code (IAC)
+
+- name: Cloud Security Misunderstood 
+  icon: picture-3.png
+  details: |
+    Most cloud security __vulnerabilities are due to security provided by the cloud customer__ not the cloud provider
+
+- name: Organization's Needs Vary
+  icon: picture-4.png
+  details: |
+    __Regardless of size or the nature of cloud deployment, a breach would be disastrous to the business and personal reputations__; the basics need to be covered
+
+- name: Fragmented Solutions Space
+  icon: picture-5.png
+  details: |
+    __Seldom robust security solutions using only CSP provided tools is not enough__. We customize solutions, using best of breed native CSP and 3rd party tools.
+
+- name: Compliance in Cloud Age
+  icon: picture-6.png
+  details: |
+    Businesses need to quickly and easily satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA. __Compliance solutions need to be real-time and customizable__
+
+- name: Network Security and Design
+  icon: picture-7.png
+  details: |
+    - Implement network and workload security with next-generation firewalls
+    - Design and implement secure multi-cloud and hybrid architectures
+    - Implement CSP native security tools as a supplemental layer of security
 
 - name: Policy Enforcement and Compliance
+  icon: picture-8.png
   details: |
-    * Deployment of automated compliance tools to secure any resource, deployed anywhere
-    * Development of customized security policies and compliance reports
-    * Creation of customized security health reports on cloud resources
+    - Create customized solutions for our customers using best of breed native CSP and 3rd party tools
+    - Provide solutions to satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA
+    - Create customized compliance and security health reports on all cloud resources
 
 - name: Automation and Infrastructure as Code (IaC)
+  icon: picture-9.png
   details: |
-    * Creation of Terraform and CloudFormation templates to build secure and repeatable infrastructure
-    * Integration of security practices into CI/CD pipelines
-    * Creation of customized security health reports on cloud resources
+    - Integrate security practices into CI/CD pipelines
+    - Create Cloud Formation and Terraform templates
+    - Use IAC and other automation tools to create a viable disaster recovery strategy
