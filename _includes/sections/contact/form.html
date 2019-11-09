@@ -3,7 +3,7 @@
     <h5 class = 'mute'>Looking for a quick reply?</h5>
     <h2 class = 'light'>Send us an email</h2>
   </div>
-  <form name = 'contact' action = 'https://formcarry.com/s/{{ site.formcarry }}' method = 'POST' accept-charset = 'UTF-8' id = 'enquire' class = 'form'>
+  <form name = 'contact' action = '' method = 'POST' accept-charset = 'UTF-8' id = 'enquire' class = 'form'>
     <label for = 'id'>Your Name</label>
     <input type = 'text' id = 'name' name = 'Name' placeholder = 'Your Name' class = 'form_input contact-name'>
     <label for = 'email'>Your Email</label>
@@ -17,10 +17,10 @@
   </form>
   <script>
     grecaptcha.ready(function() {
-	grecaptcha.execute('6LcSQ40UAAAAAFyoiiVA2_S2e6KWddU91fy4Ih-n', {action: 'homepage'})
-	.then(function(token) {
-            document.getElementById('captchaResponse').value = token;					
-	});
+      grecaptcha.execute('6LcSQ40UAAAAAFyoiiVA2_S2e6KWddU91fy4Ih-n', {action: 'homepage'})
+      .then(function(token) {
+        document.getElementById('captchaResponse').value = token;					
+      });
     });
   </script>
 </div>
