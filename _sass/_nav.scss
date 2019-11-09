@@ -1,7 +1,6 @@
 .header{
   width: 100%;
   font-size: 1.05rem;
-  padding: 15px 0;
   background-color: $dark;
 }
 .nav{
@@ -21,13 +20,21 @@
     display: flex;
     flex-direction: column;
     color: $light;
-    width: 0;
-    position: fixed;
     overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.25s ease-out;
+    @media screen and (max-width: 1023px) {
+      opacity: 0;
+      width: 15rem;
+      background: $dark;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      padding: $margin*2 0;
+      transform: translateX(-15rem);
+      transition: opacity 0.3s $ease, transform 0.3s $ease;
+    }
     @media screen and (min-width: 1024px) {
-      opacity: 1;
       position: relative;
       flex-direction: row;
       align-items: center;
@@ -48,54 +55,53 @@
     position: absolute !important;
     right: 25px !important;
     z-index: 9999;
-    top: 0;
-    bottom: 0;
     color: $light;
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(/assets/icons/icon-bar.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
     @media screen and (min-width: 1024px) {
       display: none;
     }
   }
   &_close{
-    color: $dark;
-    background: $light;
     height: 44px;
     width: 44px;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 0 0 90px rgba(0,0,0,0.17)
+    box-shadow: 0 0.25rem 1rem rgba($dark, 0.15);
+    background-size: 1.25rem;
+    background-color: $dark;
+    background-image: url(/assets/icons/icon-close.svg);
+    top: 1rem;
   }
   &_open{
-    background: $light;
-    color: $dark;
-    animation: show 0.3s 0.3s ease-out forwards;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 5px;
-    height: 100vh;
     box-shadow: 0 0 130px rgba(0,0,0,0.17);
-    padding: $margin*2 0;
+    transform: translateX(0);
+    opacity: 1;
   }
   &_child{
     // shows only when the mobile menu is open
-    border-bottom: 1px solid darken($light, 8%);
+    border-bottom: 1px solid lighten($dark, 2%);
     padding: 15px;
     &.nav_active{
-      border-left: 5px solid $gold;
+      border-left: 2.5px solid $gold;
     }
+  }
+  &_brand {
+    display: flex;
+    align-items: center;
   }
   &_active {
     color: $gold;
   }
   &_overlay{
     cursor: pointer;
-  }
-  &_hide{
-    animation: hide 0s 0.3s ease-out forwards;
   }
   &_dark {
     @media screen and (min-width: 1024px) {
@@ -107,9 +113,9 @@
       transform: translateY(-10rem);
       transition: transform 1.5s $ease;
       will-change: transform;
-    // }
-  }
-  &_fixed {
+      // }
+    }
+    &_fixed {
       position: fixed !important;
       z-index: 101;
       left: 0;
@@ -117,5 +123,6 @@
       top: 0;
       transform: translateY(0);
     }
-}
-
+  }
+  
+  

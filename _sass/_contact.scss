@@ -32,8 +32,13 @@
     background: $light;
     box-shadow: 0 10px 25px 0 rgba(158, 174, 221, 0.1);
     img {
+      width: 5rem;
       margin-left: auto;
       margin-right: auto;
+    }
+    a {
+      text-decoration: underline;
+      text-decoration-color: $gold;
     }
   }
 }

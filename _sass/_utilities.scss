@@ -8,8 +8,7 @@
   display: grid;
   align-items: center;
   width: 12.5rem;
-  margin-top: -10px;
-  margin-bottom: -15px;
+  margin: -0.5rem 0;
 }
 .truncate {
   // for body element
@@ -123,6 +122,7 @@
   right: 0;
   top: 0;
   background: rgba($dark, 0.03) !important;
+  z-index: 99999;
 }
 
 $sites: (
@@ -194,7 +194,7 @@ $sites: (
   grid-template-columns: 1fr;
 }
 [class*='grid-']{
-  grid-gap: 40px;
+  grid-gap: 1.8rem;
   @extend %grid;
 }
 .grid{
