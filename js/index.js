@@ -82,7 +82,6 @@ function fileHelper() {
     let links = elems('.nav_item');
     let childClass = 'nav_child';
     let close = 'nav_close';
-    let menuIsOpen = false;
     
     function modifyNavLinks() {
       links.forEach(function(link){
@@ -108,7 +107,6 @@ function fileHelper() {
       s[4].add(s[2])
       s[4].remove(s[1]);
       s[5].remove(s[0]);
-      hamburger.innerHTML = `&#9776;`;
       hamburger.classList.remove(close);
       modifyNavLinks();
       menuIsOpen = false;
@@ -119,7 +117,6 @@ function fileHelper() {
       s[4].add(s[1])
       s[4].remove(s[2]);
       s[5].add(s[0]);
-      hamburger.innerHTML = `&#10006;`;
       hamburger.classList.add(close);
       modifyNavLinks();
       menuIsOpen = true;
@@ -131,18 +128,14 @@ function fileHelper() {
       closed ? openMenu() : closeMenu();
     }
     
-    hamburger.addEventListener('click', function () {
-      modifyMenu();
+    doc.addEventListener('click', function(event) {
+      let target = event.target;
+      let isMenuToggle = target.matches('.nav_toggle');
+      let isMenuOverlay = target.matches('.slab');
+      isMenuToggle || isMenuOverlay ? modifyMenu() : false ;
     });
     
-    if(menuIsOpen) {
-      overlay.addEventListener('click', function(event) {
-        event.target == this ? modifyMenu() : false ;
-      });
-    }
-    
   })();
-  
   
   (function showActiveLink() {
     let links = elems('.nav_item');
@@ -175,9 +168,10 @@ function fileHelper() {
     
     doc.addEventListener('click', function(event) {
       let target = event.target;
-      let isBlog = elem('blog');
-      let isArchive = isBlog ? target.closest('h3').matches('.pretty') : false;
-      isArchive ? toggleArchive(target.closest('h3')) : false;
+      let isBlog = elem('.blog');
+      let archiveTitle = target.closest('h3');
+      let isArchive = isBlog ? archiveTitle ? archiveTitle.matches('.pretty') : false : false;
+      isArchive ? toggleArchive(archiveTitle) : false;
     });
   })();
   
@@ -202,7 +196,7 @@ function fileHelper() {
       },
       failure: {
         title: "Something's wrong ...",
-        message: "<a href = 'mailto:info@konekti.us'<u>Contact us</u></a> directly and You'll hear from us soon.",
+        message: "<a href = 'mailto:info@konekti.us'<u>Contact us directly</u></a> and you'll hear from us soon.",
         icon: "icon-failure.png"
       }
     }
@@ -275,7 +269,7 @@ function fileHelper() {
   }
   
   function submitSignUp(form) {
-    let formAction = 'https://getform.io/f/febe942a-1bbe-418e-a138-26286a4e9e68';
+    let formAction = formCarryAction;
     
     let data = formValues(form);
     
@@ -287,11 +281,11 @@ function fileHelper() {
     
     fetch(formAction, options)
     .then(response => response.text())
-    .then((contents) => {
+    .then(() => {
       formFeedBack(form, true);
       // form.reset();
     })
-    .catch((error) => {
+    .catch(() => {
       formFeedBack(form)
     });
   }
@@ -424,23 +418,6 @@ function fileHelper() {
     }
     nav ? fixNav() : false;
     
-  })();
-  
-  (function mobileNav() {
-    let hamburger, nav, show, toggle, header, fix;
-    hamburger = elem('.nav_toggle');
-    nav = elem ('.nav');
-    header = elem('.nav_top');
-    show = 'nav_show';
-    fix = 'nav_fixed';
-    toggle = 'nav_toggled';
-    doc.addEventListener('click', function(event) {
-      if (event.target == hamburger) {
-        modifyClass(hamburger, toggle);
-        modifyClass(nav, show);
-        modifyClass(header, fix);
-      }
-    });
   })();
 }
 
