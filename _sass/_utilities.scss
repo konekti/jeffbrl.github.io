@@ -221,6 +221,12 @@ $sites: (
 .grid-4{
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
+.grid-service {
+  grid-template-columns: 10rem 1fr;
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .figure {
@@ -274,4 +280,7 @@ $emojis: (
   &-success {
     color: #28a745;
   }
+}
+.thumbnail {
+  width: 7rem;
 }
