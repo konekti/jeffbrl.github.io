@@ -307,23 +307,18 @@ function fileHelper() {
   
   (function() {  
     (function toggleSubscribeWidget() {
-      let mailPreview = elem('.mail_preview');
-      let mailClose = elem('.mail_close');
-      if (mailPreview) {
-        let grow = 'mail_grow';
-        let retard = 'mail_retard';
-        function alterMailPanel(target) {
-          modifyClass(target, grow);
-        }
-        mailPreview.addEventListener('click', function(event) {
-          let mailBody = this.nextElementSibling;
-          alterMailPanel(mailBody);
-        });
-        mailClose.addEventListener('click', function() {
-          let mailBody = this.parentNode.parentNode;
-          alterMailPanel(mailBody);
-        });
-      }
+      let mailPreview = '.mail_preview';
+      mailClose = '.mail_close';
+      let grow = 'mail_grow';
+      let mailBody = elem('.mail_body');
+      doc.addEventListener('click', function(event){
+        let target = event.target;
+        let isMailPreview = target.matches(mailPreview) || target.closest(mailPreview);
+        let isMailClose = target.matches(mailClose);
+        let mailBodyIsOpen = mailBody ? containsClass(mailBody, grow) : false;
+
+        isMailClose || isMailPreview ? modifyClass(mailBody, grow) : mailBodyIsOpen ? modifyClass(mailBody, grow) : false;
+      });
     })();
     
     (function toggleShare() {
