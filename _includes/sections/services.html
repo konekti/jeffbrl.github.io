@@ -1,9 +1,16 @@
 <section class='about-text-outer-area' id='services'>
-  <div class='container pa pb-2 pt-2'>
+  <section class='container pa pb-2 pt-2'>
     <h2 class = 'left pt-1'>Our Services</h2>
-    {% for service in site.data.services | markdownify %}
-    <h3 class = 'pt-1'>{{ service.name }}</h3>
-    {{ service.details | markdownify }}    
+    {% for item in site.data.services | markdownify %}
+    <div class = 'grid-service mt-3'>
+      <div>
+        <img src = '/assets/images/{{ item.icon }}' class = 'thumbnail'>
+      </div>
+      <section>
+        <h3>{{ item.name }}</h3>
+        {{ item.details | markdownify }}    
+      </section>
+    </div>
     {% endfor %}
-  </div>
+  </section>
 </section>
