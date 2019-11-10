@@ -46,6 +46,7 @@
   }
   &_item{
     color: inherit;
+    user-select: none;
     @media screen and (min-width: 1024px) {
       padding: 0.25rem 1.5rem;
     }
