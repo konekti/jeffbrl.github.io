@@ -377,6 +377,10 @@ section p{
   }
   &_inner{
     position: relative;
+    max-height: 4rem;
+    &.expand {
+      max-height: initial;
+    }
   }
   &_preview {
     position: absolute;

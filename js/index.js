@@ -309,15 +309,27 @@ function fileHelper() {
     (function toggleSubscribeWidget() {
       let mailPreview = '.mail_preview';
       mailClose = '.mail_close';
+      let mailInner = '.mail_inner';
       let grow = 'mail_grow';
+      let expand = 'expand';
       let mailBody = elem('.mail_body');
+
+      function mailBodyIsOpen() {
+        return mailBody ? containsClass(mailBody, grow) : false;
+      } 
+
+      function togglePanel() {
+        modifyClass(mailBody, grow);
+        modifyClass(mailBody.closest(mailInner), expand);
+      }
+
       doc.addEventListener('click', function(event){
         let target = event.target;
         let isMailPreview = target.matches(mailPreview) || target.closest(mailPreview);
         let isMailClose = target.matches(mailClose);
-        let mailBodyIsOpen = mailBody ? containsClass(mailBody, grow) : false;
+        let isWithinMail = target.closest(mailInner); 
 
-        isMailClose || isMailPreview ? modifyClass(mailBody, grow) : mailBodyIsOpen ? modifyClass(mailBody, grow) : false;
+        isMailClose || isMailPreview ? togglePanel() : mailBodyIsOpen() && !isWithinMail ? togglePanel() : false;
       });
     })();
     
