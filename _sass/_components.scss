@@ -27,9 +27,9 @@
   &_input {
     background: $light;
     color: $text;
-    margin-bottom: 15px !important;
+    margin-bottom: 0.8rem !important;
     line-height: 1.6;
-    padding: 15px 30px;
+    padding: 0.6rem 1.2rem;
     border-radius: 30px;
     border: 1px solid transparent;
     text-align: left;
@@ -246,12 +246,17 @@ section p{
 .intro{
   background-color: $dark;
   padding: 8rem 0 3rem;
+  color: $light;
   p {
     font-size: 1.25rem;
-    font-weight: 300;
+    // font-weight: 300;
   }
-  h1{
-    color: $light;
+  p, h1 {
+    color: inherit;
+    opacity: 0.9;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   img{
     width: 100%;
@@ -382,12 +387,6 @@ section p{
       max-height: initial;
     }
   }
-  &_preview {
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    transform-origin: 100% 50%;
-  }
   &_inner, &_preview, &_body {
     width: 100%;
     right: 0;
@@ -400,15 +399,20 @@ section p{
     }
   }
   &_preview {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transform-origin: 100% 50%;
     z-index: 49;
-    font-weight: 500;
     cursor: pointer;
     background: $gold;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1rem;
+    grid-gap: 0.5rem;
+    align-items: center;
     color: #fff;
     border-radius: 10px 10px 0 0;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 1rem;
   }
   &_body{
     background: $light;
@@ -446,5 +450,27 @@ section p{
   }
   &_btn, &_form {
     margin: 0 !important;
+  }
+}
+
+.share{
+  display: flex;
+  align-items: center;
+  position: relative;
+  img{
+    width: 40%;
+  }
+  &_item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transform-origin: 50% 50%;
+    margin: 7.5px;
+    background: $pale;
+    border-radius: 50%;
+    color: $light;
+    font-size: 1.5rem;
   }
 }

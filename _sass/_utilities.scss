@@ -278,3 +278,15 @@ $sites: (
 .thumbnail {
   width: 7rem;
 }
+.label {
+  &-normal {
+    font-weight: 400;
+    opacity: 0.84;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+  }
+  &-upper {
+    font-weight: 400;
+    // text-transform: uppercase;
+  }
+}
