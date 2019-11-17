@@ -2,18 +2,5 @@
   {%- assign services = site.data.services %}
   <section class='container pa pb-2 pt-2'>
     {{ services.content | markdownify }}
-    <h2 class = 'pt-4 pb-2'>Appendix</h2>
-    <div class = 'grid-3'>
-    {%- for item in services.appendix %}
-      <div class = 'center pb-2 column'>
-        <div>
-          <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
-        </div>
-        <h3 class = 'h3'>{{ item.title }}</h3>
-        <p class = 'column_flex'>{{ item.content }}</p>
-        <a href = '{{ item.more }}' class = 'btn'>Learn More</a>
-      </div>
-    {%- endfor %}
-    </div>
   </section>
 </section>
