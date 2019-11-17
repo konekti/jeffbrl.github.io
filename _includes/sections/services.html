@@ -10,8 +10,8 @@
           <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
         </div>
         <h3 class = 'h3'>{{ item.title }}</h3>
-        <p>{{ item.content }}</p>
-        <a href = '{{ item.more }}' class = 'btn column_end'>Learn More</a>
+        <p class = 'column_flex'>{{ item.content }}</p>
+        <a href = '{{ item.more }}' class = 'btn'>Learn More</a>
       </div>
     {%- endfor %}
     </div>
