@@ -6,6 +6,8 @@ form: true
 
 {% include sections/intro.html %}
   
+{% include sections/mission.html %}
+
 {% include sections/services.html %}
 
 {% include sections/engage-us.html %}

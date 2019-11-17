@@ -1,9 +1,10 @@
 .header{
   width: 100%;
   font-size: 1.05rem;
-  background-color: $dark;
-  position: absolute;
+  background-color: $light;
+  // position: absolute;
   z-index: 99;
+  color: $dark;
 }
 .nav{
   align-items: center;
@@ -21,12 +22,12 @@
   &_menu{
     display: flex;
     flex-direction: column;
-    color: $light;
+    // color: $light;
     overflow: hidden;
     @media screen and (max-width: 1023px) {
       opacity: 0;
       width: 16.5rem;
-      background: $dark;
+      background: $haze;
       position: fixed;
       top: 0;
       bottom: 0;
@@ -48,7 +49,7 @@
     color: inherit;
     user-select: none;
     @media screen and (min-width: 1024px) {
-      padding: 0.25rem 1.5rem;
+      padding: 0.25rem 1rem;
     }
     &:hover{
       color: $gold;
@@ -58,7 +59,6 @@
     position: absolute !important;
     right: 25px !important;
     z-index: 9999;
-    color: $light;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
   }
   &_child{
     // shows only when the mobile menu is open
-    border-bottom: 1px solid lighten($dark, 2%);
+    border-bottom: 1px solid lighten($light, 2%);
     padding: 15px;
     &.nav_active{
       border-left: 2.5px solid $gold;
@@ -99,6 +99,7 @@
   &_brand {
     display: flex;
     align-items: center;
+    padding: 1rem 0;
   }
   &_active {
     color: $gold;
@@ -125,6 +126,7 @@
       right: 0;
       top: 0;
       transform: translateY(0);
+      box-shadow: 0 1.5rem 1rem -1rem rgba($dark, 0.04);
     }
   }
   

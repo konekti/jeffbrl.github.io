@@ -240,6 +240,10 @@ $sites: (
     .grid-#{$i} {
       grid-template-columns: repeat($i, 1fr);
     }
+    .img-#{$i} {
+      display: inline-block;
+      width: $i * 20%;
+    }
   }
 }
 
@@ -287,6 +291,9 @@ $sites: (
   }
   &-upper {
     font-weight: 400;
-    // text-transform: uppercase;
   }
 }
+.haze {
+  background-color: $haze;
+}
+

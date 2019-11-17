@@ -1,0 +1,14 @@
+<section class='section'>
+  {%- assign mission = site.data.mission %}
+  <section class='container pa pb-2 pt-2'>
+    {{- mission.content | markdownify }}
+    <div class = 'grid-4 pt-4'>
+    {%- for item in mission.services %}
+      <div class = 'center'>
+        <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+        <p>{{ item.content }}</p>
+      </div>
+    {%- endfor %}
+    </div>
+  </section>
+</section>

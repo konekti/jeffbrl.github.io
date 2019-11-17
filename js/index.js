@@ -132,7 +132,9 @@ function fileHelper() {
       let target = event.target;
       let isMenuToggle = target.matches('.nav_toggle');
       let isMenuOverlay = target.matches('.slab');
-      isMenuToggle || isMenuOverlay ? modifyMenu() : false ;
+      let isMenuItem = target.matches('.nav_item');
+      let menuIsOpen = target.closest('header').matches('.slab');
+     (isMenuItem && menuIsOpen) || isMenuToggle || isMenuOverlay ? modifyMenu() : false ;
     });
     
   })();

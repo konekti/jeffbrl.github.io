@@ -1,6 +1,9 @@
 - id: home
   text: Home
   type: section
+- id: services
+  text: Services
+  type: section
 - id: contact
   text: Contact Us
   type: section

@@ -47,7 +47,7 @@ $lh : 1.1;
 $fs : 2rem;
 @for $i from 1 through 6 {
 	$lh : $lh + 0.06;
-	$fs : $fs - 0.15;
+	$fs : $fs - 0.2;
 	h#{$i} {
 		margin: 0;
 		font-weight: 600;
@@ -109,7 +109,7 @@ img, figure, svg {
   max-width: 100%;
   display: grid;
 }
-b, em, strong {
+b, strong {
   font-weight: 600;
 }
 aside h3{
@@ -164,4 +164,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.h3 {
+  color: $gold;
+  font-size: 1.33rem;
+  margin-top: 0.75rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  &_end {
+    align-self: flex-end;
+  }
 }

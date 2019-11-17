@@ -7,12 +7,9 @@
 }
 .blog{
   h1, h2, h3{
-    margin:15px auto;
+    margin: 0.9rem auto;
     text-align:left;
     padding:5px 0 0 0;
-  }
-  h4{
-    // font-size:1.2em;
   }
 }
 .post{
@@ -168,15 +165,12 @@
   width: 100%;
   min-width: 250px;
   font-size: 1.2rem;
-  background-color:#ededed;
+  background-color: $haze;
   color:inherit;
   padding:12.5px !important;
   cursor:pointer;
   margin-top:5px !important;
   user-select: none;
-}
-.deep{
-  background-color:#f9f9f9;
 }
 .pretty + ul{
   height:0;

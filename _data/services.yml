@@ -1,53 +1,62 @@
-- name: Cloud Security Expertise
-  icon: picture-1.png
-  details: |
-    __Consulting company with focus on Cloud Security__, not a traditional reseller. 
-    We understand today’s cloud native applications and what it takes to secure them.
+content: |
+  ## Services
+  ### NETWORK SECURITY AND DESIGN
 
-- name: Services
-  icon: picture-2.png
-  details: |
-    - Cloud Compliance  and Policy Enforcement
-    - Network Security and Design 
-    - Automation and Infrastructure as Code (IAC)
+  To protect your network from cyberattacks and improve your overall security posture, we provide solutions to safely enable applications across all ports, for all users, all the time – while simultaneously scanning traffic for both known and new threats. In addition, we will work with your network and security teams to create scalable solutions for connecting branches, users and mobile devices to the cloud. Konekti is an industry leader in network security design and implementation with focus in the following areas
+   
+  Architecting modern network security through application visibility and workload segmentation as provided by NG-FWs, preventing a wide variety of threats, including vulnerability exploits, malware and botnets
+  Providing guidance on deployment of CSP native security tools 
+  Creation of scalable secure cloud architectures using cloud native constructs such as VPC peering, Transit VPCs, Direct Connect, AWS Private Link, and Transit Gateways
+  Architect secure cloud access solutions for remote branches and mobile users
+  
+  ### POLICY ENFORCEMENT AND COMPLIANCE
+  
+  _Businesses need to quickly and easily satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA. __Compliance solutions need to be real-time and customizable___
+   
+  - Create customized solutions using native CSP and 3rd party tools in order to meet compliance and governance requirements
+  - Create solutions for granular policy enforcement on all cloud resources including SaaS applications
+  - Provide solutions with out of the box support for standards like CIS, NIST and PCI, with ability to generate custom, audit-ready reports
+  - Deliver guidance and procedures to investigate and auto-remediate compliance violations
 
-- name: Cloud Security Misunderstood 
-  icon: picture-3.png
-  details: |
-    Most cloud security __vulnerabilities are due to security provided by the cloud customer__ not the cloud provider
+  ### AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
+  
+  We believe no security solution is complete without a comprehensive automation strategy. Infrastructure as Code enables businesses to manage IT infrastructure efficiently in a DevOps environment that relies on continuous delivery. Konekti can help your business with the following critical functions:
+   
+  - Integrate security practices into CI/CD pipelines
+  - Create IAC and other automation tools to streamline cloud deployment and operations
+  - Use serverless functionality to integrate security components and provide remediation
+  - Provide automation solutions to enable businesses quickly provision pre-configured resources 
+  
+appendix:
+  - title: Data Warehouse Modernization
+    icon: icon-1.svg
+    more: # url
+    content: Take advantage of a modern architecture that brings together all your data in one place and makes it available to all your users and applications. 
 
-- name: Organization's Needs Vary
-  icon: picture-4.png
-  details: |
-    __Regardless of size or the nature of cloud deployment, a breach would be disastrous to the business and personal reputations__; the basics need to be covered
+  - title: Insights from your DataLake 
+    icon: icon-1.svg
+    more: # url
+    content: Easily and affordably combine diverse data for exploration, experimentation, and refinement without sacrificing performance. 
 
-- name: Fragmented Solutions Space
-  icon: picture-5.png
-  details: |
-    __Seldom robust security solutions using only CSP provided tools is not enough__. We customize solutions, using best of breed native CSP and 3rd party tools.
 
-- name: Compliance in Cloud Age
-  icon: picture-6.png
-  details: |
-    Businesses need to quickly and easily satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA. __Compliance solutions need to be real-time and customizable__
+  - title: Accelerating Analytics 
+    icon: icon-1.svg
+    more: # url
+    content: Deliver rapid data insights to analysts at any scale of data, workload, and concurrency, without needing to manually tune and optimize a data warehouse. 
 
-- name: Network Security and Design
-  icon: picture-7.png
-  details: |
-    - Implement network and workload security with next-generation firewalls
-    - Design and implement secure multi-cloud and hybrid architectures
-    - Implement CSP native security tools as a supplemental layer of security
 
-- name: Policy Enforcement and Compliance
-  icon: picture-8.png
-  details: |
-    - Create customized solutions for our customers using best of breed native CSP and 3rd party tools
-    - Provide solutions to satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA
-    - Create customized compliance and security health reports on all cloud resources
+  - title: Secure Data Sharing 
+    icon: icon-1.svg
+    more: # url
+    content: Seamlessly share data both inside and outside of your organization without copying, transferring, or manually transforming data. 
 
-- name: Automation and Infrastructure as Code (IaC)
-  icon: picture-9.png
-  details: |
-    - Integrate security practices into CI/CD pipelines
-    - Create Cloud Formation and Terraform templates
-    - Use IAC and other automation tools to create a viable disaster recovery strategy
+
+  - title: Enabling Developers 
+    icon: icon-1.svg
+    more: # url
+    content: From data science to embedded applications, see how Snowflake enables developers to build the applications and services that put data to full use. 
+
+  - title: Security, Compliance, Anti-Fraud 
+    icon: icon-1.svg
+    more: # url
+    content: Aggregate and analyze all your data in the cloud for better, faster, and more cost-effective threat defense and regulatory compliance. 

@@ -69,7 +69,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 section p{
-  text-align:left;
+  // text-align:left;
   padding:10px 0;
 }
 .overlay h1{
@@ -244,9 +244,8 @@ section p{
   text-align: center;
 }
 .intro{
-  background-color: $dark;
+  background-color: $haze;
   padding: 8rem 0 3rem;
-  color: $light;
   p {
     font-size: 1.25rem;
     // font-weight: 300;
@@ -269,7 +268,7 @@ section p{
   }
 }
 #engage {
-  background: #F4F5F9;
+  background: $haze;
   padding: 30px 0;
   margin: 30px 0;
 }
@@ -472,5 +471,16 @@ section p{
     border-radius: 50%;
     color: $light;
     font-size: 1.5rem;
+  }
+}
+
+.section {
+  h2 {
+    font-weight: 400;
+  }
+  h3 {
+    &:not(:first-of-type) {
+      margin-top: 3rem;
+    }
   }
 }

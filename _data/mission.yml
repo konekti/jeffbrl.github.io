@@ -1,0 +1,18 @@
+content: |
+  ## Our Mission
+
+  Most cloud security __vulnerabilities are due to security provided by the cloud customer__, not the cloud provider. __Regardless of size or the nature of cloud deployment, a breach would be disastrous to the business and personal reputations__; the basics need to be covered.  Our mission is to secure public cloud and hybrid infrastructures so that our clients can focus on writing innovative applications.
+
+services:
+  - icon: icon-1.svg
+    content: Protect critical data wherever it may be, as it moves between the traditional Data Center, the Public Cloud and SaaS applications.
+
+  - icon: icon-2.svg
+    content: Follow the continuous security model by protecting applications throughout the development pipeline to eventual deployment
+
+  - icon: icon-3.svg
+    content: Use security solutions that work across all major public clouds 
+
+  - icon: icon-4.svg
+    content: Any security solution needs to scale up as a business grows and its cloud deployment scales up.
+
