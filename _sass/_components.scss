@@ -230,13 +230,11 @@ section p{
 }
 .tools{
   a{
-    color: #faac3a;
+    color: $blue;
     &:visited,
     &:hover{
+      color: $blue;
       opacity:0.75;
-    }
-    &:visited{
-      color: darken(#faac3a, 30%);
     }
   }
 }
@@ -347,7 +345,6 @@ section p{
     display: none;
   }
   &_member{
-    // box-shadow: 0 0 5px rgba(0,0,0,0.17);
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 5px;
@@ -415,7 +412,7 @@ section p{
   }
   &_body{
     background: $light;
-    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    box-shadow: 0 0 6rem rgba(19, 7, 7, 0.17);
     border-radius: 10px 10px 0 0;
     z-index: 50;
     opacity: 0;
