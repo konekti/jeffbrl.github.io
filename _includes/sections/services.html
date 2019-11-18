@@ -1,6 +1,17 @@
 <section class='about-text-outer-area section'>
   {%- assign services = site.data.services %}
   <section class='container pa pb-2 pt-2'>
-    {{ services.content | markdownify }}
+    <h2>Services</h2>
+    <div class = 'grid-inverse pt-2'>
+    {% for item in services %}
+      <section>
+        <h3 class = 'h3'>{{ item.title }}</h3>
+        <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+      </section>
+      <div>
+        {{ item.content | markdownify  }}
+      </div>
+      {% endfor %}
+    </div>
   </section>
 </section>

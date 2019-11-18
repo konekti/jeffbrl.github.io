@@ -1,28 +1,31 @@
-content: |
-  ## Services
-  ### NETWORK SECURITY AND DESIGN
+- title: NETWORK SECURITY AND DESIGN
+  icon: icon-1.svg
+  content: |
+    To protect your network from cyberattacks and improve your overall security posture, we provide solutions to safely enable applications across all ports, for all users, all the time – while simultaneously scanning traffic for both known and new threats. In addition, we will work with your network and security teams to create scalable solutions for connecting branches, users and mobile devices to the cloud. Konekti is an industry leader in network security design and implementation with focus in the following areas
+     
+    Architecting modern network security through application visibility and workload segmentation as provided by NG-FWs, preventing a wide variety of threats, including vulnerability exploits, malware and botnets
+    Providing guidance on deployment of CSP native security tools 
 
-  To protect your network from cyberattacks and improve your overall security posture, we provide solutions to safely enable applications across all ports, for all users, all the time – while simultaneously scanning traffic for both known and new threats. In addition, we will work with your network and security teams to create scalable solutions for connecting branches, users and mobile devices to the cloud. Konekti is an industry leader in network security design and implementation with focus in the following areas
-   
-  Architecting modern network security through application visibility and workload segmentation as provided by NG-FWs, preventing a wide variety of threats, including vulnerability exploits, malware and botnets
-  Providing guidance on deployment of CSP native security tools 
-  Creation of scalable secure cloud architectures using cloud native constructs such as VPC peering, Transit VPCs, Direct Connect, AWS Private Link, and Transit Gateways
-  Architect secure cloud access solutions for remote branches and mobile users
-  
-  ### POLICY ENFORCEMENT AND COMPLIANCE
-  
-  _Businesses need to quickly and easily satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA. __Compliance solutions need to be real-time and customizable___
-   
-  - Create customized solutions using native CSP and 3rd party tools in order to meet compliance and governance requirements
-  - Create solutions for granular policy enforcement on all cloud resources including SaaS applications
-  - Provide solutions with out of the box support for standards like CIS, NIST and PCI, with ability to generate custom, audit-ready reports
-  - Deliver guidance and procedures to investigate and auto-remediate compliance violations
+    Creation of scalable secure cloud architectures using cloud native constructs such as VPC peering, Transit VPCs, Direct Connect, AWS Private Link, and Transit Gateways
+    Architect secure cloud access solutions for remote branches and mobile users
 
-  ### AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
+- title: POLICY ENFORCEMENT AND COMPLIANCE
+  icon: icon-2.svg
+  content: | 
+    Businesses need to quickly and easily satisfy compliance requirements, such as those related to GDPR, PCI, or HIPAA. __Compliance solutions need to be real-time and customizable___
+     
+    - Create customized solutions using native CSP and 3rd party tools in order to meet compliance and governance requirements
+    - Create solutions for granular policy enforcement on all cloud resources including SaaS applications
+    - Provide solutions with out of the box support for standards like CIS, NIST and PCI, with ability to generate custom, audit-ready reports
+    - Deliver guidance and procedures to investigate and auto-remediate compliance violations
+
+- title: AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
+  icon: icon-3.svg
+  content: |
+    We believe no security solution is complete without a comprehensive automation strategy. Infrastructure as Code enables businesses to manage IT infrastructure efficiently in a DevOps environment that relies on continuous delivery. Konekti can help your business with the following critical functions:
+       
+    - Integrate security practices into CI/CD pipelines
+    - Create IAC and other automation tools to streamline cloud deployment and operations
+    - Use serverless functionality to integrate security components and provide remediation
+    - Provide automation solutions to enable businesses quickly provision pre-configured resources
   
-  We believe no security solution is complete without a comprehensive automation strategy. Infrastructure as Code enables businesses to manage IT infrastructure efficiently in a DevOps environment that relies on continuous delivery. Konekti can help your business with the following critical functions:
-   
-  - Integrate security practices into CI/CD pipelines
-  - Create IAC and other automation tools to streamline cloud deployment and operations
-  - Use serverless functionality to integrate security components and provide remediation
-  - Provide automation solutions to enable businesses quickly provision pre-configured resources
