@@ -12,7 +12,7 @@
     text-transform: uppercase; 
     :hover {
       background: $light;
-      color: $gold;
+      color: $blue;
       border: 1px solid transparent;
     }   
     }
@@ -38,7 +38,7 @@
     }
     a {
       text-decoration: underline;
-      text-decoration-color: $gold;
+      text-decoration-color: $blue;
     }
   }
 }

@@ -240,10 +240,12 @@ $sites: (
     .grid-#{$i} {
       grid-template-columns: repeat($i, 1fr);
     }
-    .img-#{$i} {
-      display: inline-block;
-      width: $i * 20%;
-    }
+  }
+}
+@for $i from 2 through 4 {
+  .img-#{$i} {
+    display: inline-block;
+    width: $i * 20%;
   }
 }
 

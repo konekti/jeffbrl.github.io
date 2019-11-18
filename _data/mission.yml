@@ -5,14 +5,18 @@ content: |
 
 services:
   - icon: icon-1.svg
+    title: protect every resource
     content: Protect critical data wherever it may be, as it moves between the traditional Data Center, the Public Cloud and SaaS applications.
 
   - icon: icon-2.svg
+    title: follow continuous security model
     content: Follow the continuous security model by protecting applications throughout the development pipeline to eventual deployment
 
   - icon: icon-3.svg
+    title: protect any cloud
     content: Use security solutions that work across all major public clouds 
 
   - icon: icon-4.svg
+    title: scale across the cloud journey
     content: Any security solution needs to scale up as a business grows and its cloud deployment scales up.
 

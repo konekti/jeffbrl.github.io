@@ -6,6 +6,7 @@
     {%- for item in mission.services %}
       <div class = 'center'>
         <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+        <h3 class = 'h3'>{{ item.title | upcase }}</h3>
         <p>{{ item.content }}</p>
       </div>
     {%- endfor %}

@@ -121,7 +121,7 @@ section p{
   margin:auto;
 }
 .btn {
-	background: #faac3a;
+	background: $blue;
 	text-transform: uppercase;
 	border-radius: 40px;
 	color: #ffffff;
@@ -144,9 +144,9 @@ section p{
     margin-left: 0;
   }
   &:hover{
-    color: $gold;
+    color: $blue;
     background: $light;
-    border: 1px solid $gold;
+    border: 1px solid $blue;
   }
 }
 .hold{
@@ -404,7 +404,7 @@ section p{
     transform-origin: 100% 50%;
     z-index: 49;
     cursor: pointer;
-    background: $gold;
+    background: $blue;
     display: grid;
     grid-template-columns: 1fr 1rem;
     grid-gap: 0.5rem;
@@ -437,7 +437,7 @@ section p{
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0.25rem 1rem rgba($text, 0.15);
-    background-color: $gold;
+    background-color: $blue;
     background-repeat: no-repeat;
     background-size: 1rem;
     background-position: 50% 50%;
@@ -475,9 +475,6 @@ section p{
 }
 
 .section {
-  h2 {
-    font-weight: 400;
-  }
   h3 {
     &:not(:first-of-type) {
       margin-top: 3rem;
