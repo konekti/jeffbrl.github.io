@@ -1,8 +1,6 @@
 content: |
   ## Our Mission
 
-  Most cloud security __vulnerabilities are due to security provided by the cloud customer__, not the cloud provider. __Regardless of size or the nature of cloud deployment, a breach would be disastrous to the business and personal reputations__; the basics need to be covered.  Our mission is to secure public cloud and hybrid infrastructures so that our clients can focus on writing innovative applications.
-
 services:
   - icon: icon-1.svg
     title: protect every resource
