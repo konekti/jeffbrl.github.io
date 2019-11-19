@@ -11,7 +11,7 @@ services:
     content: Follow the continuous security model by protecting applications throughout the development pipeline to eventual deployment
 
   - icon: icon-3.svg
-    title: protect any cloud
+    title: protect any cloud resource
     content: Use security solutions that work across all major public clouds 
 
   - icon: icon-4.svg
