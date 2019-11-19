@@ -18,7 +18,7 @@ defaults:
       image: sky.jpg
       twitter_image: twitter-card.png
       parent: blog
-description: "Konekti Systems is a secure connetivity services company. We are experts in interconnecting workloads in hybrid IT environments."
+description: "Konekti Systems helps clients develop and implement secure cloud infrastructure"
 url: https://konekti.us
 baseurl: ''
 twitter: konekti_systems
