@@ -4,7 +4,7 @@
     __To protect your network from cyberattacks and improve your overall security posture, we provide solutions to safely enable applications across all ports, for all users, all the time – while simultaneously scanning traffic for both known and new threats__. In addition, we will work with your network and security teams to create scalable solutions for connecting branches, users and mobile devices to the cloud. Konekti is an industry leader in network security design and implementation with focus in the following areas.
      
     - Architecting modern network security through application visibility and workload segmentation as provided by next-generation firewalls, preventing a wide variety of threats, including vulnerability exploits, malware and botnets
-    - Providing guidance on deployment of CSP native security tools 
+    - Providing guidance on deployment of Cloud Service Provider (CSP) native security tools 
     - Creation of scalable secure cloud architectures using cloud native constructs such as VPC peering, Transit VPCs, Direct Connect, AWS PrivateLink, and Transit Gateways
     - Architect secure cloud access solutions for remote branches and mobile users
 
