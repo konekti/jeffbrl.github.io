@@ -1,3 +1,37 @@
+- name: Amir Tabdili
+  role: CEO
+  thumb: amir.jpg
+  phone: +1 202-812-9273
+  email: amir@konekti.us
+  scope: |
+    Amir is a 22-year veteran of networking industry, a subject matter expert on large-scale IP networks as well as a 
+    successful entrepreneur. Amir began his networking career in 1996 at Sprint as an operations engineer. 
+    At Sprint, Amir implemented the first inter-provider multicast network in the industry. Amir joined Juniper Networks 
+    in 1999 and excelled in various leadership technical roles over the next decade. At Juniper, he was instrumental in the 
+    deployment of Juniper products into numerous large service provider and enterprise networks. Amir founded Cypress 
+    Consulting in early 2011 with focus on providing IP/MPLS consulting services to large service provider and enterprises.
+
+    Amir has dual bachelor degrees in Electrical Engineering and Biomedical Engineering from Vanderbilt University, and an 
+    MBA with focus in finance from the University of Maryland.
+
+- name: Eduard Stumpel
+  role: VP, Sales
+  thumb: ed.jpg
+  phone: 
+  email: eduard@konekti.nl
+  scope: |
+    Eduard has been active in the ICT business since 1984. After
+    successful leadership roles with various software companies
+    such as Micromuse and ThruPoint, he started Cypress as a
+    consulting firm in IP-based Infrastructure Technology.
+
+    Eduard has extensive experience in implementing growth
+    strategies and is a seasoned entrepreneur. He has
+    comprehensive knowledge of IP based infrastructures for
+    telcos and enterprises, extensive knowledge of OSS/BSS
+    systems, and excellent knowledge of EAI, SOA and application
+    development. Eduard holds a bachelor degree in Economics.
+
 - name: Jeff Loughridge
   role: CTO
   thumb: jeff.jpg
@@ -12,20 +46,4 @@
 
     Jeff graduated from Duke Univerisity in 1998 with a degree in Computer Science. His writing on IP networking has appeared
     in publications such as The IP Protocol Journal and Network Computing.
-
-- name: Amir Tabdili
-  role: Chief Architect
-  thumb: amir.jpg
-  phone: +1 202-812-9273
-  email: amir@konekti.us
-  scope: |
-    Amir is a 22-year veteran of networking industry, a subject matter expert on large-scale IP networks as well as a 
-    successful entrepreneur. Amir began his networking career in 1996 at Sprint as an operations engineer. 
-    At Sprint, Amir implemented the first inter-provider multicast network in the industry. Amir joined Juniper Networks 
-    in 1999 and excelled in various leadership technical roles over the next decade. At Juniper, he was instrumental in the 
-    deployment of Juniper products into numerous large service provider and enterprise networks. Amir founded Cypress 
-    Consulting in early 2011 with focus on providing IP/MPLS consulting services to large service provider and enterprises.
-
-    Amir has dual bachelor degrees in Electrical Engineering and Biomedical Engineering from Vanderbilt University, and an 
-    MBA with focus in finance from the University of Maryland.
 
