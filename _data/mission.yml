@@ -16,5 +16,5 @@ services:
 
   - icon: icon-4.svg
     title: scale across the cloud journey
-    content: Any security solution needs to scale up as a business grows and its cloud deployment scales up.
+    content: Any security solution needs to scale up as a business grows and its cloud deployment scales up
 
