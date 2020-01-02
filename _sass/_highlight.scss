@@ -1,14 +1,37 @@
+pre{
+  display: block;
+  margin: 0 0 10px;
+  line-height: 1.42857143;
+  color: #333;
+  border-radius: 4px;
+}
+code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+code, pre {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .highlight{
+  display: grid;
   width: 100%;
   max-width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 0.5rem 2rem rgba(158, 174, 221, 0.15);
+  margin-bottom: 2rem;
 }
 pre.highlight{  
   border:none;
   padding:25px 20px;
   background: #f9f2f4;
   font-size: 1rem;
-  box-shadow:0 25px 40px -10px rgba(158, 174, 221, 0.2);
-  margin-bottom: 2rem;
+  box-shadow: none;
+  margin-bottom: 0;
   .hll { background: #ffffcc }
   .err { color: #a61717; background: #e3d2d2; }
   .gd { background: #ffdddd }
