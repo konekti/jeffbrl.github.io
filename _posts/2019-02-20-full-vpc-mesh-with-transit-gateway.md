@@ -26,7 +26,7 @@ The following diagram depicts a simplified four VPC full mesh using VPC peering.
 This full mesh can grow to 125 VPC peerings upon request. This is hard limit. To establish routing between VPCs, 
 you'll have to request that Amazon increase the number of routes per routing table.
 
-What if you want to add a 17th VPC? The required number of VPC peerings is 17*16/2 = 127.5. Uh oh. A redesign is needed. 
+What if you want to add a 17th VPC? The required number of VPC peerings is 17*16/2 = 136. Uh oh. A redesign is needed. 
 Fortunately, using TGW to implement a full mesh of VPC connectivity is simple.
 
 This diagram depicts the new design using TGW.
