@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Angus Gow
-# image: postimage ~~~ Already defined in config defaults
+image: sky.jpg
 title: Everything is MVP?
 date: 2020-02-23 00:00:00 -0500
 
