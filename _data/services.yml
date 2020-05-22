@@ -1,11 +1,11 @@
-- title: CLOUD MIGRATION
+- title: SECURE CLOUD MIGRATION
   icon: picture5.png
   content: |
     - Work with stakeholders to prioritize application and business requirements and their applicability to the cloud environment 
     - Create reference architecture for cloud services that meet both business and compliance requirements
     - Implement the cloud architecture using best practices for security and automation
 
-- title: NETWORK SECURITY AND DESIGN
+- title: NETWORK SECURITY AND SECURE ACCESS
   icon: picture6.png
   content: |
     -	Design and implement secure multi-cloud and hybrid cloud architectures
