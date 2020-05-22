@@ -2,8 +2,8 @@
   <div class = 'container pa pb-2 pt-2'>
     <h2 class = 'left'>When to Engage Us</h2>
     {%- for case in site.data.use-cases -%}
-      <h3 class = 'pb-1 pt-1'>Use Case #{{ forloop.index }}</h3>
-      <h4>"{{ case.question }}"</h4>
+      <h3 class = 'pb-1 pt-1'>"{{ case.question }}"</h3>
+      <!-- <h4></h4> -->
       <p>{{ case.answer }}</p>
     {%- endfor -%}
   </div>
