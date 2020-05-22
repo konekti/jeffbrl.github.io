@@ -1,0 +1,26 @@
+- title: KONEKTI SECURITY AUDIT
+  icon: picture9.png
+  content: |
+    - Cloud Infrastructure Security 
+    - Host / OS Vulnerability Scan
+    - Software Security
+    - CI / CD Pipeline Audit for best practices around security
+    - Container Deployment Security and Scan
+    - Optional: Penetration Testing
+  
+- title: WELL ARCHITECTED FRAMEWORK AUDIT
+  icon: picture10.png
+  content: |
+    - Operational excellence required to deliver business value
+    - Security protection of information & systems
+    - Reliability and ability to quickly recover from failures 
+    - Performance efficiency 
+    - Cost optimization AND control where money is spent
+  
+- title: KONEKTI NETWORK AUDIT
+  icon: picture11.png
+  content: |
+    - Multi-cloud and Hybrid Cloud architectures for industry best practices
+    - Analysis of organization’s remote access and VPN needs to conform to user-centric, scalable and adaptive network access
+    - Audit of usage of various CSP provided constructs, such as Transit Gateway, VPC - Peering and PrivateLink, for delivery of maximum business value
+  

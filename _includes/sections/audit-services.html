@@ -1,0 +1,18 @@
+<section class='about-text-outer-area section' id = 'services'>
+  {%- assign services = site.data.audit-services %}
+  <section class='container pa pb-2 pt-2'>
+    <h2>Konekti's Audit Services</h2>
+    <div class = 'grid-3 pt-2'>
+    {% for item in services %}
+      <!-- <section class = 'center'> -->
+      <section>
+        <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+        <h3 class = 'h3'>{{ item.title }}</h3>
+        <div>
+          {{ item.content | markdownify  }}
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+</section>
