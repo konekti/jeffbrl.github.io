@@ -8,17 +8,19 @@
 - title: NETWORK SECURITY AND DESIGN
   icon: picture6.png
   content: |
-    - Design and implement secure multi-cloud and hybrid cloud architectures
-    - Provide solutions to transcend the traditional VPNs with the latest architecture and seamless least privilege access
-    - Leverage secure access service edge (SASE) offerings to ensure user-centric and policy-based network access to on premise resources, SaaS applications, and cloud environments
+    -	Design and implement secure multi-cloud and hybrid cloud architectures
+    -	Use various public cloud constructs to create secure and high-performance cloud native architectures that meet application and compliance requirements
+    -	Leverage Secure Access Service edge (SASE) offerings to ensure user-centric and policy-based network access, transcending traditional VPN architectures
+    
   
 
 - title: ClOUD SECURITY & COMPLIANCE
   icon: picture7.png
   content: | 
-    - Create customized solutions for our customers using best of breed native CSP & 3rd party tools
-    - Provide solutions to satisfy compliance requirements (e.g., GDPR, PCI, HIPPA)
-    - Create customized compliance & security health reports on cloud resources
+    -	Collaborate with customers to design, plan and implement a comprehensive cloud security and compliance model that applies to cloud infrastructures, business applications and end users
+    -	Help transform compliance efforts into a competitive advantage through leveraging clouds capabilities that speed up such initiatives 
+    -	Create customized solutions around compliance reporting and enforcement using best of breed native cloud and third-party tools 
+  
   
 - title: AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
   icon: picture8.png
