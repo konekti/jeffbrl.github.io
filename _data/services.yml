@@ -1,12 +1,12 @@
 - title: CLOUD MIGRATION
-  icon: picture1.png
+  icon: picture5.png
   content: |
     - Work with stakeholders to prioritize application and business requirements and their applicability to the cloud environment 
     - Create reference architecture for cloud services that meet both business and compliance requirements
     - Implement the cloud architecture using best practices for security and automation
 
 - title: NETWORK SECURITY AND DESIGN
-  icon: picture2.png
+  icon: picture6.png
   content: |
     - Design and implement secure multi-cloud and hybrid cloud architectures
     - Provide solutions to transcend the traditional VPNs with the latest architecture and seamless least privilege access
@@ -14,14 +14,14 @@
   
 
 - title: ClOUD SECURITY & COMPLIANCE
-  icon: picture3.png
+  icon: picture7.png
   content: | 
     - Create customized solutions for our customers using best of breed native CSP & 3rd party tools
     - Provide solutions to satisfy compliance requirements (e.g., GDPR, PCI, HIPPA)
     - Create customized compliance & security health reports on cloud resources
   
 - title: AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
-  icon: picture4.png
+  icon: picture8.png
   content: |
     - Integrate security practices into CI / CD pipelines
     - Create Cloud Formation and Terraform Templates

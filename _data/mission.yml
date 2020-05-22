@@ -2,19 +2,19 @@ content: |
   ## Our Mission
 
 services:
-  - icon: picture5.png
+  - icon: picture1.png
     title: protect every resource
     content: Protect critical data wherever it may be, as it moves between the traditional Data Center, the Public Cloud and SaaS applications.
 
-  - icon: picture6.png
+  - icon: picture2.png
     title: follow continuous security model
     content: Follow the continuous security model by protecting applications throughout the development pipeline to eventual deployment
 
-  - icon: picture7.png
+  - icon: picture3.png
     title: protect any cloud deployment
     content: Use security solutions that work across all major public clouds 
 
-  - icon: picture8.png
+  - icon: picture4.png
     title: scale across the cloud journey
     content: Any security solution needs to scale up as a business grows and its cloud deployment scales up
 
