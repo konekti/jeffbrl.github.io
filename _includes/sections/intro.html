@@ -1,6 +1,8 @@
 <section class='intro' id='home'>
   <div class = 'container pa'>
     <!-- <h1 class = 'center'>Cloud Security Simplified</h1> -->
-    <p class = 'mute pb-1 pt-1 center'><i>Most cloud security vulnerabilities are due to security provided by the cloud customer, not the cloud provider. Regardless of size or the nature of cloud deployment, a breach would be disastrous to the business and personal reputations. We help clients secure public cloud and hybrid infrastructure so that they can focus on writing innovative applications.</i></p>
+    <div class = 'pb-1 pt-1 center'>
+      {{ site.data.intro.contents | markdownify }}
+    </div>
   </div>
 </section>
