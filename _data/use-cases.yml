@@ -1,3 +1,6 @@
+- question: "Our company needs to move our enterprise applications to the public cloud. What do we do next?"
+  answer: "If your organization is looking to modernize mission-critical applications and you’re planning a cloud migration as part of this process, you don’t want to repeat others’ mistakes. Our team of consultants will work with all the stake holders in your organization to create a migration path that meets your organization’s budget and timelines, while meeting security and compliance requirements."
+
 - question: "Did my organization implement a secure cloud infrastructure?"
   answer: "You’ve fully migrated to the cloud and your services are wildly popular. Your developers have embraced the cloud, and your paying customer base is expanding rapidly. Even so, you worry about security and the ramifications of a breach. Engage our team of experts to guide you to a security posture in which you can concentrate on the revenue-generating services rather than infrastructure areas that fall outside your team’s expertise."
 
@@ -9,3 +12,6 @@
 
 - question: "How can I ensure my cloud services remain highly available and quickly restored if a CSP experiences a region failure?"
   answer: "Your cloud infrastructure was deployed manually using the CSP's web console. The thought having to rebuild the infrastructure manually after a catastrophic failure is constantly on your mind. You understand the importance of infrastructure-as-code; however, other priorities have kept your engineers from implementing it. Konekti's engineers can recreate your infrastructure using CloudFormation, Azure Resource Manager, or Terraform."
+
+- question: "Many of our employees work from home today. The current network architecture does not provide adequate security and performance for today’s cloud based applications. How can I provide a solution that meets the needs of our mobile workforce?"
+  answer: "We now live in a world of cloud and mobility, yet many organizations are still trying to provide secure remote access to applications using network security solutions, like the VPN. It’s time to adopt a modern, scalable approach—one that enables secure remote access to private applications in the cloud and data center. Our consultants will help you chose and implement a modern approach to secure application access without the performance implications of backhauling traffic through VPNs, which can quickly become overwhelmed by surges in usage."
