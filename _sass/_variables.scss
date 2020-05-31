@@ -20,6 +20,10 @@ $blue: #34a2e2;
 $font: 'Metropolis', sans-serif;
 $ease: cubic-bezier(.19,1,.22,1);
 
+:root {
+  --dark: #1b1f23;
+}
+
 // mixins
 @mixin viewport ($width: $max-width){
   width:100%;
