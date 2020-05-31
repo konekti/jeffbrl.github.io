@@ -481,7 +481,9 @@ section p{
 
 .bg {
   background: var(--dark);
-  color: $light;
+  &, h2 {
+    color: $light;
+  }
   &_img {
     width: 9rem;
     height: 9rem;
