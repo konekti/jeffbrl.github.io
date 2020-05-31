@@ -1,0 +1,11 @@
+- title: CLOUD SECURITY HEALTH
+  content: | 
+    This audit is intended as a comprehensive audit of an organization's security posture in anticipation of a security audit and includes the following components: Cloud Infrastructure Security, Host / OS Vulnerability scan, CI / CD pipeline audit (optional) and penetration testing (optional)
+
+- title: WELL ARCHITECTED FRAMEWORK
+  content: |
+    Audit of AWS Cloud Infrastructure to ensure conformance to five pillars of a well-architected framework: Operational excellence, security, reliability, performance efficiency and cost optimization
+    
+- title: NETWORK AUDIT 
+  content: |
+    Includes audit of organization’s network and remote workforce access architecture to ensure conformance to secure, scalable and adaptive network industry best practices.

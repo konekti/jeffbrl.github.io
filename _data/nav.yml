@@ -4,9 +4,6 @@
 - id: services
   text: Services
   type: section
-- id: audit-services
-  text: Audit Services
-  type: section
 - id: contact
   text: Contact Us
   type: section
