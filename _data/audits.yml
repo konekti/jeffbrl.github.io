@@ -1,11 +1,34 @@
 - title: CLOUD SECURITY HEALTH
+  icon: picture9 # icon sprite id
   content: | 
-    This audit is intended as a comprehensive audit of an organization's security posture in anticipation of a security audit and includes the following components: Cloud Infrastructure Security, Host / OS Vulnerability scan, CI / CD pipeline audit (optional) and penetration testing (optional)
+    This audit is intended as a comprehensive audit of an organization's security posture in anticipation of a security audit and includes the following components
 
-- title: WELL ARCHITECTED FRAMEWORK
+    - Cloud Infrastructure Security 
+    - Host / OS Vulnerability Scan
+    - Software Security
+    - CI / CD Pipeline Audit for best practices around security
+    - Container Deployment Security and Scan
+    - Optional: Penetration Testing
+
+
+
+- title: WELL ARCHITECTED FRAMEWORK AUDIT
+  icon: picture10 # icon sprite id
   content: |
-    Audit of AWS Cloud Infrastructure to ensure conformance to five pillars of a well-architected framework: Operational excellence, security, reliability, performance efficiency and cost optimization
+    Audit of AWS cloud infrastructure to ensure conformance to five pillars of a well-architected framework
+
+    - Operational excellence required to deliver business value
+    - Security protection of information & systems
+    - Reliability and ability to quickly recover from failures 
+    - Performance efficiency 
+    - Cost optimization AND control where money is spent
+
     
 - title: NETWORK AUDIT 
+  icon: picture11 # icon sprite id
   content: |
     Includes audit of organization’s network and remote workforce access architecture to ensure conformance to secure, scalable and adaptive network industry best practices.
+
+    - Multi-cloud and Hybrid Cloud architectures for industry best practices
+    - Analysis of organization’s remote access and VPN needs to conform to user-centric, scalable and adaptive network access
+    - Audit of usage of various CSP provided constructs, such as Transit Gateway, VPC Peering and PrivateLink, for delivery of maximum business value

@@ -2,18 +2,18 @@ content: |
   ## Our Mission
 
 services:
-  - icon: picture1.png
+  - icon: picture1 # icon sprite id
     title: Enable Secure Cloud Transformation
     content: Create the infrastructure and automation solutions to protect critical data wherever it may be, as it moves between the traditional Data Center, the Public Cloud and SaaS applications.
 
-  - icon: picture2.png
+  - icon: picture2 # icon sprite id
     title: Extend Security to the Mobile Workforce
     content: Enable businesses to easily secure access to network resources, cloud environments, and business applications, with seamless and highly intuitive cloud-based solutions.
 
-  - icon: picture3.png
+  - icon: picture3 # icon sprite id
     title: Follow the Continuous Security Model 
     content: Follow the continuous security model by protecting applications throughout the development pipeline to eventual deployment
 
-  - icon: picture4.png
+  - icon: picture4 # icon sprite id
     title: Simplify Cloud Compliance
     content: Implement policies, procedures, processes and systems to satisfy internal and external compliance requirements

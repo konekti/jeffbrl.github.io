@@ -1,12 +1,12 @@
 - title: SECURE CLOUD MIGRATION
-  icon: picture5.png
+  icon: picture5 # icon sprite id
   content: |
     - Work with stakeholders to prioritize application and business requirements and their applicability to the cloud environment 
     - Create reference architecture for cloud services that meet both business and compliance requirements
     - Implement the cloud architecture using best practices for security and automation
 
 - title: NETWORK SECURITY AND SECURE ACCESS
-  icon: picture6.png
+  icon: picture6 # icon sprite id
   content: |
     -	Design and implement secure multi-cloud and hybrid cloud architectures
     -	Use various public cloud constructs to create secure and high-performance cloud native architectures that meet application and compliance requirements
@@ -15,7 +15,7 @@
   
 
 - title: CLOUD SECURITY & COMPLIANCE
-  icon: picture7.png
+  icon: picture7 # icon sprite id
   content: | 
     -	Collaborate with customers to design, plan and implement a comprehensive cloud security and compliance model that applies to cloud infrastructures, business applications and end users
     -	Help transform compliance efforts into a competitive advantage through leveraging clouds capabilities that speed up such initiatives 
@@ -23,24 +23,24 @@
   
   
 - title: AUTOMATION AND INFRASTRUCTURE AS CODE (IAC)
-  icon: picture8.png
+  icon: picture8 # icon sprite id
   content: |
     - Integrate security practices into CI / CD pipelines
     - Create Cloud Formation and Terraform Templates
     - Use IAC & other automation tools to create a viable disaster recovery strategy
   
-- title: KONEKTI SECURITY AUDIT
-  icon: picture9.png
-  content: |
-    - Cloud Infrastructure Security 
-    - Host / OS Vulnerability Scan
-    - Software Security
-    - CI / CD Pipeline Audit for best practices around security
-    - Container Deployment Security and Scan
-    - Optional: Penetration Testing
+# - title: KONEKTI SECURITY AUDIT
+#   icon: picture9 # icon sprite id
+#   content: |
+#     - Cloud Infrastructure Security 
+#     - Host / OS Vulnerability Scan
+#     - Software Security
+#     - CI / CD Pipeline Audit for best practices around security
+#     - Container Deployment Security and Scan
+#     - Optional: Penetration Testing
   
 # - title: WELL ARCHITECTED FRAMEWORK AUDIT
-#   icon: picture10.png
+#   icon: picture10 # icon sprite id
 #   content: |
 #     - Operational excellence required to deliver business value
 #     - Security protection of information & systems
@@ -48,9 +48,9 @@
 #     - Performance efficiency 
 #     - Cost optimization AND control where money is spent
   
-- title: KONEKTI NETWORK AUDIT
-  icon: picture11.png
-  content: |
-    - Multi-cloud and Hybrid Cloud architectures for industry best practices
-    - Analysis of organization’s remote access and VPN needs to conform to user-centric, scalable and adaptive network access
-    - Audit of usage of various CSP provided constructs, such as Transit Gateway, VPC - Peering and PrivateLink, for delivery of maximum business value
+# - title: KONEKTI NETWORK AUDIT
+#   icon: picture11 # icon sprite id
+#   content: |
+#     - Multi-cloud and Hybrid Cloud architectures for industry best practices
+#     - Analysis of organization’s remote access and VPN needs to conform to user-centric, scalable and adaptive network access
+#     - Audit of usage of various CSP provided constructs, such as Transit Gateway, VPC - Peering and PrivateLink, for delivery of maximum business value
