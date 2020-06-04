@@ -8,7 +8,7 @@
 // #132433;
 // #24292e;
 $dark : #161d21; 
-$text: #161d21;
+$text: $dark;
 $pale: lighten(#000, 20%);
 $light: #fff;
 $haze: #f5f5f5;
@@ -22,6 +22,9 @@ $ease: cubic-bezier(.19,1,.22,1);
 
 :root {
   --dark: #1b1f23;
+  --theme: #34a2e2;
+  --light: #fff;
+  --haze: #f5f5f5;
 }
 
 // mixins
