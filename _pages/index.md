@@ -17,3 +17,5 @@ form: true
 {% include sections/about-us.html %}
 
 {% include sections/contact/index.html %}
+
+{% include svgicons.html %}
