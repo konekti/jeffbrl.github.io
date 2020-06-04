@@ -7,7 +7,11 @@
       <!-- <section class = 'center'> -->
       <section>
         {%- if item.icon %}
-        <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+        <div class = 'bg_img'>
+          <svg class="icon img-2">
+            <use xlink:href="#{{ item.icon }}"></use>
+          </svg>
+        </div>
         {%- endif %}
         <h3 class = 'h3'>{{ item.title }}</h3>
         <div>

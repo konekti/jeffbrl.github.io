@@ -2,12 +2,14 @@
   {%- assign services = site.data.services %}
   <section class='container pa pb-2 pt-2'>
     <h2>Services</h2>
-    <div class = 'grid-3 pt-2'>
+    <div class = 'grid-4 pt-2'>
     {% for item in services %}
       <!-- <section class = 'center'> -->
       <section>
         <div class = 'bg_img'>
-          <img src = '/assets/images/{{ item.icon }}' class = 'img-2'>
+          <svg class="icon img-2">
+            <use xlink:href="#{{ item.icon }}"></use>
+          </svg>
         </div>
         <h3 class = 'h3'>{{ item.title }}</h3>
         <div>
