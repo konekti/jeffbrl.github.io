@@ -28,6 +28,11 @@ email: info@konekti.us
 environment: production
 disqus:
   shortname: konekti-us
+
+  # https://github.com/jekyll/jekyll-gist#disabling-noscript-support
+gist:
+  noscript: false
+  
 markdown: kramdown
 highlighter: rouge
 paginate: 5
